@@ -1,71 +1,71 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ExtensionServicenowConfig extends cdktf.TerraformMetaArguments {
+export interface ExtensionServicenowConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow#endpoint_url ExtensionServicenow#endpoint_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow#endpoint_url ExtensionServicenow#endpoint_url}
   */
   readonly endpointUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow#extension_objects ExtensionServicenow#extension_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow#extension_objects ExtensionServicenow#extension_objects}
   */
   readonly extensionObjects: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow#extension_schema ExtensionServicenow#extension_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow#extension_schema ExtensionServicenow#extension_schema}
   */
   readonly extensionSchema: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow#name ExtensionServicenow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow#name ExtensionServicenow#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow#referer ExtensionServicenow#referer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow#referer ExtensionServicenow#referer}
   */
   readonly referer: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow#snow_password ExtensionServicenow#snow_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow#snow_password ExtensionServicenow#snow_password}
   */
   readonly snowPassword: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow#snow_user ExtensionServicenow#snow_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow#snow_user ExtensionServicenow#snow_user}
   */
   readonly snowUser: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow#summary ExtensionServicenow#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow#summary ExtensionServicenow#summary}
   */
   readonly summary?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow#sync_options ExtensionServicenow#sync_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow#sync_options ExtensionServicenow#sync_options}
   */
   readonly syncOptions: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow#target ExtensionServicenow#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow#target ExtensionServicenow#target}
   */
   readonly target: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow#task_type ExtensionServicenow#task_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow#task_type ExtensionServicenow#task_type}
   */
   readonly taskType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow#type ExtensionServicenow#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow#type ExtensionServicenow#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow pagerduty_extension_servicenow}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow pagerduty_extension_servicenow}
 */
-export class ExtensionServicenow extends cdktf.TerraformResource {
+export class ExtensionServicenow extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -76,14 +76,14 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ExtensionServicenow resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ExtensionServicenow resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExtensionServicenow to import
-  * @param importFromId The id of the existing ExtensionServicenow that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ExtensionServicenow that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExtensionServicenow to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_extension_servicenow", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_extension_servicenow", importId: importFromId, provider });
       }
 
   // ===========
@@ -91,7 +91,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow pagerduty_extension_servicenow} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension_servicenow pagerduty_extension_servicenow} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +102,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_extension_servicenow',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -150,7 +150,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   // extension_objects - computed: false, optional: false, required: true
   private _extensionObjects?: string[]; 
   public get extensionObjects() {
-    return cdktf.Fn.tolist(this.getListAttribute('extension_objects'));
+    return cdktn.Fn.tolist(this.getListAttribute('extension_objects'));
   }
   public set extensionObjects(value: string[]) {
     this._extensionObjects = value;
@@ -315,91 +315,91 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      endpoint_url: cdktf.stringToTerraform(this._endpointUrl),
-      extension_objects: cdktf.listMapper(cdktf.stringToTerraform, false)(this._extensionObjects),
-      extension_schema: cdktf.stringToTerraform(this._extensionSchema),
-      name: cdktf.stringToTerraform(this._name),
-      referer: cdktf.stringToTerraform(this._referer),
-      snow_password: cdktf.stringToTerraform(this._snowPassword),
-      snow_user: cdktf.stringToTerraform(this._snowUser),
-      summary: cdktf.stringToTerraform(this._summary),
-      sync_options: cdktf.stringToTerraform(this._syncOptions),
-      target: cdktf.stringToTerraform(this._target),
-      task_type: cdktf.stringToTerraform(this._taskType),
-      type: cdktf.stringToTerraform(this._type),
+      endpoint_url: cdktn.stringToTerraform(this._endpointUrl),
+      extension_objects: cdktn.listMapper(cdktn.stringToTerraform, false)(this._extensionObjects),
+      extension_schema: cdktn.stringToTerraform(this._extensionSchema),
+      name: cdktn.stringToTerraform(this._name),
+      referer: cdktn.stringToTerraform(this._referer),
+      snow_password: cdktn.stringToTerraform(this._snowPassword),
+      snow_user: cdktn.stringToTerraform(this._snowUser),
+      summary: cdktn.stringToTerraform(this._summary),
+      sync_options: cdktn.stringToTerraform(this._syncOptions),
+      target: cdktn.stringToTerraform(this._target),
+      task_type: cdktn.stringToTerraform(this._taskType),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       endpoint_url: {
-        value: cdktf.stringToHclTerraform(this._endpointUrl),
+        value: cdktn.stringToHclTerraform(this._endpointUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       extension_objects: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._extensionObjects),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._extensionObjects),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       extension_schema: {
-        value: cdktf.stringToHclTerraform(this._extensionSchema),
+        value: cdktn.stringToHclTerraform(this._extensionSchema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       referer: {
-        value: cdktf.stringToHclTerraform(this._referer),
+        value: cdktn.stringToHclTerraform(this._referer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       snow_password: {
-        value: cdktf.stringToHclTerraform(this._snowPassword),
+        value: cdktn.stringToHclTerraform(this._snowPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       snow_user: {
-        value: cdktf.stringToHclTerraform(this._snowUser),
+        value: cdktn.stringToHclTerraform(this._snowUser),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       summary: {
-        value: cdktf.stringToHclTerraform(this._summary),
+        value: cdktn.stringToHclTerraform(this._summary),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sync_options: {
-        value: cdktf.stringToHclTerraform(this._syncOptions),
+        value: cdktn.stringToHclTerraform(this._syncOptions),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target: {
-        value: cdktf.stringToHclTerraform(this._target),
+        value: cdktn.stringToHclTerraform(this._target),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       task_type: {
-        value: cdktf.stringToHclTerraform(this._taskType),
+        value: cdktn.stringToHclTerraform(this._taskType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

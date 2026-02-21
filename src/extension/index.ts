@@ -1,47 +1,47 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ExtensionConfig extends cdktf.TerraformMetaArguments {
+export interface ExtensionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension#config Extension#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension#config Extension#config}
   */
   readonly config?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension#endpoint_url Extension#endpoint_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension#endpoint_url Extension#endpoint_url}
   */
   readonly endpointUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension#extension_objects Extension#extension_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension#extension_objects Extension#extension_objects}
   */
   readonly extensionObjects: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension#extension_schema Extension#extension_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension#extension_schema Extension#extension_schema}
   */
   readonly extensionSchema: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension#name Extension#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension#name Extension#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension#type Extension#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension#type Extension#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension pagerduty_extension}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension pagerduty_extension}
 */
-export class Extension extends cdktf.TerraformResource {
+export class Extension extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class Extension extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Extension resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Extension resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Extension to import
-  * @param importFromId The id of the existing Extension that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Extension that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Extension to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_extension", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_extension", importId: importFromId, provider });
       }
 
   // ===========
@@ -67,7 +67,7 @@ export class Extension extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension pagerduty_extension} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/extension pagerduty_extension} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class Extension extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_extension',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -136,7 +136,7 @@ export class Extension extends cdktf.TerraformResource {
   // extension_objects - computed: false, optional: false, required: true
   private _extensionObjects?: string[]; 
   public get extensionObjects() {
-    return cdktf.Fn.tolist(this.getListAttribute('extension_objects'));
+    return cdktn.Fn.tolist(this.getListAttribute('extension_objects'));
   }
   public set extensionObjects(value: string[]) {
     this._extensionObjects = value;
@@ -212,49 +212,49 @@ export class Extension extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      config: cdktf.stringToTerraform(this._config),
-      endpoint_url: cdktf.stringToTerraform(this._endpointUrl),
-      extension_objects: cdktf.listMapper(cdktf.stringToTerraform, false)(this._extensionObjects),
-      extension_schema: cdktf.stringToTerraform(this._extensionSchema),
-      name: cdktf.stringToTerraform(this._name),
-      type: cdktf.stringToTerraform(this._type),
+      config: cdktn.stringToTerraform(this._config),
+      endpoint_url: cdktn.stringToTerraform(this._endpointUrl),
+      extension_objects: cdktn.listMapper(cdktn.stringToTerraform, false)(this._extensionObjects),
+      extension_schema: cdktn.stringToTerraform(this._extensionSchema),
+      name: cdktn.stringToTerraform(this._name),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       config: {
-        value: cdktf.stringToHclTerraform(this._config),
+        value: cdktn.stringToHclTerraform(this._config),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_url: {
-        value: cdktf.stringToHclTerraform(this._endpointUrl),
+        value: cdktn.stringToHclTerraform(this._endpointUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       extension_objects: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._extensionObjects),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._extensionObjects),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       extension_schema: {
-        value: cdktf.stringToHclTerraform(this._extensionSchema),
+        value: cdktn.stringToHclTerraform(this._extensionSchema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

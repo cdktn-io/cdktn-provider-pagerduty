@@ -1,73 +1,73 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EscalationPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface EscalationPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy#description EscalationPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy#description EscalationPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy#id EscalationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy#id EscalationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy#name EscalationPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy#name EscalationPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy#num_loops EscalationPolicy#num_loops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy#num_loops EscalationPolicy#num_loops}
   */
   readonly numLoops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy#teams EscalationPolicy#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy#teams EscalationPolicy#teams}
   */
   readonly teams?: string[];
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy#rule EscalationPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy#rule EscalationPolicy#rule}
   */
-  readonly rule: EscalationPolicyRule[] | cdktf.IResolvable;
+  readonly rule: EscalationPolicyRule[] | cdktn.IResolvable;
 }
 export interface EscalationPolicyRuleEscalationRuleAssignmentStrategy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy#type EscalationPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy#type EscalationPolicy#type}
   */
   readonly type?: string;
 }
 
 export function escalationPolicyRuleEscalationRuleAssignmentStrategyToTerraform(struct?: EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference | EscalationPolicyRuleEscalationRuleAssignmentStrategy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function escalationPolicyRuleEscalationRuleAssignmentStrategyToHclTerraform(struct?: EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference | EscalationPolicyRuleEscalationRuleAssignmentStrategy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -78,14 +78,14 @@ export function escalationPolicyRuleEscalationRuleAssignmentStrategyToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference extends cdktf.ComplexObject {
+export class EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -128,44 +128,44 @@ export class EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference
 }
 export interface EscalationPolicyRuleTarget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy#id EscalationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy#id EscalationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy#type EscalationPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy#type EscalationPolicy#type}
   */
   readonly type?: string;
 }
 
-export function escalationPolicyRuleTargetToTerraform(struct?: EscalationPolicyRuleTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function escalationPolicyRuleTargetToTerraform(struct?: EscalationPolicyRuleTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    type: cdktf.stringToTerraform(struct!.type),
+    id: cdktn.stringToTerraform(struct!.id),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function escalationPolicyRuleTargetToHclTerraform(struct?: EscalationPolicyRuleTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function escalationPolicyRuleTargetToHclTerraform(struct?: EscalationPolicyRuleTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -176,9 +176,9 @@ export function escalationPolicyRuleTargetToHclTerraform(struct?: EscalationPoli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EscalationPolicyRuleTargetOutputReference extends cdktf.ComplexObject {
+export class EscalationPolicyRuleTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -186,11 +186,11 @@ export class EscalationPolicyRuleTargetOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EscalationPolicyRuleTarget | cdktf.IResolvable | undefined {
+  public get internalValue(): EscalationPolicyRuleTarget | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -207,14 +207,14 @@ export class EscalationPolicyRuleTargetOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EscalationPolicyRuleTarget | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EscalationPolicyRuleTarget | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -256,15 +256,15 @@ export class EscalationPolicyRuleTargetOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class EscalationPolicyRuleTargetList extends cdktf.ComplexList {
-  public internalValue? : EscalationPolicyRuleTarget[] | cdktf.IResolvable
+export class EscalationPolicyRuleTargetList extends cdktn.ComplexList {
+  public internalValue? : EscalationPolicyRuleTarget[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -277,44 +277,44 @@ export class EscalationPolicyRuleTargetList extends cdktf.ComplexList {
 }
 export interface EscalationPolicyRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy#escalation_delay_in_minutes EscalationPolicy#escalation_delay_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy#escalation_delay_in_minutes EscalationPolicy#escalation_delay_in_minutes}
   */
   readonly escalationDelayInMinutes: number;
   /**
   * escalation_rule_assignment_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy#escalation_rule_assignment_strategy EscalationPolicy#escalation_rule_assignment_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy#escalation_rule_assignment_strategy EscalationPolicy#escalation_rule_assignment_strategy}
   */
   readonly escalationRuleAssignmentStrategy?: EscalationPolicyRuleEscalationRuleAssignmentStrategy;
   /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy#target EscalationPolicy#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy#target EscalationPolicy#target}
   */
-  readonly target: EscalationPolicyRuleTarget[] | cdktf.IResolvable;
+  readonly target: EscalationPolicyRuleTarget[] | cdktn.IResolvable;
 }
 
-export function escalationPolicyRuleToTerraform(struct?: EscalationPolicyRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function escalationPolicyRuleToTerraform(struct?: EscalationPolicyRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    escalation_delay_in_minutes: cdktf.numberToTerraform(struct!.escalationDelayInMinutes),
+    escalation_delay_in_minutes: cdktn.numberToTerraform(struct!.escalationDelayInMinutes),
     escalation_rule_assignment_strategy: escalationPolicyRuleEscalationRuleAssignmentStrategyToTerraform(struct!.escalationRuleAssignmentStrategy),
-    target: cdktf.listMapper(escalationPolicyRuleTargetToTerraform, true)(struct!.target),
+    target: cdktn.listMapper(escalationPolicyRuleTargetToTerraform, true)(struct!.target),
   }
 }
 
 
-export function escalationPolicyRuleToHclTerraform(struct?: EscalationPolicyRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function escalationPolicyRuleToHclTerraform(struct?: EscalationPolicyRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     escalation_delay_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.escalationDelayInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.escalationDelayInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -326,7 +326,7 @@ export function escalationPolicyRuleToHclTerraform(struct?: EscalationPolicyRule
       storageClassType: "EscalationPolicyRuleEscalationRuleAssignmentStrategyList",
     },
     target: {
-      value: cdktf.listMapperHcl(escalationPolicyRuleTargetToHclTerraform, true)(struct!.target),
+      value: cdktn.listMapperHcl(escalationPolicyRuleTargetToHclTerraform, true)(struct!.target),
       isBlock: true,
       type: "list",
       storageClassType: "EscalationPolicyRuleTargetList",
@@ -337,9 +337,9 @@ export function escalationPolicyRuleToHclTerraform(struct?: EscalationPolicyRule
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EscalationPolicyRuleOutputReference extends cdktf.ComplexObject {
+export class EscalationPolicyRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -347,11 +347,11 @@ export class EscalationPolicyRuleOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EscalationPolicyRule | cdktf.IResolvable | undefined {
+  public get internalValue(): EscalationPolicyRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -372,7 +372,7 @@ export class EscalationPolicyRuleOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EscalationPolicyRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EscalationPolicyRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -380,7 +380,7 @@ export class EscalationPolicyRuleOutputReference extends cdktf.ComplexObject {
       this._escalationRuleAssignmentStrategy.internalValue = undefined;
       this._target.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -432,7 +432,7 @@ export class EscalationPolicyRuleOutputReference extends cdktf.ComplexObject {
   public get target() {
     return this._target;
   }
-  public putTarget(value: EscalationPolicyRuleTarget[] | cdktf.IResolvable) {
+  public putTarget(value: EscalationPolicyRuleTarget[] | cdktn.IResolvable) {
     this._target.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -441,15 +441,15 @@ export class EscalationPolicyRuleOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class EscalationPolicyRuleList extends cdktf.ComplexList {
-  public internalValue? : EscalationPolicyRule[] | cdktf.IResolvable
+export class EscalationPolicyRuleList extends cdktn.ComplexList {
+  public internalValue? : EscalationPolicyRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -462,9 +462,9 @@ export class EscalationPolicyRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy pagerduty_escalation_policy}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy pagerduty_escalation_policy}
 */
-export class EscalationPolicy extends cdktf.TerraformResource {
+export class EscalationPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -475,14 +475,14 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EscalationPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EscalationPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EscalationPolicy to import
-  * @param importFromId The id of the existing EscalationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EscalationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EscalationPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_escalation_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_escalation_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -490,7 +490,7 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/escalation_policy pagerduty_escalation_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/escalation_policy pagerduty_escalation_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -501,7 +501,7 @@ export class EscalationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_escalation_policy',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -606,7 +606,7 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   public get rule() {
     return this._rule;
   }
-  public putRule(value: EscalationPolicyRule[] | cdktf.IResolvable) {
+  public putRule(value: EscalationPolicyRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -620,49 +620,49 @@ export class EscalationPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      num_loops: cdktf.numberToTerraform(this._numLoops),
-      teams: cdktf.listMapper(cdktf.stringToTerraform, false)(this._teams),
-      rule: cdktf.listMapper(escalationPolicyRuleToTerraform, true)(this._rule.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      num_loops: cdktn.numberToTerraform(this._numLoops),
+      teams: cdktn.listMapper(cdktn.stringToTerraform, false)(this._teams),
+      rule: cdktn.listMapper(escalationPolicyRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       num_loops: {
-        value: cdktf.numberToHclTerraform(this._numLoops),
+        value: cdktn.numberToHclTerraform(this._numLoops),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       teams: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._teams),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._teams),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       rule: {
-        value: cdktf.listMapperHcl(escalationPolicyRuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(escalationPolicyRuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EscalationPolicyRuleList",

@@ -1,51 +1,51 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/user_contact_method
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_contact_method
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface UserContactMethodConfig extends cdktf.TerraformMetaArguments {
+export interface UserContactMethodConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/user_contact_method#address UserContactMethod#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_contact_method#address UserContactMethod#address}
   */
   readonly address: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/user_contact_method#country_code UserContactMethod#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_contact_method#country_code UserContactMethod#country_code}
   */
   readonly countryCode?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/user_contact_method#device_type UserContactMethod#device_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_contact_method#device_type UserContactMethod#device_type}
   */
   readonly deviceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/user_contact_method#label UserContactMethod#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_contact_method#label UserContactMethod#label}
   */
   readonly label: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/user_contact_method#send_short_email UserContactMethod#send_short_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_contact_method#send_short_email UserContactMethod#send_short_email}
   */
-  readonly sendShortEmail?: boolean | cdktf.IResolvable;
+  readonly sendShortEmail?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/user_contact_method#type UserContactMethod#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_contact_method#type UserContactMethod#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/user_contact_method#user_id UserContactMethod#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_contact_method#user_id UserContactMethod#user_id}
   */
   readonly userId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/user_contact_method pagerduty_user_contact_method}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_contact_method pagerduty_user_contact_method}
 */
-export class UserContactMethod extends cdktf.TerraformResource {
+export class UserContactMethod extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -56,14 +56,14 @@ export class UserContactMethod extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a UserContactMethod resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a UserContactMethod resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserContactMethod to import
-  * @param importFromId The id of the existing UserContactMethod that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/user_contact_method#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserContactMethod that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_contact_method#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserContactMethod to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_user_contact_method", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_user_contact_method", importId: importFromId, provider });
       }
 
   // ===========
@@ -71,7 +71,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/user_contact_method pagerduty_user_contact_method} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_contact_method pagerduty_user_contact_method} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -82,7 +82,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_user_contact_method',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -180,11 +180,11 @@ export class UserContactMethod extends cdktf.TerraformResource {
   }
 
   // send_short_email - computed: true, optional: true, required: false
-  private _sendShortEmail?: boolean | cdktf.IResolvable; 
+  private _sendShortEmail?: boolean | cdktn.IResolvable; 
   public get sendShortEmail() {
     return this.getBooleanAttribute('send_short_email');
   }
-  public set sendShortEmail(value: boolean | cdktf.IResolvable) {
+  public set sendShortEmail(value: boolean | cdktn.IResolvable) {
     this._sendShortEmail = value;
   }
   public resetSendShortEmail() {
@@ -227,56 +227,56 @@ export class UserContactMethod extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address: cdktf.stringToTerraform(this._address),
-      country_code: cdktf.numberToTerraform(this._countryCode),
-      device_type: cdktf.stringToTerraform(this._deviceType),
-      label: cdktf.stringToTerraform(this._label),
-      send_short_email: cdktf.booleanToTerraform(this._sendShortEmail),
-      type: cdktf.stringToTerraform(this._type),
-      user_id: cdktf.stringToTerraform(this._userId),
+      address: cdktn.stringToTerraform(this._address),
+      country_code: cdktn.numberToTerraform(this._countryCode),
+      device_type: cdktn.stringToTerraform(this._deviceType),
+      label: cdktn.stringToTerraform(this._label),
+      send_short_email: cdktn.booleanToTerraform(this._sendShortEmail),
+      type: cdktn.stringToTerraform(this._type),
+      user_id: cdktn.stringToTerraform(this._userId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       address: {
-        value: cdktf.stringToHclTerraform(this._address),
+        value: cdktn.stringToHclTerraform(this._address),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       country_code: {
-        value: cdktf.numberToHclTerraform(this._countryCode),
+        value: cdktn.numberToHclTerraform(this._countryCode),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       device_type: {
-        value: cdktf.stringToHclTerraform(this._deviceType),
+        value: cdktn.stringToHclTerraform(this._deviceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       label: {
-        value: cdktf.stringToHclTerraform(this._label),
+        value: cdktn.stringToHclTerraform(this._label),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       send_short_email: {
-        value: cdktf.booleanToHclTerraform(this._sendShortEmail),
+        value: cdktn.booleanToHclTerraform(this._sendShortEmail),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_id: {
-        value: cdktf.stringToHclTerraform(this._userId),
+        value: cdktn.stringToHclTerraform(this._userId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,38 +1,38 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_runner_team_association
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_runner_team_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AutomationActionsRunnerTeamAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface AutomationActionsRunnerTeamAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_runner_team_association#id AutomationActionsRunnerTeamAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_runner_team_association#id AutomationActionsRunnerTeamAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_runner_team_association#runner_id AutomationActionsRunnerTeamAssociation#runner_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_runner_team_association#runner_id AutomationActionsRunnerTeamAssociation#runner_id}
   */
   readonly runnerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_runner_team_association#team_id AutomationActionsRunnerTeamAssociation#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_runner_team_association#team_id AutomationActionsRunnerTeamAssociation#team_id}
   */
   readonly teamId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_runner_team_association pagerduty_automation_actions_runner_team_association}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_runner_team_association pagerduty_automation_actions_runner_team_association}
 */
-export class AutomationActionsRunnerTeamAssociation extends cdktf.TerraformResource {
+export class AutomationActionsRunnerTeamAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class AutomationActionsRunnerTeamAssociation extends cdktf.TerraformResou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AutomationActionsRunnerTeamAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AutomationActionsRunnerTeamAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutomationActionsRunnerTeamAssociation to import
-  * @param importFromId The id of the existing AutomationActionsRunnerTeamAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_runner_team_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AutomationActionsRunnerTeamAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_runner_team_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutomationActionsRunnerTeamAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_automation_actions_runner_team_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_automation_actions_runner_team_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -58,7 +58,7 @@ export class AutomationActionsRunnerTeamAssociation extends cdktf.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_runner_team_association pagerduty_automation_actions_runner_team_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_runner_team_association pagerduty_automation_actions_runner_team_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,7 @@ export class AutomationActionsRunnerTeamAssociation extends cdktf.TerraformResou
       terraformResourceType: 'pagerduty_automation_actions_runner_team_association',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -137,28 +137,28 @@ export class AutomationActionsRunnerTeamAssociation extends cdktf.TerraformResou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      runner_id: cdktf.stringToTerraform(this._runnerId),
-      team_id: cdktf.stringToTerraform(this._teamId),
+      id: cdktn.stringToTerraform(this._id),
+      runner_id: cdktn.stringToTerraform(this._runnerId),
+      team_id: cdktn.stringToTerraform(this._teamId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runner_id: {
-        value: cdktf.stringToHclTerraform(this._runnerId),
+        value: cdktn.stringToHclTerraform(this._runnerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       team_id: {
-        value: cdktf.stringToHclTerraform(this._teamId),
+        value: cdktn.stringToHclTerraform(this._teamId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

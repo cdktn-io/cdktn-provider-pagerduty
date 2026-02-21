@@ -1,108 +1,108 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface JiraCloudAccountMappingRuleConfig extends cdktf.TerraformMetaArguments {
+export interface JiraCloudAccountMappingRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#account_mapping JiraCloudAccountMappingRule#account_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#account_mapping JiraCloudAccountMappingRule#account_mapping}
   */
   readonly accountMapping: string;
   /**
   * Indicates if the rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#enabled JiraCloudAccountMappingRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#enabled JiraCloudAccountMappingRule#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#name JiraCloudAccountMappingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#name JiraCloudAccountMappingRule#name}
   */
   readonly name: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#config JiraCloudAccountMappingRule#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#config JiraCloudAccountMappingRule#config}
   */
   readonly config?: JiraCloudAccountMappingRuleConfigA;
 }
 export interface JiraCloudAccountMappingRuleConfigJiraCustomFields {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#source_incident_field JiraCloudAccountMappingRule#source_incident_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#source_incident_field JiraCloudAccountMappingRule#source_incident_field}
   */
   readonly sourceIncidentField?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#target_issue_field JiraCloudAccountMappingRule#target_issue_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#target_issue_field JiraCloudAccountMappingRule#target_issue_field}
   */
   readonly targetIssueField: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#target_issue_field_name JiraCloudAccountMappingRule#target_issue_field_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#target_issue_field_name JiraCloudAccountMappingRule#target_issue_field_name}
   */
   readonly targetIssueFieldName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#type JiraCloudAccountMappingRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#type JiraCloudAccountMappingRule#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#value JiraCloudAccountMappingRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#value JiraCloudAccountMappingRule#value}
   */
   readonly value?: string;
 }
 
-export function jiraCloudAccountMappingRuleConfigJiraCustomFieldsToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraCustomFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraCustomFieldsToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraCustomFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source_incident_field: cdktf.stringToTerraform(struct!.sourceIncidentField),
-    target_issue_field: cdktf.stringToTerraform(struct!.targetIssueField),
-    target_issue_field_name: cdktf.stringToTerraform(struct!.targetIssueFieldName),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    source_incident_field: cdktn.stringToTerraform(struct!.sourceIncidentField),
+    target_issue_field: cdktn.stringToTerraform(struct!.targetIssueField),
+    target_issue_field_name: cdktn.stringToTerraform(struct!.targetIssueFieldName),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function jiraCloudAccountMappingRuleConfigJiraCustomFieldsToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraCustomFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraCustomFieldsToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraCustomFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source_incident_field: {
-      value: cdktf.stringToHclTerraform(struct!.sourceIncidentField),
+      value: cdktn.stringToHclTerraform(struct!.sourceIncidentField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_issue_field: {
-      value: cdktf.stringToHclTerraform(struct!.targetIssueField),
+      value: cdktn.stringToHclTerraform(struct!.targetIssueField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_issue_field_name: {
-      value: cdktf.stringToHclTerraform(struct!.targetIssueFieldName),
+      value: cdktn.stringToHclTerraform(struct!.targetIssueFieldName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,9 +113,9 @@ export function jiraCloudAccountMappingRuleConfigJiraCustomFieldsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JiraCloudAccountMappingRuleConfigJiraCustomFieldsOutputReference extends cdktf.ComplexObject {
+export class JiraCloudAccountMappingRuleConfigJiraCustomFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -123,11 +123,11 @@ export class JiraCloudAccountMappingRuleConfigJiraCustomFieldsOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraCustomFields | cdktf.IResolvable | undefined {
+  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraCustomFields | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class JiraCloudAccountMappingRuleConfigJiraCustomFieldsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraCustomFields | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraCustomFields | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -166,7 +166,7 @@ export class JiraCloudAccountMappingRuleConfigJiraCustomFieldsOutputReference ex
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -253,15 +253,15 @@ export class JiraCloudAccountMappingRuleConfigJiraCustomFieldsOutputReference ex
   }
 }
 
-export class JiraCloudAccountMappingRuleConfigJiraCustomFieldsList extends cdktf.ComplexList {
-  public internalValue? : JiraCloudAccountMappingRuleConfigJiraCustomFields[] | cdktf.IResolvable
+export class JiraCloudAccountMappingRuleConfigJiraCustomFieldsList extends cdktn.ComplexList {
+  public internalValue? : JiraCloudAccountMappingRuleConfigJiraCustomFields[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -274,44 +274,44 @@ export class JiraCloudAccountMappingRuleConfigJiraCustomFieldsList extends cdktf
 }
 export interface JiraCloudAccountMappingRuleConfigJiraIssueType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#id JiraCloudAccountMappingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#id JiraCloudAccountMappingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#name JiraCloudAccountMappingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#name JiraCloudAccountMappingRule#name}
   */
   readonly name: string;
 }
 
-export function jiraCloudAccountMappingRuleConfigJiraIssueTypeToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraIssueType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraIssueTypeToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraIssueType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    name: cdktf.stringToTerraform(struct!.name),
+    id: cdktn.stringToTerraform(struct!.id),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function jiraCloudAccountMappingRuleConfigJiraIssueTypeToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraIssueType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraIssueTypeToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraIssueType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -322,19 +322,19 @@ export function jiraCloudAccountMappingRuleConfigJiraIssueTypeToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JiraCloudAccountMappingRuleConfigJiraIssueTypeOutputReference extends cdktf.ComplexObject {
+export class JiraCloudAccountMappingRuleConfigJiraIssueTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraIssueType | cdktf.IResolvable | undefined {
+  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraIssueType | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -351,14 +351,14 @@ export class JiraCloudAccountMappingRuleConfigJiraIssueTypeOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraIssueType | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraIssueType | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -398,41 +398,41 @@ export class JiraCloudAccountMappingRuleConfigJiraIssueTypeOutputReference exten
 }
 export interface JiraCloudAccountMappingRuleConfigJiraPriorities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#jira_id JiraCloudAccountMappingRule#jira_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#jira_id JiraCloudAccountMappingRule#jira_id}
   */
   readonly jiraId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#pagerduty_id JiraCloudAccountMappingRule#pagerduty_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#pagerduty_id JiraCloudAccountMappingRule#pagerduty_id}
   */
   readonly pagerdutyId: string;
 }
 
-export function jiraCloudAccountMappingRuleConfigJiraPrioritiesToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraPriorities | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraPrioritiesToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraPriorities | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    jira_id: cdktf.stringToTerraform(struct!.jiraId),
-    pagerduty_id: cdktf.stringToTerraform(struct!.pagerdutyId),
+    jira_id: cdktn.stringToTerraform(struct!.jiraId),
+    pagerduty_id: cdktn.stringToTerraform(struct!.pagerdutyId),
   }
 }
 
 
-export function jiraCloudAccountMappingRuleConfigJiraPrioritiesToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraPriorities | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraPrioritiesToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraPriorities | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     jira_id: {
-      value: cdktf.stringToHclTerraform(struct!.jiraId),
+      value: cdktn.stringToHclTerraform(struct!.jiraId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pagerduty_id: {
-      value: cdktf.stringToHclTerraform(struct!.pagerdutyId),
+      value: cdktn.stringToHclTerraform(struct!.pagerdutyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -443,9 +443,9 @@ export function jiraCloudAccountMappingRuleConfigJiraPrioritiesToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JiraCloudAccountMappingRuleConfigJiraPrioritiesOutputReference extends cdktf.ComplexObject {
+export class JiraCloudAccountMappingRuleConfigJiraPrioritiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -453,11 +453,11 @@ export class JiraCloudAccountMappingRuleConfigJiraPrioritiesOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraPriorities | cdktf.IResolvable | undefined {
+  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraPriorities | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -474,14 +474,14 @@ export class JiraCloudAccountMappingRuleConfigJiraPrioritiesOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraPriorities | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraPriorities | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._jiraId = undefined;
       this._pagerdutyId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -520,15 +520,15 @@ export class JiraCloudAccountMappingRuleConfigJiraPrioritiesOutputReference exte
   }
 }
 
-export class JiraCloudAccountMappingRuleConfigJiraPrioritiesList extends cdktf.ComplexList {
-  public internalValue? : JiraCloudAccountMappingRuleConfigJiraPriorities[] | cdktf.IResolvable
+export class JiraCloudAccountMappingRuleConfigJiraPrioritiesList extends cdktn.ComplexList {
+  public internalValue? : JiraCloudAccountMappingRuleConfigJiraPriorities[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -541,55 +541,55 @@ export class JiraCloudAccountMappingRuleConfigJiraPrioritiesList extends cdktf.C
 }
 export interface JiraCloudAccountMappingRuleConfigJiraProject {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#id JiraCloudAccountMappingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#id JiraCloudAccountMappingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#key JiraCloudAccountMappingRule#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#key JiraCloudAccountMappingRule#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#name JiraCloudAccountMappingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#name JiraCloudAccountMappingRule#name}
   */
   readonly name: string;
 }
 
-export function jiraCloudAccountMappingRuleConfigJiraProjectToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraProject | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraProjectToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraProject | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    key: cdktf.stringToTerraform(struct!.key),
-    name: cdktf.stringToTerraform(struct!.name),
+    id: cdktn.stringToTerraform(struct!.id),
+    key: cdktn.stringToTerraform(struct!.key),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function jiraCloudAccountMappingRuleConfigJiraProjectToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraProject | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraProjectToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraProject | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -600,19 +600,19 @@ export function jiraCloudAccountMappingRuleConfigJiraProjectToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JiraCloudAccountMappingRuleConfigJiraProjectOutputReference extends cdktf.ComplexObject {
+export class JiraCloudAccountMappingRuleConfigJiraProjectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraProject | cdktf.IResolvable | undefined {
+  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraProject | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -633,7 +633,7 @@ export class JiraCloudAccountMappingRuleConfigJiraProjectOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraProject | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraProject | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -641,7 +641,7 @@ export class JiraCloudAccountMappingRuleConfigJiraProjectOutputReference extends
       this._key = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -695,44 +695,44 @@ export class JiraCloudAccountMappingRuleConfigJiraProjectOutputReference extends
 }
 export interface JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#id JiraCloudAccountMappingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#id JiraCloudAccountMappingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#name JiraCloudAccountMappingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#name JiraCloudAccountMappingRule#name}
   */
   readonly name?: string;
 }
 
-export function jiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledgedToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledgedToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    name: cdktf.stringToTerraform(struct!.name),
+    id: cdktn.stringToTerraform(struct!.id),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function jiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledgedToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledgedToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -743,19 +743,19 @@ export function jiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledgedTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledgedOutputReference extends cdktf.ComplexObject {
+export class JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledgedOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged | cdktf.IResolvable | undefined {
+  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -772,14 +772,14 @@ export class JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledgedOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -825,44 +825,44 @@ export class JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledgedOutpu
 }
 export interface JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#id JiraCloudAccountMappingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#id JiraCloudAccountMappingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#name JiraCloudAccountMappingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#name JiraCloudAccountMappingRule#name}
   */
   readonly name?: string;
 }
 
-export function jiraCloudAccountMappingRuleConfigJiraStatusMappingResolvedToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraStatusMappingResolvedToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    name: cdktf.stringToTerraform(struct!.name),
+    id: cdktn.stringToTerraform(struct!.id),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function jiraCloudAccountMappingRuleConfigJiraStatusMappingResolvedToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraStatusMappingResolvedToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -873,19 +873,19 @@ export function jiraCloudAccountMappingRuleConfigJiraStatusMappingResolvedToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JiraCloudAccountMappingRuleConfigJiraStatusMappingResolvedOutputReference extends cdktf.ComplexObject {
+export class JiraCloudAccountMappingRuleConfigJiraStatusMappingResolvedOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved | cdktf.IResolvable | undefined {
+  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -902,14 +902,14 @@ export class JiraCloudAccountMappingRuleConfigJiraStatusMappingResolvedOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -955,44 +955,44 @@ export class JiraCloudAccountMappingRuleConfigJiraStatusMappingResolvedOutputRef
 }
 export interface JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#id JiraCloudAccountMappingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#id JiraCloudAccountMappingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#name JiraCloudAccountMappingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#name JiraCloudAccountMappingRule#name}
   */
   readonly name: string;
 }
 
-export function jiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    name: cdktf.stringToTerraform(struct!.name),
+    id: cdktn.stringToTerraform(struct!.id),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function jiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1003,19 +1003,19 @@ export function jiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredOutputReference extends cdktf.ComplexObject {
+export class JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered | cdktf.IResolvable | undefined {
+  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1032,14 +1032,14 @@ export class JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1081,26 +1081,26 @@ export interface JiraCloudAccountMappingRuleConfigJiraStatusMapping {
   /**
   * acknowledged block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#acknowledged JiraCloudAccountMappingRule#acknowledged}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#acknowledged JiraCloudAccountMappingRule#acknowledged}
   */
   readonly acknowledged?: JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged;
   /**
   * resolved block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#resolved JiraCloudAccountMappingRule#resolved}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#resolved JiraCloudAccountMappingRule#resolved}
   */
   readonly resolved?: JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved;
   /**
   * triggered block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#triggered JiraCloudAccountMappingRule#triggered}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#triggered JiraCloudAccountMappingRule#triggered}
   */
   readonly triggered: JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered;
 }
 
-export function jiraCloudAccountMappingRuleConfigJiraStatusMappingToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraStatusMappingToTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1111,9 +1111,9 @@ export function jiraCloudAccountMappingRuleConfigJiraStatusMappingToTerraform(st
 }
 
 
-export function jiraCloudAccountMappingRuleConfigJiraStatusMappingToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraStatusMappingToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJiraStatusMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1141,19 +1141,19 @@ export function jiraCloudAccountMappingRuleConfigJiraStatusMappingToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JiraCloudAccountMappingRuleConfigJiraStatusMappingOutputReference extends cdktf.ComplexObject {
+export class JiraCloudAccountMappingRuleConfigJiraStatusMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraStatusMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): JiraCloudAccountMappingRuleConfigJiraStatusMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1174,7 +1174,7 @@ export class JiraCloudAccountMappingRuleConfigJiraStatusMappingOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraStatusMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JiraCloudAccountMappingRuleConfigJiraStatusMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1182,7 +1182,7 @@ export class JiraCloudAccountMappingRuleConfigJiraStatusMappingOutputReference e
       this._resolved.internalValue = undefined;
       this._triggered.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1242,93 +1242,93 @@ export class JiraCloudAccountMappingRuleConfigJiraStatusMappingOutputReference e
 }
 export interface JiraCloudAccountMappingRuleConfigJira {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#autocreate_jql JiraCloudAccountMappingRule#autocreate_jql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#autocreate_jql JiraCloudAccountMappingRule#autocreate_jql}
   */
   readonly autocreateJql?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#create_issue_on_incident_trigger JiraCloudAccountMappingRule#create_issue_on_incident_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#create_issue_on_incident_trigger JiraCloudAccountMappingRule#create_issue_on_incident_trigger}
   */
-  readonly createIssueOnIncidentTrigger?: boolean | cdktf.IResolvable;
+  readonly createIssueOnIncidentTrigger?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#sync_notes_user JiraCloudAccountMappingRule#sync_notes_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#sync_notes_user JiraCloudAccountMappingRule#sync_notes_user}
   */
   readonly syncNotesUser?: string;
   /**
   * custom_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#custom_fields JiraCloudAccountMappingRule#custom_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#custom_fields JiraCloudAccountMappingRule#custom_fields}
   */
-  readonly customFields?: JiraCloudAccountMappingRuleConfigJiraCustomFields[] | cdktf.IResolvable;
+  readonly customFields?: JiraCloudAccountMappingRuleConfigJiraCustomFields[] | cdktn.IResolvable;
   /**
   * issue_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#issue_type JiraCloudAccountMappingRule#issue_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#issue_type JiraCloudAccountMappingRule#issue_type}
   */
   readonly issueType: JiraCloudAccountMappingRuleConfigJiraIssueType;
   /**
   * priorities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#priorities JiraCloudAccountMappingRule#priorities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#priorities JiraCloudAccountMappingRule#priorities}
   */
-  readonly priorities?: JiraCloudAccountMappingRuleConfigJiraPriorities[] | cdktf.IResolvable;
+  readonly priorities?: JiraCloudAccountMappingRuleConfigJiraPriorities[] | cdktn.IResolvable;
   /**
   * project block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#project JiraCloudAccountMappingRule#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#project JiraCloudAccountMappingRule#project}
   */
   readonly project: JiraCloudAccountMappingRuleConfigJiraProject;
   /**
   * status_mapping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#status_mapping JiraCloudAccountMappingRule#status_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#status_mapping JiraCloudAccountMappingRule#status_mapping}
   */
   readonly statusMapping?: JiraCloudAccountMappingRuleConfigJiraStatusMapping;
 }
 
-export function jiraCloudAccountMappingRuleConfigJiraToTerraform(struct?: JiraCloudAccountMappingRuleConfigJira | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraToTerraform(struct?: JiraCloudAccountMappingRuleConfigJira | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    autocreate_jql: cdktf.stringToTerraform(struct!.autocreateJql),
-    create_issue_on_incident_trigger: cdktf.booleanToTerraform(struct!.createIssueOnIncidentTrigger),
-    sync_notes_user: cdktf.stringToTerraform(struct!.syncNotesUser),
-    custom_fields: cdktf.listMapper(jiraCloudAccountMappingRuleConfigJiraCustomFieldsToTerraform, true)(struct!.customFields),
+    autocreate_jql: cdktn.stringToTerraform(struct!.autocreateJql),
+    create_issue_on_incident_trigger: cdktn.booleanToTerraform(struct!.createIssueOnIncidentTrigger),
+    sync_notes_user: cdktn.stringToTerraform(struct!.syncNotesUser),
+    custom_fields: cdktn.listMapper(jiraCloudAccountMappingRuleConfigJiraCustomFieldsToTerraform, true)(struct!.customFields),
     issue_type: jiraCloudAccountMappingRuleConfigJiraIssueTypeToTerraform(struct!.issueType),
-    priorities: cdktf.listMapper(jiraCloudAccountMappingRuleConfigJiraPrioritiesToTerraform, true)(struct!.priorities),
+    priorities: cdktn.listMapper(jiraCloudAccountMappingRuleConfigJiraPrioritiesToTerraform, true)(struct!.priorities),
     project: jiraCloudAccountMappingRuleConfigJiraProjectToTerraform(struct!.project),
     status_mapping: jiraCloudAccountMappingRuleConfigJiraStatusMappingToTerraform(struct!.statusMapping),
   }
 }
 
 
-export function jiraCloudAccountMappingRuleConfigJiraToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJira | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigJiraToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigJira | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     autocreate_jql: {
-      value: cdktf.stringToHclTerraform(struct!.autocreateJql),
+      value: cdktn.stringToHclTerraform(struct!.autocreateJql),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     create_issue_on_incident_trigger: {
-      value: cdktf.booleanToHclTerraform(struct!.createIssueOnIncidentTrigger),
+      value: cdktn.booleanToHclTerraform(struct!.createIssueOnIncidentTrigger),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sync_notes_user: {
-      value: cdktf.stringToHclTerraform(struct!.syncNotesUser),
+      value: cdktn.stringToHclTerraform(struct!.syncNotesUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_fields: {
-      value: cdktf.listMapperHcl(jiraCloudAccountMappingRuleConfigJiraCustomFieldsToHclTerraform, true)(struct!.customFields),
+      value: cdktn.listMapperHcl(jiraCloudAccountMappingRuleConfigJiraCustomFieldsToHclTerraform, true)(struct!.customFields),
       isBlock: true,
       type: "list",
       storageClassType: "JiraCloudAccountMappingRuleConfigJiraCustomFieldsList",
@@ -1340,7 +1340,7 @@ export function jiraCloudAccountMappingRuleConfigJiraToHclTerraform(struct?: Jir
       storageClassType: "JiraCloudAccountMappingRuleConfigJiraIssueType",
     },
     priorities: {
-      value: cdktf.listMapperHcl(jiraCloudAccountMappingRuleConfigJiraPrioritiesToHclTerraform, true)(struct!.priorities),
+      value: cdktn.listMapperHcl(jiraCloudAccountMappingRuleConfigJiraPrioritiesToHclTerraform, true)(struct!.priorities),
       isBlock: true,
       type: "list",
       storageClassType: "JiraCloudAccountMappingRuleConfigJiraPrioritiesList",
@@ -1363,19 +1363,19 @@ export function jiraCloudAccountMappingRuleConfigJiraToHclTerraform(struct?: Jir
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JiraCloudAccountMappingRuleConfigJiraOutputReference extends cdktf.ComplexObject {
+export class JiraCloudAccountMappingRuleConfigJiraOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): JiraCloudAccountMappingRuleConfigJira | cdktf.IResolvable | undefined {
+  public get internalValue(): JiraCloudAccountMappingRuleConfigJira | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1416,7 +1416,7 @@ export class JiraCloudAccountMappingRuleConfigJiraOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JiraCloudAccountMappingRuleConfigJira | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JiraCloudAccountMappingRuleConfigJira | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1429,7 +1429,7 @@ export class JiraCloudAccountMappingRuleConfigJiraOutputReference extends cdktf.
       this._project.internalValue = undefined;
       this._statusMapping.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1464,11 +1464,11 @@ export class JiraCloudAccountMappingRuleConfigJiraOutputReference extends cdktf.
   }
 
   // create_issue_on_incident_trigger - computed: true, optional: true, required: false
-  private _createIssueOnIncidentTrigger?: boolean | cdktf.IResolvable; 
+  private _createIssueOnIncidentTrigger?: boolean | cdktn.IResolvable; 
   public get createIssueOnIncidentTrigger() {
     return this.getBooleanAttribute('create_issue_on_incident_trigger');
   }
-  public set createIssueOnIncidentTrigger(value: boolean | cdktf.IResolvable) {
+  public set createIssueOnIncidentTrigger(value: boolean | cdktn.IResolvable) {
     this._createIssueOnIncidentTrigger = value;
   }
   public resetCreateIssueOnIncidentTrigger() {
@@ -1500,7 +1500,7 @@ export class JiraCloudAccountMappingRuleConfigJiraOutputReference extends cdktf.
   public get customFields() {
     return this._customFields;
   }
-  public putCustomFields(value: JiraCloudAccountMappingRuleConfigJiraCustomFields[] | cdktf.IResolvable) {
+  public putCustomFields(value: JiraCloudAccountMappingRuleConfigJiraCustomFields[] | cdktn.IResolvable) {
     this._customFields.internalValue = value;
   }
   public resetCustomFields() {
@@ -1529,7 +1529,7 @@ export class JiraCloudAccountMappingRuleConfigJiraOutputReference extends cdktf.
   public get priorities() {
     return this._priorities;
   }
-  public putPriorities(value: JiraCloudAccountMappingRuleConfigJiraPriorities[] | cdktf.IResolvable) {
+  public putPriorities(value: JiraCloudAccountMappingRuleConfigJiraPriorities[] | cdktn.IResolvable) {
     this._priorities.internalValue = value;
   }
   public resetPriorities() {
@@ -1571,37 +1571,37 @@ export class JiraCloudAccountMappingRuleConfigJiraOutputReference extends cdktf.
 }
 export interface JiraCloudAccountMappingRuleConfigA {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#service JiraCloudAccountMappingRule#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#service JiraCloudAccountMappingRule#service}
   */
   readonly service: string;
   /**
   * jira block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#jira JiraCloudAccountMappingRule#jira}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#jira JiraCloudAccountMappingRule#jira}
   */
   readonly jira?: JiraCloudAccountMappingRuleConfigJira;
 }
 
-export function jiraCloudAccountMappingRuleConfigAToTerraform(struct?: JiraCloudAccountMappingRuleConfigA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigAToTerraform(struct?: JiraCloudAccountMappingRuleConfigA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service: cdktf.stringToTerraform(struct!.service),
+    service: cdktn.stringToTerraform(struct!.service),
     jira: jiraCloudAccountMappingRuleConfigJiraToTerraform(struct!.jira),
   }
 }
 
 
-export function jiraCloudAccountMappingRuleConfigAToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jiraCloudAccountMappingRuleConfigAToHclTerraform(struct?: JiraCloudAccountMappingRuleConfigA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1618,19 +1618,19 @@ export function jiraCloudAccountMappingRuleConfigAToHclTerraform(struct?: JiraCl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JiraCloudAccountMappingRuleConfigAOutputReference extends cdktf.ComplexObject {
+export class JiraCloudAccountMappingRuleConfigAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): JiraCloudAccountMappingRuleConfigA | cdktf.IResolvable | undefined {
+  public get internalValue(): JiraCloudAccountMappingRuleConfigA | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1647,14 +1647,14 @@ export class JiraCloudAccountMappingRuleConfigAOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JiraCloudAccountMappingRuleConfigA | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JiraCloudAccountMappingRuleConfigA | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._service = undefined;
       this._jira.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1697,9 +1697,9 @@ export class JiraCloudAccountMappingRuleConfigAOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule pagerduty_jira_cloud_account_mapping_rule}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule pagerduty_jira_cloud_account_mapping_rule}
 */
-export class JiraCloudAccountMappingRule extends cdktf.TerraformResource {
+export class JiraCloudAccountMappingRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1710,14 +1710,14 @@ export class JiraCloudAccountMappingRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a JiraCloudAccountMappingRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a JiraCloudAccountMappingRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the JiraCloudAccountMappingRule to import
-  * @param importFromId The id of the existing JiraCloudAccountMappingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing JiraCloudAccountMappingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the JiraCloudAccountMappingRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_jira_cloud_account_mapping_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_jira_cloud_account_mapping_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -1725,7 +1725,7 @@ export class JiraCloudAccountMappingRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/jira_cloud_account_mapping_rule pagerduty_jira_cloud_account_mapping_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/jira_cloud_account_mapping_rule pagerduty_jira_cloud_account_mapping_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1736,7 +1736,7 @@ export class JiraCloudAccountMappingRule extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_jira_cloud_account_mapping_rule',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -1781,11 +1781,11 @@ export class JiraCloudAccountMappingRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1836,9 +1836,9 @@ export class JiraCloudAccountMappingRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_mapping: cdktf.stringToTerraform(this._accountMapping),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      name: cdktf.stringToTerraform(this._name),
+      account_mapping: cdktn.stringToTerraform(this._accountMapping),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      name: cdktn.stringToTerraform(this._name),
       config: jiraCloudAccountMappingRuleConfigAToTerraform(this._config.internalValue),
     };
   }
@@ -1846,19 +1846,19 @@ export class JiraCloudAccountMappingRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_mapping: {
-        value: cdktf.stringToHclTerraform(this._accountMapping),
+        value: cdktn.stringToHclTerraform(this._accountMapping),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

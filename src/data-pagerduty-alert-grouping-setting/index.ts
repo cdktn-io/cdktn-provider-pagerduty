@@ -1,28 +1,28 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/alert_grouping_setting
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/alert_grouping_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataPagerdutyAlertGroupingSettingConfig extends cdktf.TerraformMetaArguments {
+export interface DataPagerdutyAlertGroupingSettingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}
   */
   readonly name: string;
 }
 export interface DataPagerdutyAlertGroupingSettingConfigA {
 }
 
-export function dataPagerdutyAlertGroupingSettingConfigAToTerraform(struct?: DataPagerdutyAlertGroupingSettingConfigA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataPagerdutyAlertGroupingSettingConfigAToTerraform(struct?: DataPagerdutyAlertGroupingSettingConfigA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -30,9 +30,9 @@ export function dataPagerdutyAlertGroupingSettingConfigAToTerraform(struct?: Dat
 }
 
 
-export function dataPagerdutyAlertGroupingSettingConfigAToHclTerraform(struct?: DataPagerdutyAlertGroupingSettingConfigA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataPagerdutyAlertGroupingSettingConfigAToHclTerraform(struct?: DataPagerdutyAlertGroupingSettingConfigA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -40,19 +40,19 @@ export function dataPagerdutyAlertGroupingSettingConfigAToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataPagerdutyAlertGroupingSettingConfigAOutputReference extends cdktf.ComplexObject {
+export class DataPagerdutyAlertGroupingSettingConfigAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataPagerdutyAlertGroupingSettingConfigA | cdktf.IResolvable | undefined {
+  public get internalValue(): DataPagerdutyAlertGroupingSettingConfigA | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -61,12 +61,12 @@ export class DataPagerdutyAlertGroupingSettingConfigAOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataPagerdutyAlertGroupingSettingConfigA | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataPagerdutyAlertGroupingSettingConfigA | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -83,7 +83,7 @@ export class DataPagerdutyAlertGroupingSettingConfigAOutputReference extends cdk
 
   // fields - computed: true, optional: false, required: false
   public get fields() {
-    return cdktf.Fn.tolist(this.getListAttribute('fields'));
+    return cdktn.Fn.tolist(this.getListAttribute('fields'));
   }
 
   // iag_fields - computed: true, optional: false, required: false
@@ -103,9 +103,9 @@ export class DataPagerdutyAlertGroupingSettingConfigAOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting}
 */
-export class DataPagerdutyAlertGroupingSetting extends cdktf.TerraformDataSource {
+export class DataPagerdutyAlertGroupingSetting extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -116,14 +116,14 @@ export class DataPagerdutyAlertGroupingSetting extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataPagerdutyAlertGroupingSetting resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataPagerdutyAlertGroupingSetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyAlertGroupingSetting to import
-  * @param importFromId The id of the existing DataPagerdutyAlertGroupingSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/alert_grouping_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyAlertGroupingSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/alert_grouping_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyAlertGroupingSetting to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_alert_grouping_setting", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_alert_grouping_setting", importId: importFromId, provider });
       }
 
   // ===========
@@ -131,7 +131,7 @@ export class DataPagerdutyAlertGroupingSetting extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -142,7 +142,7 @@ export class DataPagerdutyAlertGroupingSetting extends cdktf.TerraformDataSource
       terraformResourceType: 'pagerduty_alert_grouping_setting',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -185,7 +185,7 @@ export class DataPagerdutyAlertGroupingSetting extends cdktf.TerraformDataSource
 
   // services - computed: true, optional: false, required: false
   public get services() {
-    return cdktf.Fn.tolist(this.getListAttribute('services'));
+    return cdktn.Fn.tolist(this.getListAttribute('services'));
   }
 
   // type - computed: true, optional: false, required: false
@@ -205,14 +205,14 @@ export class DataPagerdutyAlertGroupingSetting extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

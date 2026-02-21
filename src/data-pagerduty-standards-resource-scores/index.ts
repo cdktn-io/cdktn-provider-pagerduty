@@ -1,26 +1,26 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/standards_resource_scores
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/standards_resource_scores
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataPagerdutyStandardsResourceScoresConfig extends cdktf.TerraformMetaArguments {
+export interface DataPagerdutyStandardsResourceScoresConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/standards_resource_scores#id DataPagerdutyStandardsResourceScores#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/standards_resource_scores#id DataPagerdutyStandardsResourceScores#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/standards_resource_scores#resource_type DataPagerdutyStandardsResourceScores#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/standards_resource_scores#resource_type DataPagerdutyStandardsResourceScores#resource_type}
   */
   readonly resourceType: string;
 }
@@ -28,8 +28,8 @@ export interface DataPagerdutyStandardsResourceScoresScore {
 }
 
 export function dataPagerdutyStandardsResourceScoresScoreToTerraform(struct?: DataPagerdutyStandardsResourceScoresScore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -38,8 +38,8 @@ export function dataPagerdutyStandardsResourceScoresScoreToTerraform(struct?: Da
 
 
 export function dataPagerdutyStandardsResourceScoresScoreToHclTerraform(struct?: DataPagerdutyStandardsResourceScoresScore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -47,14 +47,14 @@ export function dataPagerdutyStandardsResourceScoresScoreToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataPagerdutyStandardsResourceScoresScoreOutputReference extends cdktf.ComplexObject {
+export class DataPagerdutyStandardsResourceScoresScoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -87,8 +87,8 @@ export interface DataPagerdutyStandardsResourceScoresStandards {
 }
 
 export function dataPagerdutyStandardsResourceScoresStandardsToTerraform(struct?: DataPagerdutyStandardsResourceScoresStandards): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -97,8 +97,8 @@ export function dataPagerdutyStandardsResourceScoresStandardsToTerraform(struct?
 
 
 export function dataPagerdutyStandardsResourceScoresStandardsToHclTerraform(struct?: DataPagerdutyStandardsResourceScoresStandards): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -106,7 +106,7 @@ export function dataPagerdutyStandardsResourceScoresStandardsToHclTerraform(stru
   return attrs;
 }
 
-export class DataPagerdutyStandardsResourceScoresStandardsOutputReference extends cdktf.ComplexObject {
+export class DataPagerdutyStandardsResourceScoresStandardsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -115,7 +115,7 @@ export class DataPagerdutyStandardsResourceScoresStandardsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -165,14 +165,14 @@ export class DataPagerdutyStandardsResourceScoresStandardsOutputReference extend
   }
 }
 
-export class DataPagerdutyStandardsResourceScoresStandardsList extends cdktf.ComplexList {
+export class DataPagerdutyStandardsResourceScoresStandardsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -185,9 +185,9 @@ export class DataPagerdutyStandardsResourceScoresStandardsList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/standards_resource_scores pagerduty_standards_resource_scores}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/standards_resource_scores pagerduty_standards_resource_scores}
 */
-export class DataPagerdutyStandardsResourceScores extends cdktf.TerraformDataSource {
+export class DataPagerdutyStandardsResourceScores extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -198,14 +198,14 @@ export class DataPagerdutyStandardsResourceScores extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataPagerdutyStandardsResourceScores resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataPagerdutyStandardsResourceScores resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyStandardsResourceScores to import
-  * @param importFromId The id of the existing DataPagerdutyStandardsResourceScores that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/standards_resource_scores#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyStandardsResourceScores that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/standards_resource_scores#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyStandardsResourceScores to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_standards_resource_scores", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_standards_resource_scores", importId: importFromId, provider });
       }
 
   // ===========
@@ -213,7 +213,7 @@ export class DataPagerdutyStandardsResourceScores extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/standards_resource_scores pagerduty_standards_resource_scores} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/standards_resource_scores pagerduty_standards_resource_scores} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,7 +224,7 @@ export class DataPagerdutyStandardsResourceScores extends cdktf.TerraformDataSou
       terraformResourceType: 'pagerduty_standards_resource_scores',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -287,21 +287,21 @@ export class DataPagerdutyStandardsResourceScores extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      resource_type: cdktf.stringToTerraform(this._resourceType),
+      id: cdktn.stringToTerraform(this._id),
+      resource_type: cdktn.stringToTerraform(this._resourceType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_type: {
-        value: cdktf.stringToHclTerraform(this._resourceType),
+        value: cdktn.stringToHclTerraform(this._resourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

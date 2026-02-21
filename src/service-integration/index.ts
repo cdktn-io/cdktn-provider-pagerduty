@@ -1,154 +1,154 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServiceIntegrationConfig extends cdktf.TerraformMetaArguments {
+export interface ServiceIntegrationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#email_filter_mode ServiceIntegration#email_filter_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#email_filter_mode ServiceIntegration#email_filter_mode}
   */
   readonly emailFilterMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#email_incident_creation ServiceIntegration#email_incident_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#email_incident_creation ServiceIntegration#email_incident_creation}
   */
   readonly emailIncidentCreation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#email_parsing_fallback ServiceIntegration#email_parsing_fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#email_parsing_fallback ServiceIntegration#email_parsing_fallback}
   */
   readonly emailParsingFallback?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#id ServiceIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#id ServiceIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#integration_email ServiceIntegration#integration_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#integration_email ServiceIntegration#integration_email}
   */
   readonly integrationEmail?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#integration_key ServiceIntegration#integration_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#integration_key ServiceIntegration#integration_key}
   */
   readonly integrationKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#name ServiceIntegration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#name ServiceIntegration#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#service ServiceIntegration#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#service ServiceIntegration#service}
   */
   readonly service: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#type ServiceIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#type ServiceIntegration#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#vendor ServiceIntegration#vendor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#vendor ServiceIntegration#vendor}
   */
   readonly vendor?: string;
   /**
   * email_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#email_filter ServiceIntegration#email_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#email_filter ServiceIntegration#email_filter}
   */
-  readonly emailFilter?: ServiceIntegrationEmailFilter[] | cdktf.IResolvable;
+  readonly emailFilter?: ServiceIntegrationEmailFilter[] | cdktn.IResolvable;
   /**
   * email_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#email_parser ServiceIntegration#email_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#email_parser ServiceIntegration#email_parser}
   */
-  readonly emailParser?: ServiceIntegrationEmailParser[] | cdktf.IResolvable;
+  readonly emailParser?: ServiceIntegrationEmailParser[] | cdktn.IResolvable;
 }
 export interface ServiceIntegrationEmailFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#body_mode ServiceIntegration#body_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#body_mode ServiceIntegration#body_mode}
   */
   readonly bodyMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#body_regex ServiceIntegration#body_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#body_regex ServiceIntegration#body_regex}
   */
   readonly bodyRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#from_email_mode ServiceIntegration#from_email_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#from_email_mode ServiceIntegration#from_email_mode}
   */
   readonly fromEmailMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#from_email_regex ServiceIntegration#from_email_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#from_email_regex ServiceIntegration#from_email_regex}
   */
   readonly fromEmailRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#subject_mode ServiceIntegration#subject_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#subject_mode ServiceIntegration#subject_mode}
   */
   readonly subjectMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#subject_regex ServiceIntegration#subject_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#subject_regex ServiceIntegration#subject_regex}
   */
   readonly subjectRegex?: string;
 }
 
-export function serviceIntegrationEmailFilterToTerraform(struct?: ServiceIntegrationEmailFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceIntegrationEmailFilterToTerraform(struct?: ServiceIntegrationEmailFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    body_mode: cdktf.stringToTerraform(struct!.bodyMode),
-    body_regex: cdktf.stringToTerraform(struct!.bodyRegex),
-    from_email_mode: cdktf.stringToTerraform(struct!.fromEmailMode),
-    from_email_regex: cdktf.stringToTerraform(struct!.fromEmailRegex),
-    subject_mode: cdktf.stringToTerraform(struct!.subjectMode),
-    subject_regex: cdktf.stringToTerraform(struct!.subjectRegex),
+    body_mode: cdktn.stringToTerraform(struct!.bodyMode),
+    body_regex: cdktn.stringToTerraform(struct!.bodyRegex),
+    from_email_mode: cdktn.stringToTerraform(struct!.fromEmailMode),
+    from_email_regex: cdktn.stringToTerraform(struct!.fromEmailRegex),
+    subject_mode: cdktn.stringToTerraform(struct!.subjectMode),
+    subject_regex: cdktn.stringToTerraform(struct!.subjectRegex),
   }
 }
 
 
-export function serviceIntegrationEmailFilterToHclTerraform(struct?: ServiceIntegrationEmailFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceIntegrationEmailFilterToHclTerraform(struct?: ServiceIntegrationEmailFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     body_mode: {
-      value: cdktf.stringToHclTerraform(struct!.bodyMode),
+      value: cdktn.stringToHclTerraform(struct!.bodyMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     body_regex: {
-      value: cdktf.stringToHclTerraform(struct!.bodyRegex),
+      value: cdktn.stringToHclTerraform(struct!.bodyRegex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     from_email_mode: {
-      value: cdktf.stringToHclTerraform(struct!.fromEmailMode),
+      value: cdktn.stringToHclTerraform(struct!.fromEmailMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     from_email_regex: {
-      value: cdktf.stringToHclTerraform(struct!.fromEmailRegex),
+      value: cdktn.stringToHclTerraform(struct!.fromEmailRegex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject_mode: {
-      value: cdktf.stringToHclTerraform(struct!.subjectMode),
+      value: cdktn.stringToHclTerraform(struct!.subjectMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject_regex: {
-      value: cdktf.stringToHclTerraform(struct!.subjectRegex),
+      value: cdktn.stringToHclTerraform(struct!.subjectRegex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -159,9 +159,9 @@ export function serviceIntegrationEmailFilterToHclTerraform(struct?: ServiceInte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceIntegrationEmailFilterOutputReference extends cdktf.ComplexObject {
+export class ServiceIntegrationEmailFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -169,11 +169,11 @@ export class ServiceIntegrationEmailFilterOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceIntegrationEmailFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceIntegrationEmailFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -206,7 +206,7 @@ export class ServiceIntegrationEmailFilterOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceIntegrationEmailFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceIntegrationEmailFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -217,7 +217,7 @@ export class ServiceIntegrationEmailFilterOutputReference extends cdktf.ComplexO
       this._subjectMode = undefined;
       this._subjectRegex = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -335,15 +335,15 @@ export class ServiceIntegrationEmailFilterOutputReference extends cdktf.ComplexO
   }
 }
 
-export class ServiceIntegrationEmailFilterList extends cdktf.ComplexList {
-  public internalValue? : ServiceIntegrationEmailFilter[] | cdktf.IResolvable
+export class ServiceIntegrationEmailFilterList extends cdktn.ComplexList {
+  public internalValue? : ServiceIntegrationEmailFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -356,52 +356,52 @@ export class ServiceIntegrationEmailFilterList extends cdktf.ComplexList {
 }
 export interface ServiceIntegrationEmailParserMatchPredicatePredicatePredicate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#matcher ServiceIntegration#matcher}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#matcher ServiceIntegration#matcher}
   */
   readonly matcher: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#part ServiceIntegration#part}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#part ServiceIntegration#part}
   */
   readonly part: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#type ServiceIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#type ServiceIntegration#type}
   */
   readonly type: string;
 }
 
-export function serviceIntegrationEmailParserMatchPredicatePredicatePredicateToTerraform(struct?: ServiceIntegrationEmailParserMatchPredicatePredicatePredicate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceIntegrationEmailParserMatchPredicatePredicatePredicateToTerraform(struct?: ServiceIntegrationEmailParserMatchPredicatePredicatePredicate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    matcher: cdktf.stringToTerraform(struct!.matcher),
-    part: cdktf.stringToTerraform(struct!.part),
-    type: cdktf.stringToTerraform(struct!.type),
+    matcher: cdktn.stringToTerraform(struct!.matcher),
+    part: cdktn.stringToTerraform(struct!.part),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function serviceIntegrationEmailParserMatchPredicatePredicatePredicateToHclTerraform(struct?: ServiceIntegrationEmailParserMatchPredicatePredicatePredicate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceIntegrationEmailParserMatchPredicatePredicatePredicateToHclTerraform(struct?: ServiceIntegrationEmailParserMatchPredicatePredicatePredicate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     matcher: {
-      value: cdktf.stringToHclTerraform(struct!.matcher),
+      value: cdktn.stringToHclTerraform(struct!.matcher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     part: {
-      value: cdktf.stringToHclTerraform(struct!.part),
+      value: cdktn.stringToHclTerraform(struct!.part),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -412,9 +412,9 @@ export function serviceIntegrationEmailParserMatchPredicatePredicatePredicateToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference extends cdktf.ComplexObject {
+export class ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -422,11 +422,11 @@ export class ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceIntegrationEmailParserMatchPredicatePredicatePredicate | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceIntegrationEmailParserMatchPredicatePredicatePredicate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -447,7 +447,7 @@ export class ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceIntegrationEmailParserMatchPredicatePredicatePredicate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceIntegrationEmailParserMatchPredicatePredicatePredicate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -455,7 +455,7 @@ export class ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutput
       this._part = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -508,15 +508,15 @@ export class ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutput
   }
 }
 
-export class ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList extends cdktf.ComplexList {
-  public internalValue? : ServiceIntegrationEmailParserMatchPredicatePredicatePredicate[] | cdktf.IResolvable
+export class ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList extends cdktn.ComplexList {
+  public internalValue? : ServiceIntegrationEmailParserMatchPredicatePredicatePredicate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -529,65 +529,65 @@ export class ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList e
 }
 export interface ServiceIntegrationEmailParserMatchPredicatePredicate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#matcher ServiceIntegration#matcher}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#matcher ServiceIntegration#matcher}
   */
   readonly matcher?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#part ServiceIntegration#part}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#part ServiceIntegration#part}
   */
   readonly part?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#type ServiceIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#type ServiceIntegration#type}
   */
   readonly type: string;
   /**
   * predicate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#predicate ServiceIntegration#predicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#predicate ServiceIntegration#predicate}
   */
-  readonly predicate?: ServiceIntegrationEmailParserMatchPredicatePredicatePredicate[] | cdktf.IResolvable;
+  readonly predicate?: ServiceIntegrationEmailParserMatchPredicatePredicatePredicate[] | cdktn.IResolvable;
 }
 
-export function serviceIntegrationEmailParserMatchPredicatePredicateToTerraform(struct?: ServiceIntegrationEmailParserMatchPredicatePredicate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceIntegrationEmailParserMatchPredicatePredicateToTerraform(struct?: ServiceIntegrationEmailParserMatchPredicatePredicate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    matcher: cdktf.stringToTerraform(struct!.matcher),
-    part: cdktf.stringToTerraform(struct!.part),
-    type: cdktf.stringToTerraform(struct!.type),
-    predicate: cdktf.listMapper(serviceIntegrationEmailParserMatchPredicatePredicatePredicateToTerraform, true)(struct!.predicate),
+    matcher: cdktn.stringToTerraform(struct!.matcher),
+    part: cdktn.stringToTerraform(struct!.part),
+    type: cdktn.stringToTerraform(struct!.type),
+    predicate: cdktn.listMapper(serviceIntegrationEmailParserMatchPredicatePredicatePredicateToTerraform, true)(struct!.predicate),
   }
 }
 
 
-export function serviceIntegrationEmailParserMatchPredicatePredicateToHclTerraform(struct?: ServiceIntegrationEmailParserMatchPredicatePredicate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceIntegrationEmailParserMatchPredicatePredicateToHclTerraform(struct?: ServiceIntegrationEmailParserMatchPredicatePredicate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     matcher: {
-      value: cdktf.stringToHclTerraform(struct!.matcher),
+      value: cdktn.stringToHclTerraform(struct!.matcher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     part: {
-      value: cdktf.stringToHclTerraform(struct!.part),
+      value: cdktn.stringToHclTerraform(struct!.part),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     predicate: {
-      value: cdktf.listMapperHcl(serviceIntegrationEmailParserMatchPredicatePredicatePredicateToHclTerraform, true)(struct!.predicate),
+      value: cdktn.listMapperHcl(serviceIntegrationEmailParserMatchPredicatePredicatePredicateToHclTerraform, true)(struct!.predicate),
       isBlock: true,
       type: "list",
       storageClassType: "ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList",
@@ -598,9 +598,9 @@ export function serviceIntegrationEmailParserMatchPredicatePredicateToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference extends cdktf.ComplexObject {
+export class ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -608,11 +608,11 @@ export class ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceIntegrationEmailParserMatchPredicatePredicate | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceIntegrationEmailParserMatchPredicatePredicate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -637,7 +637,7 @@ export class ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceIntegrationEmailParserMatchPredicatePredicate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceIntegrationEmailParserMatchPredicatePredicate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -646,7 +646,7 @@ export class ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference
       this._type = undefined;
       this._predicate.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -710,7 +710,7 @@ export class ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference
   public get predicate() {
     return this._predicate;
   }
-  public putPredicate(value: ServiceIntegrationEmailParserMatchPredicatePredicatePredicate[] | cdktf.IResolvable) {
+  public putPredicate(value: ServiceIntegrationEmailParserMatchPredicatePredicatePredicate[] | cdktn.IResolvable) {
     this._predicate.internalValue = value;
   }
   public resetPredicate() {
@@ -722,15 +722,15 @@ export class ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference
   }
 }
 
-export class ServiceIntegrationEmailParserMatchPredicatePredicateList extends cdktf.ComplexList {
-  public internalValue? : ServiceIntegrationEmailParserMatchPredicatePredicate[] | cdktf.IResolvable
+export class ServiceIntegrationEmailParserMatchPredicatePredicateList extends cdktn.ComplexList {
+  public internalValue? : ServiceIntegrationEmailParserMatchPredicatePredicate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -743,43 +743,43 @@ export class ServiceIntegrationEmailParserMatchPredicatePredicateList extends cd
 }
 export interface ServiceIntegrationEmailParserMatchPredicate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#type ServiceIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#type ServiceIntegration#type}
   */
   readonly type: string;
   /**
   * predicate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#predicate ServiceIntegration#predicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#predicate ServiceIntegration#predicate}
   */
-  readonly predicate?: ServiceIntegrationEmailParserMatchPredicatePredicate[] | cdktf.IResolvable;
+  readonly predicate?: ServiceIntegrationEmailParserMatchPredicatePredicate[] | cdktn.IResolvable;
 }
 
 export function serviceIntegrationEmailParserMatchPredicateToTerraform(struct?: ServiceIntegrationEmailParserMatchPredicateOutputReference | ServiceIntegrationEmailParserMatchPredicate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    predicate: cdktf.listMapper(serviceIntegrationEmailParserMatchPredicatePredicateToTerraform, true)(struct!.predicate),
+    type: cdktn.stringToTerraform(struct!.type),
+    predicate: cdktn.listMapper(serviceIntegrationEmailParserMatchPredicatePredicateToTerraform, true)(struct!.predicate),
   }
 }
 
 
 export function serviceIntegrationEmailParserMatchPredicateToHclTerraform(struct?: ServiceIntegrationEmailParserMatchPredicateOutputReference | ServiceIntegrationEmailParserMatchPredicate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     predicate: {
-      value: cdktf.listMapperHcl(serviceIntegrationEmailParserMatchPredicatePredicateToHclTerraform, true)(struct!.predicate),
+      value: cdktn.listMapperHcl(serviceIntegrationEmailParserMatchPredicatePredicateToHclTerraform, true)(struct!.predicate),
       isBlock: true,
       type: "list",
       storageClassType: "ServiceIntegrationEmailParserMatchPredicatePredicateList",
@@ -790,14 +790,14 @@ export function serviceIntegrationEmailParserMatchPredicateToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceIntegrationEmailParserMatchPredicateOutputReference extends cdktf.ComplexObject {
+export class ServiceIntegrationEmailParserMatchPredicateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -846,7 +846,7 @@ export class ServiceIntegrationEmailParserMatchPredicateOutputReference extends 
   public get predicate() {
     return this._predicate;
   }
-  public putPredicate(value: ServiceIntegrationEmailParserMatchPredicatePredicate[] | cdktf.IResolvable) {
+  public putPredicate(value: ServiceIntegrationEmailParserMatchPredicatePredicate[] | cdktn.IResolvable) {
     this._predicate.internalValue = value;
   }
   public resetPredicate() {
@@ -859,85 +859,85 @@ export class ServiceIntegrationEmailParserMatchPredicateOutputReference extends 
 }
 export interface ServiceIntegrationEmailParserValueExtractor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#ends_before ServiceIntegration#ends_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#ends_before ServiceIntegration#ends_before}
   */
   readonly endsBefore?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#part ServiceIntegration#part}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#part ServiceIntegration#part}
   */
   readonly part: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#regex ServiceIntegration#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#regex ServiceIntegration#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#starts_after ServiceIntegration#starts_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#starts_after ServiceIntegration#starts_after}
   */
   readonly startsAfter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#type ServiceIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#type ServiceIntegration#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#value_name ServiceIntegration#value_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#value_name ServiceIntegration#value_name}
   */
   readonly valueName: string;
 }
 
-export function serviceIntegrationEmailParserValueExtractorToTerraform(struct?: ServiceIntegrationEmailParserValueExtractor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceIntegrationEmailParserValueExtractorToTerraform(struct?: ServiceIntegrationEmailParserValueExtractor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ends_before: cdktf.stringToTerraform(struct!.endsBefore),
-    part: cdktf.stringToTerraform(struct!.part),
-    regex: cdktf.stringToTerraform(struct!.regex),
-    starts_after: cdktf.stringToTerraform(struct!.startsAfter),
-    type: cdktf.stringToTerraform(struct!.type),
-    value_name: cdktf.stringToTerraform(struct!.valueName),
+    ends_before: cdktn.stringToTerraform(struct!.endsBefore),
+    part: cdktn.stringToTerraform(struct!.part),
+    regex: cdktn.stringToTerraform(struct!.regex),
+    starts_after: cdktn.stringToTerraform(struct!.startsAfter),
+    type: cdktn.stringToTerraform(struct!.type),
+    value_name: cdktn.stringToTerraform(struct!.valueName),
   }
 }
 
 
-export function serviceIntegrationEmailParserValueExtractorToHclTerraform(struct?: ServiceIntegrationEmailParserValueExtractor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceIntegrationEmailParserValueExtractorToHclTerraform(struct?: ServiceIntegrationEmailParserValueExtractor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ends_before: {
-      value: cdktf.stringToHclTerraform(struct!.endsBefore),
+      value: cdktn.stringToHclTerraform(struct!.endsBefore),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     part: {
-      value: cdktf.stringToHclTerraform(struct!.part),
+      value: cdktn.stringToHclTerraform(struct!.part),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     regex: {
-      value: cdktf.stringToHclTerraform(struct!.regex),
+      value: cdktn.stringToHclTerraform(struct!.regex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     starts_after: {
-      value: cdktf.stringToHclTerraform(struct!.startsAfter),
+      value: cdktn.stringToHclTerraform(struct!.startsAfter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value_name: {
-      value: cdktf.stringToHclTerraform(struct!.valueName),
+      value: cdktn.stringToHclTerraform(struct!.valueName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -948,9 +948,9 @@ export function serviceIntegrationEmailParserValueExtractorToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceIntegrationEmailParserValueExtractorOutputReference extends cdktf.ComplexObject {
+export class ServiceIntegrationEmailParserValueExtractorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -958,11 +958,11 @@ export class ServiceIntegrationEmailParserValueExtractorOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceIntegrationEmailParserValueExtractor | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceIntegrationEmailParserValueExtractor | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -995,7 +995,7 @@ export class ServiceIntegrationEmailParserValueExtractorOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceIntegrationEmailParserValueExtractor | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceIntegrationEmailParserValueExtractor | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1006,7 +1006,7 @@ export class ServiceIntegrationEmailParserValueExtractorOutputReference extends 
       this._type = undefined;
       this._valueName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1110,15 +1110,15 @@ export class ServiceIntegrationEmailParserValueExtractorOutputReference extends 
   }
 }
 
-export class ServiceIntegrationEmailParserValueExtractorList extends cdktf.ComplexList {
-  public internalValue? : ServiceIntegrationEmailParserValueExtractor[] | cdktf.IResolvable
+export class ServiceIntegrationEmailParserValueExtractorList extends cdktn.ComplexList {
+  public internalValue? : ServiceIntegrationEmailParserValueExtractor[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1131,44 +1131,44 @@ export class ServiceIntegrationEmailParserValueExtractorList extends cdktf.Compl
 }
 export interface ServiceIntegrationEmailParser {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#action ServiceIntegration#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#action ServiceIntegration#action}
   */
   readonly action: string;
   /**
   * match_predicate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#match_predicate ServiceIntegration#match_predicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#match_predicate ServiceIntegration#match_predicate}
   */
   readonly matchPredicate: ServiceIntegrationEmailParserMatchPredicate;
   /**
   * value_extractor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#value_extractor ServiceIntegration#value_extractor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#value_extractor ServiceIntegration#value_extractor}
   */
-  readonly valueExtractor?: ServiceIntegrationEmailParserValueExtractor[] | cdktf.IResolvable;
+  readonly valueExtractor?: ServiceIntegrationEmailParserValueExtractor[] | cdktn.IResolvable;
 }
 
-export function serviceIntegrationEmailParserToTerraform(struct?: ServiceIntegrationEmailParser | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceIntegrationEmailParserToTerraform(struct?: ServiceIntegrationEmailParser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
+    action: cdktn.stringToTerraform(struct!.action),
     match_predicate: serviceIntegrationEmailParserMatchPredicateToTerraform(struct!.matchPredicate),
-    value_extractor: cdktf.listMapper(serviceIntegrationEmailParserValueExtractorToTerraform, true)(struct!.valueExtractor),
+    value_extractor: cdktn.listMapper(serviceIntegrationEmailParserValueExtractorToTerraform, true)(struct!.valueExtractor),
   }
 }
 
 
-export function serviceIntegrationEmailParserToHclTerraform(struct?: ServiceIntegrationEmailParser | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceIntegrationEmailParserToHclTerraform(struct?: ServiceIntegrationEmailParser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1180,7 +1180,7 @@ export function serviceIntegrationEmailParserToHclTerraform(struct?: ServiceInte
       storageClassType: "ServiceIntegrationEmailParserMatchPredicateList",
     },
     value_extractor: {
-      value: cdktf.listMapperHcl(serviceIntegrationEmailParserValueExtractorToHclTerraform, true)(struct!.valueExtractor),
+      value: cdktn.listMapperHcl(serviceIntegrationEmailParserValueExtractorToHclTerraform, true)(struct!.valueExtractor),
       isBlock: true,
       type: "list",
       storageClassType: "ServiceIntegrationEmailParserValueExtractorList",
@@ -1191,9 +1191,9 @@ export function serviceIntegrationEmailParserToHclTerraform(struct?: ServiceInte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceIntegrationEmailParserOutputReference extends cdktf.ComplexObject {
+export class ServiceIntegrationEmailParserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1201,11 +1201,11 @@ export class ServiceIntegrationEmailParserOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceIntegrationEmailParser | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceIntegrationEmailParser | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1226,7 +1226,7 @@ export class ServiceIntegrationEmailParserOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceIntegrationEmailParser | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceIntegrationEmailParser | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1234,7 +1234,7 @@ export class ServiceIntegrationEmailParserOutputReference extends cdktf.ComplexO
       this._matchPredicate.internalValue = undefined;
       this._valueExtractor.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1283,7 +1283,7 @@ export class ServiceIntegrationEmailParserOutputReference extends cdktf.ComplexO
   public get valueExtractor() {
     return this._valueExtractor;
   }
-  public putValueExtractor(value: ServiceIntegrationEmailParserValueExtractor[] | cdktf.IResolvable) {
+  public putValueExtractor(value: ServiceIntegrationEmailParserValueExtractor[] | cdktn.IResolvable) {
     this._valueExtractor.internalValue = value;
   }
   public resetValueExtractor() {
@@ -1295,15 +1295,15 @@ export class ServiceIntegrationEmailParserOutputReference extends cdktf.ComplexO
   }
 }
 
-export class ServiceIntegrationEmailParserList extends cdktf.ComplexList {
-  public internalValue? : ServiceIntegrationEmailParser[] | cdktf.IResolvable
+export class ServiceIntegrationEmailParserList extends cdktn.ComplexList {
+  public internalValue? : ServiceIntegrationEmailParser[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1316,9 +1316,9 @@ export class ServiceIntegrationEmailParserList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration pagerduty_service_integration}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration pagerduty_service_integration}
 */
-export class ServiceIntegration extends cdktf.TerraformResource {
+export class ServiceIntegration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1329,14 +1329,14 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServiceIntegration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServiceIntegration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceIntegration to import
-  * @param importFromId The id of the existing ServiceIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceIntegration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_service_integration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_service_integration", importId: importFromId, provider });
       }
 
   // ===========
@@ -1344,7 +1344,7 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_integration pagerduty_service_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_integration pagerduty_service_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1355,7 +1355,7 @@ export class ServiceIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_service_integration',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -1551,7 +1551,7 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   public get emailFilter() {
     return this._emailFilter;
   }
-  public putEmailFilter(value: ServiceIntegrationEmailFilter[] | cdktf.IResolvable) {
+  public putEmailFilter(value: ServiceIntegrationEmailFilter[] | cdktn.IResolvable) {
     this._emailFilter.internalValue = value;
   }
   public resetEmailFilter() {
@@ -1567,7 +1567,7 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   public get emailParser() {
     return this._emailParser;
   }
-  public putEmailParser(value: ServiceIntegrationEmailParser[] | cdktf.IResolvable) {
+  public putEmailParser(value: ServiceIntegrationEmailParser[] | cdktn.IResolvable) {
     this._emailParser.internalValue = value;
   }
   public resetEmailParser() {
@@ -1584,91 +1584,91 @@ export class ServiceIntegration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      email_filter_mode: cdktf.stringToTerraform(this._emailFilterMode),
-      email_incident_creation: cdktf.stringToTerraform(this._emailIncidentCreation),
-      email_parsing_fallback: cdktf.stringToTerraform(this._emailParsingFallback),
-      id: cdktf.stringToTerraform(this._id),
-      integration_email: cdktf.stringToTerraform(this._integrationEmail),
-      integration_key: cdktf.stringToTerraform(this._integrationKey),
-      name: cdktf.stringToTerraform(this._name),
-      service: cdktf.stringToTerraform(this._service),
-      type: cdktf.stringToTerraform(this._type),
-      vendor: cdktf.stringToTerraform(this._vendor),
-      email_filter: cdktf.listMapper(serviceIntegrationEmailFilterToTerraform, true)(this._emailFilter.internalValue),
-      email_parser: cdktf.listMapper(serviceIntegrationEmailParserToTerraform, true)(this._emailParser.internalValue),
+      email_filter_mode: cdktn.stringToTerraform(this._emailFilterMode),
+      email_incident_creation: cdktn.stringToTerraform(this._emailIncidentCreation),
+      email_parsing_fallback: cdktn.stringToTerraform(this._emailParsingFallback),
+      id: cdktn.stringToTerraform(this._id),
+      integration_email: cdktn.stringToTerraform(this._integrationEmail),
+      integration_key: cdktn.stringToTerraform(this._integrationKey),
+      name: cdktn.stringToTerraform(this._name),
+      service: cdktn.stringToTerraform(this._service),
+      type: cdktn.stringToTerraform(this._type),
+      vendor: cdktn.stringToTerraform(this._vendor),
+      email_filter: cdktn.listMapper(serviceIntegrationEmailFilterToTerraform, true)(this._emailFilter.internalValue),
+      email_parser: cdktn.listMapper(serviceIntegrationEmailParserToTerraform, true)(this._emailParser.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       email_filter_mode: {
-        value: cdktf.stringToHclTerraform(this._emailFilterMode),
+        value: cdktn.stringToHclTerraform(this._emailFilterMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email_incident_creation: {
-        value: cdktf.stringToHclTerraform(this._emailIncidentCreation),
+        value: cdktn.stringToHclTerraform(this._emailIncidentCreation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email_parsing_fallback: {
-        value: cdktf.stringToHclTerraform(this._emailParsingFallback),
+        value: cdktn.stringToHclTerraform(this._emailParsingFallback),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_email: {
-        value: cdktf.stringToHclTerraform(this._integrationEmail),
+        value: cdktn.stringToHclTerraform(this._integrationEmail),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_key: {
-        value: cdktf.stringToHclTerraform(this._integrationKey),
+        value: cdktn.stringToHclTerraform(this._integrationKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service: {
-        value: cdktf.stringToHclTerraform(this._service),
+        value: cdktn.stringToHclTerraform(this._service),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vendor: {
-        value: cdktf.stringToHclTerraform(this._vendor),
+        value: cdktn.stringToHclTerraform(this._vendor),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email_filter: {
-        value: cdktf.listMapperHcl(serviceIntegrationEmailFilterToHclTerraform, true)(this._emailFilter.internalValue),
+        value: cdktn.listMapperHcl(serviceIntegrationEmailFilterToHclTerraform, true)(this._emailFilter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ServiceIntegrationEmailFilterList",
       },
       email_parser: {
-        value: cdktf.listMapperHcl(serviceIntegrationEmailParserToHclTerraform, true)(this._emailParser.internalValue),
+        value: cdktn.listMapperHcl(serviceIntegrationEmailParserToHclTerraform, true)(this._emailParser.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ServiceIntegrationEmailParserList",

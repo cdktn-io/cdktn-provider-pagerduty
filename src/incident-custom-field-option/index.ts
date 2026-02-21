@@ -1,42 +1,42 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_custom_field_option
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_custom_field_option
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IncidentCustomFieldOptionConfig extends cdktf.TerraformMetaArguments {
+export interface IncidentCustomFieldOptionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_custom_field_option#data_type IncidentCustomFieldOption#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_custom_field_option#data_type IncidentCustomFieldOption#data_type}
   */
   readonly dataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_custom_field_option#field IncidentCustomFieldOption#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_custom_field_option#field IncidentCustomFieldOption#field}
   */
   readonly field: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_custom_field_option#id IncidentCustomFieldOption#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_custom_field_option#id IncidentCustomFieldOption#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_custom_field_option#value IncidentCustomFieldOption#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_custom_field_option#value IncidentCustomFieldOption#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option}
 */
-export class IncidentCustomFieldOption extends cdktf.TerraformResource {
+export class IncidentCustomFieldOption extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class IncidentCustomFieldOption extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IncidentCustomFieldOption resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IncidentCustomFieldOption resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IncidentCustomFieldOption to import
-  * @param importFromId The id of the existing IncidentCustomFieldOption that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_custom_field_option#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IncidentCustomFieldOption that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_custom_field_option#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IncidentCustomFieldOption to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_incident_custom_field_option", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_incident_custom_field_option", importId: importFromId, provider });
       }
 
   // ===========
@@ -62,7 +62,7 @@ export class IncidentCustomFieldOption extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class IncidentCustomFieldOption extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_incident_custom_field_option',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -155,35 +155,35 @@ export class IncidentCustomFieldOption extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_type: cdktf.stringToTerraform(this._dataType),
-      field: cdktf.stringToTerraform(this._field),
-      id: cdktf.stringToTerraform(this._id),
-      value: cdktf.stringToTerraform(this._value),
+      data_type: cdktn.stringToTerraform(this._dataType),
+      field: cdktn.stringToTerraform(this._field),
+      id: cdktn.stringToTerraform(this._id),
+      value: cdktn.stringToTerraform(this._value),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_type: {
-        value: cdktf.stringToHclTerraform(this._dataType),
+        value: cdktn.stringToHclTerraform(this._dataType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       field: {
-        value: cdktf.stringToHclTerraform(this._field),
+        value: cdktn.stringToHclTerraform(this._field),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       value: {
-        value: cdktf.stringToHclTerraform(this._value),
+        value: cdktn.stringToHclTerraform(this._value),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

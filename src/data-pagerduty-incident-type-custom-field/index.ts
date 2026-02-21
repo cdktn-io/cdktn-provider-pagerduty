@@ -1,23 +1,23 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/incident_type_custom_field
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/incident_type_custom_field
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataPagerdutyIncidentTypeCustomFieldConfig extends cdktf.TerraformMetaArguments {
+export interface DataPagerdutyIncidentTypeCustomFieldConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/incident_type_custom_field#display_name DataPagerdutyIncidentTypeCustomField#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/incident_type_custom_field#display_name DataPagerdutyIncidentTypeCustomField#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/incident_type_custom_field#incident_type DataPagerdutyIncidentTypeCustomField#incident_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/incident_type_custom_field#incident_type DataPagerdutyIncidentTypeCustomField#incident_type}
   */
   readonly incidentType: string;
 }
@@ -25,8 +25,8 @@ export interface DataPagerdutyIncidentTypeCustomFieldFieldOptionsData {
 }
 
 export function dataPagerdutyIncidentTypeCustomFieldFieldOptionsDataToTerraform(struct?: DataPagerdutyIncidentTypeCustomFieldFieldOptionsData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -35,8 +35,8 @@ export function dataPagerdutyIncidentTypeCustomFieldFieldOptionsDataToTerraform(
 
 
 export function dataPagerdutyIncidentTypeCustomFieldFieldOptionsDataToHclTerraform(struct?: DataPagerdutyIncidentTypeCustomFieldFieldOptionsData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -44,14 +44,14 @@ export function dataPagerdutyIncidentTypeCustomFieldFieldOptionsDataToHclTerrafo
   return attrs;
 }
 
-export class DataPagerdutyIncidentTypeCustomFieldFieldOptionsDataOutputReference extends cdktf.ComplexObject {
+export class DataPagerdutyIncidentTypeCustomFieldFieldOptionsDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -84,8 +84,8 @@ export interface DataPagerdutyIncidentTypeCustomFieldFieldOptions {
 }
 
 export function dataPagerdutyIncidentTypeCustomFieldFieldOptionsToTerraform(struct?: DataPagerdutyIncidentTypeCustomFieldFieldOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -94,8 +94,8 @@ export function dataPagerdutyIncidentTypeCustomFieldFieldOptionsToTerraform(stru
 
 
 export function dataPagerdutyIncidentTypeCustomFieldFieldOptionsToHclTerraform(struct?: DataPagerdutyIncidentTypeCustomFieldFieldOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -103,7 +103,7 @@ export function dataPagerdutyIncidentTypeCustomFieldFieldOptionsToHclTerraform(s
   return attrs;
 }
 
-export class DataPagerdutyIncidentTypeCustomFieldFieldOptionsOutputReference extends cdktf.ComplexObject {
+export class DataPagerdutyIncidentTypeCustomFieldFieldOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -112,7 +112,7 @@ export class DataPagerdutyIncidentTypeCustomFieldFieldOptionsOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -148,14 +148,14 @@ export class DataPagerdutyIncidentTypeCustomFieldFieldOptionsOutputReference ext
   }
 }
 
-export class DataPagerdutyIncidentTypeCustomFieldFieldOptionsList extends cdktf.ComplexList {
+export class DataPagerdutyIncidentTypeCustomFieldFieldOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -168,9 +168,9 @@ export class DataPagerdutyIncidentTypeCustomFieldFieldOptionsList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/incident_type_custom_field pagerduty_incident_type_custom_field}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/incident_type_custom_field pagerduty_incident_type_custom_field}
 */
-export class DataPagerdutyIncidentTypeCustomField extends cdktf.TerraformDataSource {
+export class DataPagerdutyIncidentTypeCustomField extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -181,14 +181,14 @@ export class DataPagerdutyIncidentTypeCustomField extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataPagerdutyIncidentTypeCustomField resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataPagerdutyIncidentTypeCustomField resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyIncidentTypeCustomField to import
-  * @param importFromId The id of the existing DataPagerdutyIncidentTypeCustomField that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/incident_type_custom_field#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyIncidentTypeCustomField that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/incident_type_custom_field#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyIncidentTypeCustomField to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_incident_type_custom_field", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_incident_type_custom_field", importId: importFromId, provider });
       }
 
   // ===========
@@ -196,7 +196,7 @@ export class DataPagerdutyIncidentTypeCustomField extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/incident_type_custom_field pagerduty_incident_type_custom_field} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/incident_type_custom_field pagerduty_incident_type_custom_field} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -207,7 +207,7 @@ export class DataPagerdutyIncidentTypeCustomField extends cdktf.TerraformDataSou
       terraformResourceType: 'pagerduty_incident_type_custom_field',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -314,21 +314,21 @@ export class DataPagerdutyIncidentTypeCustomField extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      incident_type: cdktf.stringToTerraform(this._incidentType),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      incident_type: cdktn.stringToTerraform(this._incidentType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       incident_type: {
-        value: cdktf.stringToHclTerraform(this._incidentType),
+        value: cdktn.stringToHclTerraform(this._incidentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

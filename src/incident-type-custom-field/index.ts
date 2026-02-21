@@ -1,59 +1,59 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_type_custom_field
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_type_custom_field
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IncidentTypeCustomFieldConfig extends cdktf.TerraformMetaArguments {
+export interface IncidentTypeCustomFieldConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_type_custom_field#data_type IncidentTypeCustomField#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_type_custom_field#data_type IncidentTypeCustomField#data_type}
   */
   readonly dataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_type_custom_field#default_value IncidentTypeCustomField#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_type_custom_field#default_value IncidentTypeCustomField#default_value}
   */
   readonly defaultValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_type_custom_field#description IncidentTypeCustomField#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_type_custom_field#description IncidentTypeCustomField#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_type_custom_field#display_name IncidentTypeCustomField#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_type_custom_field#display_name IncidentTypeCustomField#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_type_custom_field#enabled IncidentTypeCustomField#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_type_custom_field#enabled IncidentTypeCustomField#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_type_custom_field#field_options IncidentTypeCustomField#field_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_type_custom_field#field_options IncidentTypeCustomField#field_options}
   */
   readonly fieldOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_type_custom_field#field_type IncidentTypeCustomField#field_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_type_custom_field#field_type IncidentTypeCustomField#field_type}
   */
   readonly fieldType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_type_custom_field#incident_type IncidentTypeCustomField#incident_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_type_custom_field#incident_type IncidentTypeCustomField#incident_type}
   */
   readonly incidentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_type_custom_field#name IncidentTypeCustomField#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_type_custom_field#name IncidentTypeCustomField#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_type_custom_field pagerduty_incident_type_custom_field}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_type_custom_field pagerduty_incident_type_custom_field}
 */
-export class IncidentTypeCustomField extends cdktf.TerraformResource {
+export class IncidentTypeCustomField extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -64,14 +64,14 @@ export class IncidentTypeCustomField extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IncidentTypeCustomField resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IncidentTypeCustomField resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IncidentTypeCustomField to import
-  * @param importFromId The id of the existing IncidentTypeCustomField that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_type_custom_field#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IncidentTypeCustomField that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_type_custom_field#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IncidentTypeCustomField to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_incident_type_custom_field", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_incident_type_custom_field", importId: importFromId, provider });
       }
 
   // ===========
@@ -79,7 +79,7 @@ export class IncidentTypeCustomField extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/incident_type_custom_field pagerduty_incident_type_custom_field} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/incident_type_custom_field pagerduty_incident_type_custom_field} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class IncidentTypeCustomField extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_incident_type_custom_field',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -175,11 +175,11 @@ export class IncidentTypeCustomField extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -193,7 +193,7 @@ export class IncidentTypeCustomField extends cdktf.TerraformResource {
   // field_options - computed: false, optional: true, required: false
   private _fieldOptions?: string[]; 
   public get fieldOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('field_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('field_options'));
   }
   public set fieldOptions(value: string[]) {
     this._fieldOptions = value;
@@ -274,70 +274,70 @@ export class IncidentTypeCustomField extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_type: cdktf.stringToTerraform(this._dataType),
-      default_value: cdktf.stringToTerraform(this._defaultValue),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      field_options: cdktf.listMapper(cdktf.stringToTerraform, false)(this._fieldOptions),
-      field_type: cdktf.stringToTerraform(this._fieldType),
-      incident_type: cdktf.stringToTerraform(this._incidentType),
-      name: cdktf.stringToTerraform(this._name),
+      data_type: cdktn.stringToTerraform(this._dataType),
+      default_value: cdktn.stringToTerraform(this._defaultValue),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      field_options: cdktn.listMapper(cdktn.stringToTerraform, false)(this._fieldOptions),
+      field_type: cdktn.stringToTerraform(this._fieldType),
+      incident_type: cdktn.stringToTerraform(this._incidentType),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_type: {
-        value: cdktf.stringToHclTerraform(this._dataType),
+        value: cdktn.stringToHclTerraform(this._dataType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_value: {
-        value: cdktf.stringToHclTerraform(this._defaultValue),
+        value: cdktn.stringToHclTerraform(this._defaultValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       field_options: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._fieldOptions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._fieldOptions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       field_type: {
-        value: cdktf.stringToHclTerraform(this._fieldType),
+        value: cdktn.stringToHclTerraform(this._fieldType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       incident_type: {
-        value: cdktf.stringToHclTerraform(this._incidentType),
+        value: cdktn.stringToHclTerraform(this._incidentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

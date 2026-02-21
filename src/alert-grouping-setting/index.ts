@@ -1,112 +1,112 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/alert_grouping_setting
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/alert_grouping_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AlertGroupingSettingConfig extends cdktf.TerraformMetaArguments {
+export interface AlertGroupingSettingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/alert_grouping_setting#description AlertGroupingSetting#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/alert_grouping_setting#description AlertGroupingSetting#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/alert_grouping_setting#name AlertGroupingSetting#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/alert_grouping_setting#name AlertGroupingSetting#name}
   */
-  readonly name: string;
+  readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/alert_grouping_setting#services AlertGroupingSetting#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/alert_grouping_setting#services AlertGroupingSetting#services}
   */
   readonly services: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/alert_grouping_setting#type AlertGroupingSetting#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/alert_grouping_setting#type AlertGroupingSetting#type}
   */
   readonly type: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/alert_grouping_setting#config AlertGroupingSetting#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/alert_grouping_setting#config AlertGroupingSetting#config}
   */
   readonly config?: AlertGroupingSettingConfigA;
 }
 export interface AlertGroupingSettingConfigA {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/alert_grouping_setting#aggregate AlertGroupingSetting#aggregate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/alert_grouping_setting#aggregate AlertGroupingSetting#aggregate}
   */
   readonly aggregate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/alert_grouping_setting#fields AlertGroupingSetting#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/alert_grouping_setting#fields AlertGroupingSetting#fields}
   */
   readonly fields?: string[];
   /**
   * An array of strings which represent the iag fields with which to intelligently group against
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/alert_grouping_setting#iag_fields AlertGroupingSetting#iag_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/alert_grouping_setting#iag_fields AlertGroupingSetting#iag_fields}
   */
   readonly iagFields?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/alert_grouping_setting#time_window AlertGroupingSetting#time_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/alert_grouping_setting#time_window AlertGroupingSetting#time_window}
   */
   readonly timeWindow?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/alert_grouping_setting#timeout AlertGroupingSetting#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/alert_grouping_setting#timeout AlertGroupingSetting#timeout}
   */
   readonly timeout?: number;
 }
 
-export function alertGroupingSettingConfigAToTerraform(struct?: AlertGroupingSettingConfigA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertGroupingSettingConfigAToTerraform(struct?: AlertGroupingSettingConfigA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregate: cdktf.stringToTerraform(struct!.aggregate),
-    fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fields),
-    iag_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.iagFields),
-    time_window: cdktf.numberToTerraform(struct!.timeWindow),
-    timeout: cdktf.numberToTerraform(struct!.timeout),
+    aggregate: cdktn.stringToTerraform(struct!.aggregate),
+    fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fields),
+    iag_fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.iagFields),
+    time_window: cdktn.numberToTerraform(struct!.timeWindow),
+    timeout: cdktn.numberToTerraform(struct!.timeout),
   }
 }
 
 
-export function alertGroupingSettingConfigAToHclTerraform(struct?: AlertGroupingSettingConfigA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertGroupingSettingConfigAToHclTerraform(struct?: AlertGroupingSettingConfigA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregate: {
-      value: cdktf.stringToHclTerraform(struct!.aggregate),
+      value: cdktn.stringToHclTerraform(struct!.aggregate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fields: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fields),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.fields),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     iag_fields: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.iagFields),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.iagFields),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     time_window: {
-      value: cdktf.numberToHclTerraform(struct!.timeWindow),
+      value: cdktn.numberToHclTerraform(struct!.timeWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout: {
-      value: cdktf.numberToHclTerraform(struct!.timeout),
+      value: cdktn.numberToHclTerraform(struct!.timeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -117,19 +117,19 @@ export function alertGroupingSettingConfigAToHclTerraform(struct?: AlertGrouping
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertGroupingSettingConfigAOutputReference extends cdktf.ComplexObject {
+export class AlertGroupingSettingConfigAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AlertGroupingSettingConfigA | cdktf.IResolvable | undefined {
+  public get internalValue(): AlertGroupingSettingConfigA | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -158,7 +158,7 @@ export class AlertGroupingSettingConfigAOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertGroupingSettingConfigA | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlertGroupingSettingConfigA | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -168,7 +168,7 @@ export class AlertGroupingSettingConfigAOutputReference extends cdktf.ComplexObj
       this._timeWindow = undefined;
       this._timeout = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -202,7 +202,7 @@ export class AlertGroupingSettingConfigAOutputReference extends cdktf.ComplexObj
   // fields - computed: false, optional: true, required: false
   private _fields?: string[]; 
   public get fields() {
-    return cdktf.Fn.tolist(this.getListAttribute('fields'));
+    return cdktn.Fn.tolist(this.getListAttribute('fields'));
   }
   public set fields(value: string[]) {
     this._fields = value;
@@ -265,9 +265,9 @@ export class AlertGroupingSettingConfigAOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/alert_grouping_setting pagerduty_alert_grouping_setting}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/alert_grouping_setting pagerduty_alert_grouping_setting}
 */
-export class AlertGroupingSetting extends cdktf.TerraformResource {
+export class AlertGroupingSetting extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -278,14 +278,14 @@ export class AlertGroupingSetting extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AlertGroupingSetting resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AlertGroupingSetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlertGroupingSetting to import
-  * @param importFromId The id of the existing AlertGroupingSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/alert_grouping_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AlertGroupingSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/alert_grouping_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlertGroupingSetting to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_alert_grouping_setting", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_alert_grouping_setting", importId: importFromId, provider });
       }
 
   // ===========
@@ -293,7 +293,7 @@ export class AlertGroupingSetting extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/alert_grouping_setting pagerduty_alert_grouping_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/alert_grouping_setting pagerduty_alert_grouping_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -304,7 +304,7 @@ export class AlertGroupingSetting extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_alert_grouping_setting',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -347,13 +347,16 @@ export class AlertGroupingSetting extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
@@ -363,7 +366,7 @@ export class AlertGroupingSetting extends cdktf.TerraformResource {
   // services - computed: false, optional: false, required: true
   private _services?: string[]; 
   public get services() {
-    return cdktf.Fn.tolist(this.getListAttribute('services'));
+    return cdktn.Fn.tolist(this.getListAttribute('services'));
   }
   public set services(value: string[]) {
     this._services = value;
@@ -408,10 +411,10 @@ export class AlertGroupingSetting extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      services: cdktf.listMapper(cdktf.stringToTerraform, false)(this._services),
-      type: cdktf.stringToTerraform(this._type),
+      description: cdktn.stringToTerraform(this._description),
+      name: cdktn.stringToTerraform(this._name),
+      services: cdktn.listMapper(cdktn.stringToTerraform, false)(this._services),
+      type: cdktn.stringToTerraform(this._type),
       config: alertGroupingSettingConfigAToTerraform(this._config.internalValue),
     };
   }
@@ -419,25 +422,25 @@ export class AlertGroupingSetting extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       services: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._services),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._services),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

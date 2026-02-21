@@ -1,103 +1,103 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_custom_field
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServiceCustomFieldConfig extends cdktf.TerraformMetaArguments {
+export interface ServiceCustomFieldConfig extends cdktn.TerraformMetaArguments {
   /**
   * The kind of data the custom field is allowed to contain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}
   */
   readonly dataType: string;
   /**
   * Default value for the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field#default_value ServiceCustomField#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_custom_field#default_value ServiceCustomField#default_value}
   */
   readonly defaultValue?: string;
   /**
   * A description of the data this field contains.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field#description ServiceCustomField#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_custom_field#description ServiceCustomField#description}
   */
   readonly description?: string;
   /**
   * The human-readable name of the field. This must be unique across an account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field#display_name ServiceCustomField#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_custom_field#display_name ServiceCustomField#display_name}
   */
   readonly displayName: string;
   /**
   * Whether the field is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field#enabled ServiceCustomField#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_custom_field#enabled ServiceCustomField#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The type of data this field contains. In combination with the `data_type` field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field#field_type ServiceCustomField#field_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_custom_field#field_type ServiceCustomField#field_type}
   */
   readonly fieldType: string;
   /**
   * The name of the field. May include ASCII characters, specifically lowercase letters, digits, and underescores. The `name` for a Field must be unique and cannot be changed once created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field#name ServiceCustomField#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_custom_field#name ServiceCustomField#name}
   */
   readonly name: string;
   /**
   * field_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field#field_option ServiceCustomField#field_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_custom_field#field_option ServiceCustomField#field_option}
   */
-  readonly fieldOption?: ServiceCustomFieldFieldOption[] | cdktf.IResolvable;
+  readonly fieldOption?: ServiceCustomFieldFieldOption[] | cdktn.IResolvable;
 }
 export interface ServiceCustomFieldFieldOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}
   */
   readonly dataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field#value ServiceCustomField#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_custom_field#value ServiceCustomField#value}
   */
   readonly value: string;
 }
 
-export function serviceCustomFieldFieldOptionToTerraform(struct?: ServiceCustomFieldFieldOption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceCustomFieldFieldOptionToTerraform(struct?: ServiceCustomFieldFieldOption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_type: cdktf.stringToTerraform(struct!.dataType),
-    value: cdktf.stringToTerraform(struct!.value),
+    data_type: cdktn.stringToTerraform(struct!.dataType),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function serviceCustomFieldFieldOptionToHclTerraform(struct?: ServiceCustomFieldFieldOption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceCustomFieldFieldOptionToHclTerraform(struct?: ServiceCustomFieldFieldOption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_type: {
-      value: cdktf.stringToHclTerraform(struct!.dataType),
+      value: cdktn.stringToHclTerraform(struct!.dataType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -108,9 +108,9 @@ export function serviceCustomFieldFieldOptionToHclTerraform(struct?: ServiceCust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceCustomFieldFieldOptionOutputReference extends cdktf.ComplexObject {
+export class ServiceCustomFieldFieldOptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -118,11 +118,11 @@ export class ServiceCustomFieldFieldOptionOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceCustomFieldFieldOption | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceCustomFieldFieldOption | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -139,14 +139,14 @@ export class ServiceCustomFieldFieldOptionOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceCustomFieldFieldOption | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceCustomFieldFieldOption | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataType = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -190,15 +190,15 @@ export class ServiceCustomFieldFieldOptionOutputReference extends cdktf.ComplexO
   }
 }
 
-export class ServiceCustomFieldFieldOptionList extends cdktf.ComplexList {
-  public internalValue? : ServiceCustomFieldFieldOption[] | cdktf.IResolvable
+export class ServiceCustomFieldFieldOptionList extends cdktn.ComplexList {
+  public internalValue? : ServiceCustomFieldFieldOption[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -211,9 +211,9 @@ export class ServiceCustomFieldFieldOptionList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field pagerduty_service_custom_field}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_custom_field pagerduty_service_custom_field}
 */
-export class ServiceCustomField extends cdktf.TerraformResource {
+export class ServiceCustomField extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -224,14 +224,14 @@ export class ServiceCustomField extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServiceCustomField resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServiceCustomField resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceCustomField to import
-  * @param importFromId The id of the existing ServiceCustomField that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceCustomField that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_custom_field#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceCustomField to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_service_custom_field", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_service_custom_field", importId: importFromId, provider });
       }
 
   // ===========
@@ -239,7 +239,7 @@ export class ServiceCustomField extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field pagerduty_service_custom_field} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_custom_field pagerduty_service_custom_field} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -250,7 +250,7 @@ export class ServiceCustomField extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_service_custom_field',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -334,11 +334,11 @@ export class ServiceCustomField extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -400,7 +400,7 @@ export class ServiceCustomField extends cdktf.TerraformResource {
   public get fieldOption() {
     return this._fieldOption;
   }
-  public putFieldOption(value: ServiceCustomFieldFieldOption[] | cdktf.IResolvable) {
+  public putFieldOption(value: ServiceCustomFieldFieldOption[] | cdktn.IResolvable) {
     this._fieldOption.internalValue = value;
   }
   public resetFieldOption() {
@@ -417,63 +417,63 @@ export class ServiceCustomField extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_type: cdktf.stringToTerraform(this._dataType),
-      default_value: cdktf.stringToTerraform(this._defaultValue),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      field_type: cdktf.stringToTerraform(this._fieldType),
-      name: cdktf.stringToTerraform(this._name),
-      field_option: cdktf.listMapper(serviceCustomFieldFieldOptionToTerraform, true)(this._fieldOption.internalValue),
+      data_type: cdktn.stringToTerraform(this._dataType),
+      default_value: cdktn.stringToTerraform(this._defaultValue),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      field_type: cdktn.stringToTerraform(this._fieldType),
+      name: cdktn.stringToTerraform(this._name),
+      field_option: cdktn.listMapper(serviceCustomFieldFieldOptionToTerraform, true)(this._fieldOption.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_type: {
-        value: cdktf.stringToHclTerraform(this._dataType),
+        value: cdktn.stringToHclTerraform(this._dataType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_value: {
-        value: cdktf.stringToHclTerraform(this._defaultValue),
+        value: cdktn.stringToHclTerraform(this._defaultValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       field_type: {
-        value: cdktf.stringToHclTerraform(this._fieldType),
+        value: cdktn.stringToHclTerraform(this._fieldType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       field_option: {
-        value: cdktf.listMapperHcl(serviceCustomFieldFieldOptionToHclTerraform, true)(this._fieldOption.internalValue),
+        value: cdktn.listMapperHcl(serviceCustomFieldFieldOptionToHclTerraform, true)(this._fieldOption.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ServiceCustomFieldFieldOptionList",
