@@ -1,46 +1,46 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/maintenance_window
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/maintenance_window
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MaintenanceWindowConfig extends cdktf.TerraformMetaArguments {
+export interface MaintenanceWindowConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/maintenance_window#description MaintenanceWindow#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/maintenance_window#description MaintenanceWindow#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/maintenance_window#end_time MaintenanceWindow#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/maintenance_window#end_time MaintenanceWindow#end_time}
   */
   readonly endTime: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/maintenance_window#id MaintenanceWindow#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/maintenance_window#id MaintenanceWindow#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/maintenance_window#services MaintenanceWindow#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/maintenance_window#services MaintenanceWindow#services}
   */
   readonly services: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/maintenance_window#start_time MaintenanceWindow#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/maintenance_window#start_time MaintenanceWindow#start_time}
   */
   readonly startTime: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/maintenance_window pagerduty_maintenance_window}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/maintenance_window pagerduty_maintenance_window}
 */
-export class MaintenanceWindow extends cdktf.TerraformResource {
+export class MaintenanceWindow extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -51,14 +51,14 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MaintenanceWindow resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MaintenanceWindow resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MaintenanceWindow to import
-  * @param importFromId The id of the existing MaintenanceWindow that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/maintenance_window#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MaintenanceWindow that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/maintenance_window#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MaintenanceWindow to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_maintenance_window", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_maintenance_window", importId: importFromId, provider });
       }
 
   // ===========
@@ -66,7 +66,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/maintenance_window pagerduty_maintenance_window} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/maintenance_window pagerduty_maintenance_window} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_maintenance_window',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -147,7 +147,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   // services - computed: false, optional: false, required: true
   private _services?: string[]; 
   public get services() {
-    return cdktf.Fn.tolist(this.getListAttribute('services'));
+    return cdktn.Fn.tolist(this.getListAttribute('services'));
   }
   public set services(value: string[]) {
     this._services = value;
@@ -176,42 +176,42 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      end_time: cdktf.stringToTerraform(this._endTime),
-      id: cdktf.stringToTerraform(this._id),
-      services: cdktf.listMapper(cdktf.stringToTerraform, false)(this._services),
-      start_time: cdktf.stringToTerraform(this._startTime),
+      description: cdktn.stringToTerraform(this._description),
+      end_time: cdktn.stringToTerraform(this._endTime),
+      id: cdktn.stringToTerraform(this._id),
+      services: cdktn.listMapper(cdktn.stringToTerraform, false)(this._services),
+      start_time: cdktn.stringToTerraform(this._startTime),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       end_time: {
-        value: cdktf.stringToHclTerraform(this._endTime),
+        value: cdktn.stringToHclTerraform(this._endTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       services: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._services),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._services),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       start_time: {
-        value: cdktf.stringToHclTerraform(this._startTime),
+        value: cdktn.stringToHclTerraform(this._startTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

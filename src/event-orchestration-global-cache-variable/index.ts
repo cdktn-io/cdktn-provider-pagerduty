@@ -1,68 +1,68 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EventOrchestrationGlobalCacheVariableConfig extends cdktf.TerraformMetaArguments {
+export interface EventOrchestrationGlobalCacheVariableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable#disabled EventOrchestrationGlobalCacheVariable#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable#disabled EventOrchestrationGlobalCacheVariable#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable#event_orchestration EventOrchestrationGlobalCacheVariable#event_orchestration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable#event_orchestration EventOrchestrationGlobalCacheVariable#event_orchestration}
   */
   readonly eventOrchestration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable#name EventOrchestrationGlobalCacheVariable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable#name EventOrchestrationGlobalCacheVariable#name}
   */
   readonly name: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable#condition EventOrchestrationGlobalCacheVariable#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable#condition EventOrchestrationGlobalCacheVariable#condition}
   */
-  readonly condition?: EventOrchestrationGlobalCacheVariableCondition[] | cdktf.IResolvable;
+  readonly condition?: EventOrchestrationGlobalCacheVariableCondition[] | cdktn.IResolvable;
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable#configuration EventOrchestrationGlobalCacheVariable#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable#configuration EventOrchestrationGlobalCacheVariable#configuration}
   */
   readonly configuration: EventOrchestrationGlobalCacheVariableConfiguration;
 }
 export interface EventOrchestrationGlobalCacheVariableCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable#expression EventOrchestrationGlobalCacheVariable#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable#expression EventOrchestrationGlobalCacheVariable#expression}
   */
   readonly expression: string;
 }
 
-export function eventOrchestrationGlobalCacheVariableConditionToTerraform(struct?: EventOrchestrationGlobalCacheVariableCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventOrchestrationGlobalCacheVariableConditionToTerraform(struct?: EventOrchestrationGlobalCacheVariableCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expression: cdktf.stringToTerraform(struct!.expression),
+    expression: cdktn.stringToTerraform(struct!.expression),
   }
 }
 
 
-export function eventOrchestrationGlobalCacheVariableConditionToHclTerraform(struct?: EventOrchestrationGlobalCacheVariableCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventOrchestrationGlobalCacheVariableConditionToHclTerraform(struct?: EventOrchestrationGlobalCacheVariableCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -73,9 +73,9 @@ export function eventOrchestrationGlobalCacheVariableConditionToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventOrchestrationGlobalCacheVariableConditionOutputReference extends cdktf.ComplexObject {
+export class EventOrchestrationGlobalCacheVariableConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -83,11 +83,11 @@ export class EventOrchestrationGlobalCacheVariableConditionOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventOrchestrationGlobalCacheVariableCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): EventOrchestrationGlobalCacheVariableCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -100,13 +100,13 @@ export class EventOrchestrationGlobalCacheVariableConditionOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventOrchestrationGlobalCacheVariableCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventOrchestrationGlobalCacheVariableCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._expression = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -131,15 +131,15 @@ export class EventOrchestrationGlobalCacheVariableConditionOutputReference exten
   }
 }
 
-export class EventOrchestrationGlobalCacheVariableConditionList extends cdktf.ComplexList {
-  public internalValue? : EventOrchestrationGlobalCacheVariableCondition[] | cdktf.IResolvable
+export class EventOrchestrationGlobalCacheVariableConditionList extends cdktn.ComplexList {
+  public internalValue? : EventOrchestrationGlobalCacheVariableCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -152,74 +152,74 @@ export class EventOrchestrationGlobalCacheVariableConditionList extends cdktf.Co
 }
 export interface EventOrchestrationGlobalCacheVariableConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable#data_type EventOrchestrationGlobalCacheVariable#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable#data_type EventOrchestrationGlobalCacheVariable#data_type}
   */
   readonly dataType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable#regex EventOrchestrationGlobalCacheVariable#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable#regex EventOrchestrationGlobalCacheVariable#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable#source EventOrchestrationGlobalCacheVariable#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable#source EventOrchestrationGlobalCacheVariable#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable#ttl_seconds EventOrchestrationGlobalCacheVariable#ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable#ttl_seconds EventOrchestrationGlobalCacheVariable#ttl_seconds}
   */
   readonly ttlSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable#type EventOrchestrationGlobalCacheVariable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable#type EventOrchestrationGlobalCacheVariable#type}
   */
   readonly type: string;
 }
 
 export function eventOrchestrationGlobalCacheVariableConfigurationToTerraform(struct?: EventOrchestrationGlobalCacheVariableConfigurationOutputReference | EventOrchestrationGlobalCacheVariableConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_type: cdktf.stringToTerraform(struct!.dataType),
-    regex: cdktf.stringToTerraform(struct!.regex),
-    source: cdktf.stringToTerraform(struct!.source),
-    ttl_seconds: cdktf.numberToTerraform(struct!.ttlSeconds),
-    type: cdktf.stringToTerraform(struct!.type),
+    data_type: cdktn.stringToTerraform(struct!.dataType),
+    regex: cdktn.stringToTerraform(struct!.regex),
+    source: cdktn.stringToTerraform(struct!.source),
+    ttl_seconds: cdktn.numberToTerraform(struct!.ttlSeconds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function eventOrchestrationGlobalCacheVariableConfigurationToHclTerraform(struct?: EventOrchestrationGlobalCacheVariableConfigurationOutputReference | EventOrchestrationGlobalCacheVariableConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_type: {
-      value: cdktf.stringToHclTerraform(struct!.dataType),
+      value: cdktn.stringToHclTerraform(struct!.dataType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     regex: {
-      value: cdktf.stringToHclTerraform(struct!.regex),
+      value: cdktn.stringToHclTerraform(struct!.regex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ttl_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.ttlSeconds),
+      value: cdktn.numberToHclTerraform(struct!.ttlSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -230,14 +230,14 @@ export function eventOrchestrationGlobalCacheVariableConfigurationToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventOrchestrationGlobalCacheVariableConfigurationOutputReference extends cdktf.ComplexObject {
+export class EventOrchestrationGlobalCacheVariableConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -365,9 +365,9 @@ export class EventOrchestrationGlobalCacheVariableConfigurationOutputReference e
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable pagerduty_event_orchestration_global_cache_variable}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable pagerduty_event_orchestration_global_cache_variable}
 */
-export class EventOrchestrationGlobalCacheVariable extends cdktf.TerraformResource {
+export class EventOrchestrationGlobalCacheVariable extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -378,14 +378,14 @@ export class EventOrchestrationGlobalCacheVariable extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EventOrchestrationGlobalCacheVariable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EventOrchestrationGlobalCacheVariable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventOrchestrationGlobalCacheVariable to import
-  * @param importFromId The id of the existing EventOrchestrationGlobalCacheVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventOrchestrationGlobalCacheVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventOrchestrationGlobalCacheVariable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_event_orchestration_global_cache_variable", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_event_orchestration_global_cache_variable", importId: importFromId, provider });
       }
 
   // ===========
@@ -393,7 +393,7 @@ export class EventOrchestrationGlobalCacheVariable extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_global_cache_variable pagerduty_event_orchestration_global_cache_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_global_cache_variable pagerduty_event_orchestration_global_cache_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -404,7 +404,7 @@ export class EventOrchestrationGlobalCacheVariable extends cdktf.TerraformResour
       terraformResourceType: 'pagerduty_event_orchestration_global_cache_variable',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -427,11 +427,11 @@ export class EventOrchestrationGlobalCacheVariable extends cdktf.TerraformResour
   // ==========
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -478,7 +478,7 @@ export class EventOrchestrationGlobalCacheVariable extends cdktf.TerraformResour
   public get condition() {
     return this._condition;
   }
-  public putCondition(value: EventOrchestrationGlobalCacheVariableCondition[] | cdktf.IResolvable) {
+  public putCondition(value: EventOrchestrationGlobalCacheVariableCondition[] | cdktn.IResolvable) {
     this._condition.internalValue = value;
   }
   public resetCondition() {
@@ -508,10 +508,10 @@ export class EventOrchestrationGlobalCacheVariable extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      event_orchestration: cdktf.stringToTerraform(this._eventOrchestration),
-      name: cdktf.stringToTerraform(this._name),
-      condition: cdktf.listMapper(eventOrchestrationGlobalCacheVariableConditionToTerraform, true)(this._condition.internalValue),
+      disabled: cdktn.booleanToTerraform(this._disabled),
+      event_orchestration: cdktn.stringToTerraform(this._eventOrchestration),
+      name: cdktn.stringToTerraform(this._name),
+      condition: cdktn.listMapper(eventOrchestrationGlobalCacheVariableConditionToTerraform, true)(this._condition.internalValue),
       configuration: eventOrchestrationGlobalCacheVariableConfigurationToTerraform(this._configuration.internalValue),
     };
   }
@@ -519,25 +519,25 @@ export class EventOrchestrationGlobalCacheVariable extends cdktf.TerraformResour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
+        value: cdktn.booleanToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       event_orchestration: {
-        value: cdktf.stringToHclTerraform(this._eventOrchestration),
+        value: cdktn.stringToHclTerraform(this._eventOrchestration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       condition: {
-        value: cdktf.listMapperHcl(eventOrchestrationGlobalCacheVariableConditionToHclTerraform, true)(this._condition.internalValue),
+        value: cdktn.listMapperHcl(eventOrchestrationGlobalCacheVariableConditionToHclTerraform, true)(this._condition.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EventOrchestrationGlobalCacheVariableConditionList",

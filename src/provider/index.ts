@@ -1,102 +1,102 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
 export interface PagerdutyProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs#api_url_override PagerdutyProvider#api_url_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs#api_url_override PagerdutyProvider#api_url_override}
   */
   readonly apiUrlOverride?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs#insecure_tls PagerdutyProvider#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs#insecure_tls PagerdutyProvider#insecure_tls}
   */
-  readonly insecureTls?: boolean | cdktf.IResolvable;
+  readonly insecureTls?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs#service_region PagerdutyProvider#service_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs#service_region PagerdutyProvider#service_region}
   */
   readonly serviceRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}
   */
-  readonly skipCredentialsValidation?: boolean | cdktf.IResolvable;
+  readonly skipCredentialsValidation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs#token PagerdutyProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs#token PagerdutyProvider#token}
   */
   readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs#user_token PagerdutyProvider#user_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs#user_token PagerdutyProvider#user_token}
   */
   readonly userToken?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs#alias PagerdutyProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs#alias PagerdutyProvider#alias}
   */
   readonly alias?: string;
   /**
   * use_app_oauth_scoped_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs#use_app_oauth_scoped_token PagerdutyProvider#use_app_oauth_scoped_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs#use_app_oauth_scoped_token PagerdutyProvider#use_app_oauth_scoped_token}
   */
   readonly useAppOauthScopedToken?: PagerdutyProviderUseAppOauthScopedToken;
 }
 export interface PagerdutyProviderUseAppOauthScopedToken {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs#pd_client_id PagerdutyProvider#pd_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs#pd_client_id PagerdutyProvider#pd_client_id}
   */
   readonly pdClientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs#pd_client_secret PagerdutyProvider#pd_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs#pd_client_secret PagerdutyProvider#pd_client_secret}
   */
   readonly pdClientSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs#pd_subdomain PagerdutyProvider#pd_subdomain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs#pd_subdomain PagerdutyProvider#pd_subdomain}
   */
   readonly pdSubdomain?: string;
 }
 
 export function pagerdutyProviderUseAppOauthScopedTokenToTerraform(struct?: PagerdutyProviderUseAppOauthScopedToken): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pd_client_id: cdktf.stringToTerraform(struct!.pdClientId),
-    pd_client_secret: cdktf.stringToTerraform(struct!.pdClientSecret),
-    pd_subdomain: cdktf.stringToTerraform(struct!.pdSubdomain),
+    pd_client_id: cdktn.stringToTerraform(struct!.pdClientId),
+    pd_client_secret: cdktn.stringToTerraform(struct!.pdClientSecret),
+    pd_subdomain: cdktn.stringToTerraform(struct!.pdSubdomain),
   }
 }
 
 
 export function pagerdutyProviderUseAppOauthScopedTokenToHclTerraform(struct?: PagerdutyProviderUseAppOauthScopedToken): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     pd_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.pdClientId),
+      value: cdktn.stringToHclTerraform(struct!.pdClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pd_client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.pdClientSecret),
+      value: cdktn.stringToHclTerraform(struct!.pdClientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pd_subdomain: {
-      value: cdktf.stringToHclTerraform(struct!.pdSubdomain),
+      value: cdktn.stringToHclTerraform(struct!.pdSubdomain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,9 +109,9 @@ export function pagerdutyProviderUseAppOauthScopedTokenToHclTerraform(struct?: P
 
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs pagerduty}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs pagerduty}
 */
-export class PagerdutyProvider extends cdktf.TerraformProvider {
+export class PagerdutyProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -122,14 +122,14 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PagerdutyProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PagerdutyProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PagerdutyProvider to import
-  * @param importFromId The id of the existing PagerdutyProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PagerdutyProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PagerdutyProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty", importId: importFromId, provider });
       }
 
   // ===========
@@ -137,7 +137,7 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs pagerduty} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs pagerduty} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -148,7 +148,7 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'pagerduty',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       terraformProviderSource: 'PagerDuty/pagerduty'
@@ -184,11 +184,11 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   }
 
   // insecure_tls - computed: false, optional: true, required: false
-  private _insecureTls?: boolean | cdktf.IResolvable; 
+  private _insecureTls?: boolean | cdktn.IResolvable; 
   public get insecureTls() {
     return this._insecureTls;
   }
-  public set insecureTls(value: boolean | cdktf.IResolvable | undefined) {
+  public set insecureTls(value: boolean | cdktn.IResolvable | undefined) {
     this._insecureTls = value;
   }
   public resetInsecureTls() {
@@ -216,11 +216,11 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   }
 
   // skip_credentials_validation - computed: false, optional: true, required: false
-  private _skipCredentialsValidation?: boolean | cdktf.IResolvable; 
+  private _skipCredentialsValidation?: boolean | cdktn.IResolvable; 
   public get skipCredentialsValidation() {
     return this._skipCredentialsValidation;
   }
-  public set skipCredentialsValidation(value: boolean | cdktf.IResolvable | undefined) {
+  public set skipCredentialsValidation(value: boolean | cdktn.IResolvable | undefined) {
     this._skipCredentialsValidation = value;
   }
   public resetSkipCredentialsValidation() {
@@ -301,13 +301,13 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_url_override: cdktf.stringToTerraform(this._apiUrlOverride),
-      insecure_tls: cdktf.booleanToTerraform(this._insecureTls),
-      service_region: cdktf.stringToTerraform(this._serviceRegion),
-      skip_credentials_validation: cdktf.booleanToTerraform(this._skipCredentialsValidation),
-      token: cdktf.stringToTerraform(this._token),
-      user_token: cdktf.stringToTerraform(this._userToken),
-      alias: cdktf.stringToTerraform(this._alias),
+      api_url_override: cdktn.stringToTerraform(this._apiUrlOverride),
+      insecure_tls: cdktn.booleanToTerraform(this._insecureTls),
+      service_region: cdktn.stringToTerraform(this._serviceRegion),
+      skip_credentials_validation: cdktn.booleanToTerraform(this._skipCredentialsValidation),
+      token: cdktn.stringToTerraform(this._token),
+      user_token: cdktn.stringToTerraform(this._userToken),
+      alias: cdktn.stringToTerraform(this._alias),
       use_app_oauth_scoped_token: pagerdutyProviderUseAppOauthScopedTokenToTerraform(this._useAppOauthScopedToken),
     };
   }
@@ -315,43 +315,43 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_url_override: {
-        value: cdktf.stringToHclTerraform(this._apiUrlOverride),
+        value: cdktn.stringToHclTerraform(this._apiUrlOverride),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       insecure_tls: {
-        value: cdktf.booleanToHclTerraform(this._insecureTls),
+        value: cdktn.booleanToHclTerraform(this._insecureTls),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       service_region: {
-        value: cdktf.stringToHclTerraform(this._serviceRegion),
+        value: cdktn.stringToHclTerraform(this._serviceRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_credentials_validation: {
-        value: cdktf.booleanToHclTerraform(this._skipCredentialsValidation),
+        value: cdktn.booleanToHclTerraform(this._skipCredentialsValidation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       token: {
-        value: cdktf.stringToHclTerraform(this._token),
+        value: cdktn.stringToHclTerraform(this._token),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_token: {
-        value: cdktf.stringToHclTerraform(this._userToken),
+        value: cdktn.stringToHclTerraform(this._userToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

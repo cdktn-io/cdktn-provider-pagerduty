@@ -1,99 +1,99 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/slack_connection
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/slack_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SlackConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface SlackConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/slack_connection#channel_id SlackConnection#channel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/slack_connection#channel_id SlackConnection#channel_id}
   */
   readonly channelId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/slack_connection#id SlackConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/slack_connection#id SlackConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/slack_connection#notification_type SlackConnection#notification_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/slack_connection#notification_type SlackConnection#notification_type}
   */
   readonly notificationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/slack_connection#source_id SlackConnection#source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/slack_connection#source_id SlackConnection#source_id}
   */
   readonly sourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/slack_connection#source_type SlackConnection#source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/slack_connection#source_type SlackConnection#source_type}
   */
   readonly sourceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/slack_connection#workspace_id SlackConnection#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/slack_connection#workspace_id SlackConnection#workspace_id}
   */
   readonly workspaceId: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/slack_connection#config SlackConnection#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/slack_connection#config SlackConnection#config}
   */
-  readonly config: SlackConnectionConfigA[] | cdktf.IResolvable;
+  readonly config: SlackConnectionConfigA[] | cdktn.IResolvable;
 }
 export interface SlackConnectionConfigA {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/slack_connection#events SlackConnection#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/slack_connection#events SlackConnection#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/slack_connection#priorities SlackConnection#priorities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/slack_connection#priorities SlackConnection#priorities}
   */
   readonly priorities?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/slack_connection#urgency SlackConnection#urgency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/slack_connection#urgency SlackConnection#urgency}
   */
   readonly urgency?: string;
 }
 
-export function slackConnectionConfigAToTerraform(struct?: SlackConnectionConfigA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function slackConnectionConfigAToTerraform(struct?: SlackConnectionConfigA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
-    priorities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.priorities),
-    urgency: cdktf.stringToTerraform(struct!.urgency),
+    events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.events),
+    priorities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.priorities),
+    urgency: cdktn.stringToTerraform(struct!.urgency),
   }
 }
 
 
-export function slackConnectionConfigAToHclTerraform(struct?: SlackConnectionConfigA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function slackConnectionConfigAToHclTerraform(struct?: SlackConnectionConfigA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     events: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.events),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     priorities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.priorities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.priorities),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     urgency: {
-      value: cdktf.stringToHclTerraform(struct!.urgency),
+      value: cdktn.stringToHclTerraform(struct!.urgency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,9 +104,9 @@ export function slackConnectionConfigAToHclTerraform(struct?: SlackConnectionCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SlackConnectionConfigAOutputReference extends cdktf.ComplexObject {
+export class SlackConnectionConfigAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -114,11 +114,11 @@ export class SlackConnectionConfigAOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SlackConnectionConfigA | cdktf.IResolvable | undefined {
+  public get internalValue(): SlackConnectionConfigA | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -139,7 +139,7 @@ export class SlackConnectionConfigAOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SlackConnectionConfigA | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SlackConnectionConfigA | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -147,7 +147,7 @@ export class SlackConnectionConfigAOutputReference extends cdktf.ComplexObject {
       this._priorities = undefined;
       this._urgency = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -163,7 +163,7 @@ export class SlackConnectionConfigAOutputReference extends cdktf.ComplexObject {
   // events - computed: false, optional: false, required: true
   private _events?: string[]; 
   public get events() {
-    return cdktf.Fn.tolist(this.getListAttribute('events'));
+    return cdktn.Fn.tolist(this.getListAttribute('events'));
   }
   public set events(value: string[]) {
     this._events = value;
@@ -206,15 +206,15 @@ export class SlackConnectionConfigAOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SlackConnectionConfigAList extends cdktf.ComplexList {
-  public internalValue? : SlackConnectionConfigA[] | cdktf.IResolvable
+export class SlackConnectionConfigAList extends cdktn.ComplexList {
+  public internalValue? : SlackConnectionConfigA[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -227,9 +227,9 @@ export class SlackConnectionConfigAList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/slack_connection pagerduty_slack_connection}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/slack_connection pagerduty_slack_connection}
 */
-export class SlackConnection extends cdktf.TerraformResource {
+export class SlackConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -240,14 +240,14 @@ export class SlackConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SlackConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SlackConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SlackConnection to import
-  * @param importFromId The id of the existing SlackConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/slack_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SlackConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/slack_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SlackConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_slack_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_slack_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -255,7 +255,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/slack_connection pagerduty_slack_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/slack_connection pagerduty_slack_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -266,7 +266,7 @@ export class SlackConnection extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_slack_connection',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -386,7 +386,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   public get config() {
     return this._config;
   }
-  public putConfig(value: SlackConnectionConfigA[] | cdktf.IResolvable) {
+  public putConfig(value: SlackConnectionConfigA[] | cdktn.IResolvable) {
     this._config.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -400,56 +400,56 @@ export class SlackConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      channel_id: cdktf.stringToTerraform(this._channelId),
-      id: cdktf.stringToTerraform(this._id),
-      notification_type: cdktf.stringToTerraform(this._notificationType),
-      source_id: cdktf.stringToTerraform(this._sourceId),
-      source_type: cdktf.stringToTerraform(this._sourceType),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
-      config: cdktf.listMapper(slackConnectionConfigAToTerraform, true)(this._config.internalValue),
+      channel_id: cdktn.stringToTerraform(this._channelId),
+      id: cdktn.stringToTerraform(this._id),
+      notification_type: cdktn.stringToTerraform(this._notificationType),
+      source_id: cdktn.stringToTerraform(this._sourceId),
+      source_type: cdktn.stringToTerraform(this._sourceType),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
+      config: cdktn.listMapper(slackConnectionConfigAToTerraform, true)(this._config.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       channel_id: {
-        value: cdktf.stringToHclTerraform(this._channelId),
+        value: cdktn.stringToHclTerraform(this._channelId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_type: {
-        value: cdktf.stringToHclTerraform(this._notificationType),
+        value: cdktn.stringToHclTerraform(this._notificationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_id: {
-        value: cdktf.stringToHclTerraform(this._sourceId),
+        value: cdktn.stringToHclTerraform(this._sourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_type: {
-        value: cdktf.stringToHclTerraform(this._sourceType),
+        value: cdktn.stringToHclTerraform(this._sourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       config: {
-        value: cdktf.listMapperHcl(slackConnectionConfigAToHclTerraform, true)(this._config.internalValue),
+        value: cdktn.listMapperHcl(slackConnectionConfigAToHclTerraform, true)(this._config.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SlackConnectionConfigAList",

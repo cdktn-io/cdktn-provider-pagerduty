@@ -1,29 +1,29 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/priority
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/priority
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataPagerdutyPriorityConfig extends cdktf.TerraformMetaArguments {
+export interface DataPagerdutyPriorityConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the priority to find in the PagerDuty API
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/priority#name DataPagerdutyPriority#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/priority#name DataPagerdutyPriority#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/priority pagerduty_priority}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/priority pagerduty_priority}
 */
-export class DataPagerdutyPriority extends cdktf.TerraformDataSource {
+export class DataPagerdutyPriority extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -34,14 +34,14 @@ export class DataPagerdutyPriority extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataPagerdutyPriority resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataPagerdutyPriority resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyPriority to import
-  * @param importFromId The id of the existing DataPagerdutyPriority that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/priority#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyPriority that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/priority#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyPriority to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_priority", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_priority", importId: importFromId, provider });
       }
 
   // ===========
@@ -49,7 +49,7 @@ export class DataPagerdutyPriority extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/priority pagerduty_priority} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/priority pagerduty_priority} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class DataPagerdutyPriority extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_priority',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -107,14 +107,14 @@ export class DataPagerdutyPriority extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

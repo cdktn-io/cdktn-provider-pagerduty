@@ -1,153 +1,153 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AutomationActionsActionConfig extends cdktf.TerraformMetaArguments {
+export interface AutomationActionsActionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#action_classification AutomationActionsAction#action_classification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#action_classification AutomationActionsAction#action_classification}
   */
   readonly actionClassification?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#action_type AutomationActionsAction#action_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#action_type AutomationActionsAction#action_type}
   */
   readonly actionType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#allow_invocation_from_event_orchestration AutomationActionsAction#allow_invocation_from_event_orchestration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#allow_invocation_from_event_orchestration AutomationActionsAction#allow_invocation_from_event_orchestration}
   */
   readonly allowInvocationFromEventOrchestration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#allow_invocation_manually AutomationActionsAction#allow_invocation_manually}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#allow_invocation_manually AutomationActionsAction#allow_invocation_manually}
   */
   readonly allowInvocationManually?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#creation_time AutomationActionsAction#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#creation_time AutomationActionsAction#creation_time}
   */
   readonly creationTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#description AutomationActionsAction#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#description AutomationActionsAction#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#id AutomationActionsAction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#id AutomationActionsAction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#map_to_all_services AutomationActionsAction#map_to_all_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#map_to_all_services AutomationActionsAction#map_to_all_services}
   */
-  readonly mapToAllServices?: boolean | cdktf.IResolvable;
+  readonly mapToAllServices?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#modify_time AutomationActionsAction#modify_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#modify_time AutomationActionsAction#modify_time}
   */
   readonly modifyTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#name AutomationActionsAction#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#name AutomationActionsAction#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#only_invocable_on_unresolved_incidents AutomationActionsAction#only_invocable_on_unresolved_incidents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#only_invocable_on_unresolved_incidents AutomationActionsAction#only_invocable_on_unresolved_incidents}
   */
-  readonly onlyInvocableOnUnresolvedIncidents?: boolean | cdktf.IResolvable;
+  readonly onlyInvocableOnUnresolvedIncidents?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#runner_id AutomationActionsAction#runner_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#runner_id AutomationActionsAction#runner_id}
   */
   readonly runnerId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#runner_type AutomationActionsAction#runner_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#runner_type AutomationActionsAction#runner_type}
   */
   readonly runnerType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#type AutomationActionsAction#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#type AutomationActionsAction#type}
   */
   readonly type?: string;
   /**
   * action_data_reference block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#action_data_reference AutomationActionsAction#action_data_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#action_data_reference AutomationActionsAction#action_data_reference}
   */
   readonly actionDataReference: AutomationActionsActionActionDataReference;
 }
 export interface AutomationActionsActionActionDataReference {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#invocation_command AutomationActionsAction#invocation_command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#invocation_command AutomationActionsAction#invocation_command}
   */
   readonly invocationCommand?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#process_automation_job_arguments AutomationActionsAction#process_automation_job_arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#process_automation_job_arguments AutomationActionsAction#process_automation_job_arguments}
   */
   readonly processAutomationJobArguments?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#process_automation_job_id AutomationActionsAction#process_automation_job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#process_automation_job_id AutomationActionsAction#process_automation_job_id}
   */
   readonly processAutomationJobId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#process_automation_node_filter AutomationActionsAction#process_automation_node_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#process_automation_node_filter AutomationActionsAction#process_automation_node_filter}
   */
   readonly processAutomationNodeFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#script AutomationActionsAction#script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#script AutomationActionsAction#script}
   */
   readonly script?: string;
 }
 
 export function automationActionsActionActionDataReferenceToTerraform(struct?: AutomationActionsActionActionDataReferenceOutputReference | AutomationActionsActionActionDataReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    invocation_command: cdktf.stringToTerraform(struct!.invocationCommand),
-    process_automation_job_arguments: cdktf.stringToTerraform(struct!.processAutomationJobArguments),
-    process_automation_job_id: cdktf.stringToTerraform(struct!.processAutomationJobId),
-    process_automation_node_filter: cdktf.stringToTerraform(struct!.processAutomationNodeFilter),
-    script: cdktf.stringToTerraform(struct!.script),
+    invocation_command: cdktn.stringToTerraform(struct!.invocationCommand),
+    process_automation_job_arguments: cdktn.stringToTerraform(struct!.processAutomationJobArguments),
+    process_automation_job_id: cdktn.stringToTerraform(struct!.processAutomationJobId),
+    process_automation_node_filter: cdktn.stringToTerraform(struct!.processAutomationNodeFilter),
+    script: cdktn.stringToTerraform(struct!.script),
   }
 }
 
 
 export function automationActionsActionActionDataReferenceToHclTerraform(struct?: AutomationActionsActionActionDataReferenceOutputReference | AutomationActionsActionActionDataReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     invocation_command: {
-      value: cdktf.stringToHclTerraform(struct!.invocationCommand),
+      value: cdktn.stringToHclTerraform(struct!.invocationCommand),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     process_automation_job_arguments: {
-      value: cdktf.stringToHclTerraform(struct!.processAutomationJobArguments),
+      value: cdktn.stringToHclTerraform(struct!.processAutomationJobArguments),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     process_automation_job_id: {
-      value: cdktf.stringToHclTerraform(struct!.processAutomationJobId),
+      value: cdktn.stringToHclTerraform(struct!.processAutomationJobId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     process_automation_node_filter: {
-      value: cdktf.stringToHclTerraform(struct!.processAutomationNodeFilter),
+      value: cdktn.stringToHclTerraform(struct!.processAutomationNodeFilter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     script: {
-      value: cdktf.stringToHclTerraform(struct!.script),
+      value: cdktn.stringToHclTerraform(struct!.script),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -158,14 +158,14 @@ export function automationActionsActionActionDataReferenceToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationActionsActionActionDataReferenceOutputReference extends cdktf.ComplexObject {
+export class AutomationActionsActionActionDataReferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -296,9 +296,9 @@ export class AutomationActionsActionActionDataReferenceOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action pagerduty_automation_actions_action}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action pagerduty_automation_actions_action}
 */
-export class AutomationActionsAction extends cdktf.TerraformResource {
+export class AutomationActionsAction extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -309,14 +309,14 @@ export class AutomationActionsAction extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AutomationActionsAction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AutomationActionsAction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutomationActionsAction to import
-  * @param importFromId The id of the existing AutomationActionsAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AutomationActionsAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutomationActionsAction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_automation_actions_action", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_automation_actions_action", importId: importFromId, provider });
       }
 
   // ===========
@@ -324,7 +324,7 @@ export class AutomationActionsAction extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/automation_actions_action pagerduty_automation_actions_action} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/automation_actions_action pagerduty_automation_actions_action} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -335,7 +335,7 @@ export class AutomationActionsAction extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_automation_actions_action',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -477,11 +477,11 @@ export class AutomationActionsAction extends cdktf.TerraformResource {
   }
 
   // map_to_all_services - computed: true, optional: true, required: false
-  private _mapToAllServices?: boolean | cdktf.IResolvable; 
+  private _mapToAllServices?: boolean | cdktn.IResolvable; 
   public get mapToAllServices() {
     return this.getBooleanAttribute('map_to_all_services');
   }
-  public set mapToAllServices(value: boolean | cdktf.IResolvable) {
+  public set mapToAllServices(value: boolean | cdktn.IResolvable) {
     this._mapToAllServices = value;
   }
   public resetMapToAllServices() {
@@ -522,11 +522,11 @@ export class AutomationActionsAction extends cdktf.TerraformResource {
   }
 
   // only_invocable_on_unresolved_incidents - computed: true, optional: true, required: false
-  private _onlyInvocableOnUnresolvedIncidents?: boolean | cdktf.IResolvable; 
+  private _onlyInvocableOnUnresolvedIncidents?: boolean | cdktn.IResolvable; 
   public get onlyInvocableOnUnresolvedIncidents() {
     return this.getBooleanAttribute('only_invocable_on_unresolved_incidents');
   }
-  public set onlyInvocableOnUnresolvedIncidents(value: boolean | cdktf.IResolvable) {
+  public set onlyInvocableOnUnresolvedIncidents(value: boolean | cdktn.IResolvable) {
     this._onlyInvocableOnUnresolvedIncidents = value;
   }
   public resetOnlyInvocableOnUnresolvedIncidents() {
@@ -604,20 +604,20 @@ export class AutomationActionsAction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action_classification: cdktf.stringToTerraform(this._actionClassification),
-      action_type: cdktf.stringToTerraform(this._actionType),
-      allow_invocation_from_event_orchestration: cdktf.stringToTerraform(this._allowInvocationFromEventOrchestration),
-      allow_invocation_manually: cdktf.stringToTerraform(this._allowInvocationManually),
-      creation_time: cdktf.stringToTerraform(this._creationTime),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      map_to_all_services: cdktf.booleanToTerraform(this._mapToAllServices),
-      modify_time: cdktf.stringToTerraform(this._modifyTime),
-      name: cdktf.stringToTerraform(this._name),
-      only_invocable_on_unresolved_incidents: cdktf.booleanToTerraform(this._onlyInvocableOnUnresolvedIncidents),
-      runner_id: cdktf.stringToTerraform(this._runnerId),
-      runner_type: cdktf.stringToTerraform(this._runnerType),
-      type: cdktf.stringToTerraform(this._type),
+      action_classification: cdktn.stringToTerraform(this._actionClassification),
+      action_type: cdktn.stringToTerraform(this._actionType),
+      allow_invocation_from_event_orchestration: cdktn.stringToTerraform(this._allowInvocationFromEventOrchestration),
+      allow_invocation_manually: cdktn.stringToTerraform(this._allowInvocationManually),
+      creation_time: cdktn.stringToTerraform(this._creationTime),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      map_to_all_services: cdktn.booleanToTerraform(this._mapToAllServices),
+      modify_time: cdktn.stringToTerraform(this._modifyTime),
+      name: cdktn.stringToTerraform(this._name),
+      only_invocable_on_unresolved_incidents: cdktn.booleanToTerraform(this._onlyInvocableOnUnresolvedIncidents),
+      runner_id: cdktn.stringToTerraform(this._runnerId),
+      runner_type: cdktn.stringToTerraform(this._runnerType),
+      type: cdktn.stringToTerraform(this._type),
       action_data_reference: automationActionsActionActionDataReferenceToTerraform(this._actionDataReference.internalValue),
     };
   }
@@ -625,85 +625,85 @@ export class AutomationActionsAction extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action_classification: {
-        value: cdktf.stringToHclTerraform(this._actionClassification),
+        value: cdktn.stringToHclTerraform(this._actionClassification),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       action_type: {
-        value: cdktf.stringToHclTerraform(this._actionType),
+        value: cdktn.stringToHclTerraform(this._actionType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allow_invocation_from_event_orchestration: {
-        value: cdktf.stringToHclTerraform(this._allowInvocationFromEventOrchestration),
+        value: cdktn.stringToHclTerraform(this._allowInvocationFromEventOrchestration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allow_invocation_manually: {
-        value: cdktf.stringToHclTerraform(this._allowInvocationManually),
+        value: cdktn.stringToHclTerraform(this._allowInvocationManually),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       creation_time: {
-        value: cdktf.stringToHclTerraform(this._creationTime),
+        value: cdktn.stringToHclTerraform(this._creationTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       map_to_all_services: {
-        value: cdktf.booleanToHclTerraform(this._mapToAllServices),
+        value: cdktn.booleanToHclTerraform(this._mapToAllServices),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       modify_time: {
-        value: cdktf.stringToHclTerraform(this._modifyTime),
+        value: cdktn.stringToHclTerraform(this._modifyTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       only_invocable_on_unresolved_incidents: {
-        value: cdktf.booleanToHclTerraform(this._onlyInvocableOnUnresolvedIncidents),
+        value: cdktn.booleanToHclTerraform(this._onlyInvocableOnUnresolvedIncidents),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       runner_id: {
-        value: cdktf.stringToHclTerraform(this._runnerId),
+        value: cdktn.stringToHclTerraform(this._runnerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runner_type: {
-        value: cdktf.stringToHclTerraform(this._runnerType),
+        value: cdktn.stringToHclTerraform(this._runnerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

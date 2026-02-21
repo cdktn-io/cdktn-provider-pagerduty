@@ -1,57 +1,57 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ScheduleConfig extends cdktf.TerraformMetaArguments {
+export interface ScheduleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#description Schedule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#description Schedule#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#id Schedule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#id Schedule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#name Schedule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#name Schedule#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#overflow Schedule#overflow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#overflow Schedule#overflow}
   */
-  readonly overflow?: boolean | cdktf.IResolvable;
+  readonly overflow?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#teams Schedule#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#teams Schedule#teams}
   */
   readonly teams?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#time_zone Schedule#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#time_zone Schedule#time_zone}
   */
   readonly timeZone: string;
   /**
   * layer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#layer Schedule#layer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#layer Schedule#layer}
   */
-  readonly layer: ScheduleLayer[] | cdktf.IResolvable;
+  readonly layer: ScheduleLayer[] | cdktn.IResolvable;
 }
 export interface ScheduleFinalSchedule {
 }
 
 export function scheduleFinalScheduleToTerraform(struct?: ScheduleFinalSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -60,8 +60,8 @@ export function scheduleFinalScheduleToTerraform(struct?: ScheduleFinalSchedule)
 
 
 export function scheduleFinalScheduleToHclTerraform(struct?: ScheduleFinalSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -69,7 +69,7 @@ export function scheduleFinalScheduleToHclTerraform(struct?: ScheduleFinalSchedu
   return attrs;
 }
 
-export class ScheduleFinalScheduleOutputReference extends cdktf.ComplexObject {
+export class ScheduleFinalScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -78,7 +78,7 @@ export class ScheduleFinalScheduleOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -108,14 +108,14 @@ export class ScheduleFinalScheduleOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ScheduleFinalScheduleList extends cdktf.ComplexList {
+export class ScheduleFinalScheduleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -128,63 +128,63 @@ export class ScheduleFinalScheduleList extends cdktf.ComplexList {
 }
 export interface ScheduleLayerRestriction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#duration_seconds Schedule#duration_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#duration_seconds Schedule#duration_seconds}
   */
   readonly durationSeconds: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#start_day_of_week Schedule#start_day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#start_day_of_week Schedule#start_day_of_week}
   */
   readonly startDayOfWeek?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#start_time_of_day Schedule#start_time_of_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#start_time_of_day Schedule#start_time_of_day}
   */
   readonly startTimeOfDay: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#type Schedule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#type Schedule#type}
   */
   readonly type: string;
 }
 
-export function scheduleLayerRestrictionToTerraform(struct?: ScheduleLayerRestriction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function scheduleLayerRestrictionToTerraform(struct?: ScheduleLayerRestriction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    duration_seconds: cdktf.numberToTerraform(struct!.durationSeconds),
-    start_day_of_week: cdktf.numberToTerraform(struct!.startDayOfWeek),
-    start_time_of_day: cdktf.stringToTerraform(struct!.startTimeOfDay),
-    type: cdktf.stringToTerraform(struct!.type),
+    duration_seconds: cdktn.numberToTerraform(struct!.durationSeconds),
+    start_day_of_week: cdktn.numberToTerraform(struct!.startDayOfWeek),
+    start_time_of_day: cdktn.stringToTerraform(struct!.startTimeOfDay),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function scheduleLayerRestrictionToHclTerraform(struct?: ScheduleLayerRestriction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function scheduleLayerRestrictionToHclTerraform(struct?: ScheduleLayerRestriction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     duration_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.durationSeconds),
+      value: cdktn.numberToHclTerraform(struct!.durationSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_day_of_week: {
-      value: cdktf.numberToHclTerraform(struct!.startDayOfWeek),
+      value: cdktn.numberToHclTerraform(struct!.startDayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_time_of_day: {
-      value: cdktf.stringToHclTerraform(struct!.startTimeOfDay),
+      value: cdktn.stringToHclTerraform(struct!.startTimeOfDay),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -195,9 +195,9 @@ export function scheduleLayerRestrictionToHclTerraform(struct?: ScheduleLayerRes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ScheduleLayerRestrictionOutputReference extends cdktf.ComplexObject {
+export class ScheduleLayerRestrictionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -205,11 +205,11 @@ export class ScheduleLayerRestrictionOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ScheduleLayerRestriction | cdktf.IResolvable | undefined {
+  public get internalValue(): ScheduleLayerRestriction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -234,7 +234,7 @@ export class ScheduleLayerRestrictionOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ScheduleLayerRestriction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ScheduleLayerRestriction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -243,7 +243,7 @@ export class ScheduleLayerRestrictionOutputReference extends cdktf.ComplexObject
       this._startTimeOfDay = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -313,15 +313,15 @@ export class ScheduleLayerRestrictionOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class ScheduleLayerRestrictionList extends cdktf.ComplexList {
-  public internalValue? : ScheduleLayerRestriction[] | cdktf.IResolvable
+export class ScheduleLayerRestrictionList extends cdktn.ComplexList {
+  public internalValue? : ScheduleLayerRestriction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -334,98 +334,98 @@ export class ScheduleLayerRestrictionList extends cdktf.ComplexList {
 }
 export interface ScheduleLayer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#end Schedule#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#end Schedule#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#name Schedule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#name Schedule#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#rotation_turn_length_seconds Schedule#rotation_turn_length_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#rotation_turn_length_seconds Schedule#rotation_turn_length_seconds}
   */
   readonly rotationTurnLengthSeconds: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#rotation_virtual_start Schedule#rotation_virtual_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#rotation_virtual_start Schedule#rotation_virtual_start}
   */
   readonly rotationVirtualStart: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#start Schedule#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#start Schedule#start}
   */
   readonly start: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#users Schedule#users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#users Schedule#users}
   */
   readonly users: string[];
   /**
   * restriction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#restriction Schedule#restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#restriction Schedule#restriction}
   */
-  readonly restriction?: ScheduleLayerRestriction[] | cdktf.IResolvable;
+  readonly restriction?: ScheduleLayerRestriction[] | cdktn.IResolvable;
 }
 
-export function scheduleLayerToTerraform(struct?: ScheduleLayer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function scheduleLayerToTerraform(struct?: ScheduleLayer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end: cdktf.stringToTerraform(struct!.end),
-    name: cdktf.stringToTerraform(struct!.name),
-    rotation_turn_length_seconds: cdktf.numberToTerraform(struct!.rotationTurnLengthSeconds),
-    rotation_virtual_start: cdktf.stringToTerraform(struct!.rotationVirtualStart),
-    start: cdktf.stringToTerraform(struct!.start),
-    users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.users),
-    restriction: cdktf.listMapper(scheduleLayerRestrictionToTerraform, true)(struct!.restriction),
+    end: cdktn.stringToTerraform(struct!.end),
+    name: cdktn.stringToTerraform(struct!.name),
+    rotation_turn_length_seconds: cdktn.numberToTerraform(struct!.rotationTurnLengthSeconds),
+    rotation_virtual_start: cdktn.stringToTerraform(struct!.rotationVirtualStart),
+    start: cdktn.stringToTerraform(struct!.start),
+    users: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.users),
+    restriction: cdktn.listMapper(scheduleLayerRestrictionToTerraform, true)(struct!.restriction),
   }
 }
 
 
-export function scheduleLayerToHclTerraform(struct?: ScheduleLayer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function scheduleLayerToHclTerraform(struct?: ScheduleLayer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end: {
-      value: cdktf.stringToHclTerraform(struct!.end),
+      value: cdktn.stringToHclTerraform(struct!.end),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_turn_length_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.rotationTurnLengthSeconds),
+      value: cdktn.numberToHclTerraform(struct!.rotationTurnLengthSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_virtual_start: {
-      value: cdktf.stringToHclTerraform(struct!.rotationVirtualStart),
+      value: cdktn.stringToHclTerraform(struct!.rotationVirtualStart),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start: {
-      value: cdktf.stringToHclTerraform(struct!.start),
+      value: cdktn.stringToHclTerraform(struct!.start),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     users: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.users),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.users),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     restriction: {
-      value: cdktf.listMapperHcl(scheduleLayerRestrictionToHclTerraform, true)(struct!.restriction),
+      value: cdktn.listMapperHcl(scheduleLayerRestrictionToHclTerraform, true)(struct!.restriction),
       isBlock: true,
       type: "list",
       storageClassType: "ScheduleLayerRestrictionList",
@@ -436,9 +436,9 @@ export function scheduleLayerToHclTerraform(struct?: ScheduleLayer | cdktf.IReso
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ScheduleLayerOutputReference extends cdktf.ComplexObject {
+export class ScheduleLayerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -446,11 +446,11 @@ export class ScheduleLayerOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ScheduleLayer | cdktf.IResolvable | undefined {
+  public get internalValue(): ScheduleLayer | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -487,7 +487,7 @@ export class ScheduleLayerOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ScheduleLayer | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ScheduleLayer | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -499,7 +499,7 @@ export class ScheduleLayerOutputReference extends cdktf.ComplexObject {
       this._users = undefined;
       this._restriction.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -615,7 +615,7 @@ export class ScheduleLayerOutputReference extends cdktf.ComplexObject {
   public get restriction() {
     return this._restriction;
   }
-  public putRestriction(value: ScheduleLayerRestriction[] | cdktf.IResolvable) {
+  public putRestriction(value: ScheduleLayerRestriction[] | cdktn.IResolvable) {
     this._restriction.internalValue = value;
   }
   public resetRestriction() {
@@ -627,15 +627,15 @@ export class ScheduleLayerOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ScheduleLayerList extends cdktf.ComplexList {
-  public internalValue? : ScheduleLayer[] | cdktf.IResolvable
+export class ScheduleLayerList extends cdktn.ComplexList {
+  public internalValue? : ScheduleLayer[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -648,9 +648,9 @@ export class ScheduleLayerList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule pagerduty_schedule}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule pagerduty_schedule}
 */
-export class Schedule extends cdktf.TerraformResource {
+export class Schedule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -661,14 +661,14 @@ export class Schedule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Schedule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Schedule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Schedule to import
-  * @param importFromId The id of the existing Schedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Schedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Schedule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_schedule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_schedule", importId: importFromId, provider });
       }
 
   // ===========
@@ -676,7 +676,7 @@ export class Schedule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/schedule pagerduty_schedule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/schedule pagerduty_schedule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -687,7 +687,7 @@ export class Schedule extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_schedule',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -766,11 +766,11 @@ export class Schedule extends cdktf.TerraformResource {
   }
 
   // overflow - computed: false, optional: true, required: false
-  private _overflow?: boolean | cdktf.IResolvable; 
+  private _overflow?: boolean | cdktn.IResolvable; 
   public get overflow() {
     return this.getBooleanAttribute('overflow');
   }
-  public set overflow(value: boolean | cdktf.IResolvable) {
+  public set overflow(value: boolean | cdktn.IResolvable) {
     this._overflow = value;
   }
   public resetOverflow() {
@@ -815,7 +815,7 @@ export class Schedule extends cdktf.TerraformResource {
   public get layer() {
     return this._layer;
   }
-  public putLayer(value: ScheduleLayer[] | cdktf.IResolvable) {
+  public putLayer(value: ScheduleLayer[] | cdktn.IResolvable) {
     this._layer.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -829,56 +829,56 @@ export class Schedule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      overflow: cdktf.booleanToTerraform(this._overflow),
-      teams: cdktf.listMapper(cdktf.stringToTerraform, false)(this._teams),
-      time_zone: cdktf.stringToTerraform(this._timeZone),
-      layer: cdktf.listMapper(scheduleLayerToTerraform, true)(this._layer.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      overflow: cdktn.booleanToTerraform(this._overflow),
+      teams: cdktn.listMapper(cdktn.stringToTerraform, false)(this._teams),
+      time_zone: cdktn.stringToTerraform(this._timeZone),
+      layer: cdktn.listMapper(scheduleLayerToTerraform, true)(this._layer.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       overflow: {
-        value: cdktf.booleanToHclTerraform(this._overflow),
+        value: cdktn.booleanToHclTerraform(this._overflow),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       teams: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._teams),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._teams),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       time_zone: {
-        value: cdktf.stringToHclTerraform(this._timeZone),
+        value: cdktn.stringToHclTerraform(this._timeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       layer: {
-        value: cdktf.listMapperHcl(scheduleLayerToHclTerraform, true)(this._layer.internalValue),
+        value: cdktn.listMapperHcl(scheduleLayerToHclTerraform, true)(this._layer.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ScheduleLayerList",

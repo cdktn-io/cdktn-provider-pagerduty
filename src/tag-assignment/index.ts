@@ -1,35 +1,35 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/tag_assignment
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TagAssignmentConfig extends cdktf.TerraformMetaArguments {
+export interface TagAssignmentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/tag_assignment#entity_id TagAssignment#entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment#entity_id TagAssignment#entity_id}
   */
   readonly entityId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/tag_assignment#entity_type TagAssignment#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment#entity_type TagAssignment#entity_type}
   */
   readonly entityType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/tag_assignment#tag_id TagAssignment#tag_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment#tag_id TagAssignment#tag_id}
   */
   readonly tagId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/tag_assignment pagerduty_tag_assignment}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment pagerduty_tag_assignment}
 */
-export class TagAssignment extends cdktf.TerraformResource {
+export class TagAssignment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +40,14 @@ export class TagAssignment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TagAssignment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TagAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TagAssignment to import
-  * @param importFromId The id of the existing TagAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/tag_assignment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TagAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TagAssignment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_tag_assignment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_tag_assignment", importId: importFromId, provider });
       }
 
   // ===========
@@ -55,7 +55,7 @@ export class TagAssignment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/tag_assignment pagerduty_tag_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment pagerduty_tag_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class TagAssignment extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_tag_assignment',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -136,28 +136,28 @@ export class TagAssignment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      entity_id: cdktf.stringToTerraform(this._entityId),
-      entity_type: cdktf.stringToTerraform(this._entityType),
-      tag_id: cdktf.stringToTerraform(this._tagId),
+      entity_id: cdktn.stringToTerraform(this._entityId),
+      entity_type: cdktn.stringToTerraform(this._entityType),
+      tag_id: cdktn.stringToTerraform(this._tagId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       entity_id: {
-        value: cdktf.stringToHclTerraform(this._entityId),
+        value: cdktn.stringToHclTerraform(this._entityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       entity_type: {
-        value: cdktf.stringToHclTerraform(this._entityType),
+        value: cdktn.stringToHclTerraform(this._entityType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tag_id: {
-        value: cdktf.stringToHclTerraform(this._tagId),
+        value: cdktn.stringToHclTerraform(this._tagId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

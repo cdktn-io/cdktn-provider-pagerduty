@@ -1,23 +1,23 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EventOrchestrationRouterConfig extends cdktf.TerraformMetaArguments {
+export interface EventOrchestrationRouterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#event_orchestration EventOrchestrationRouter#event_orchestration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#event_orchestration EventOrchestrationRouter#event_orchestration}
   */
   readonly eventOrchestration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#id EventOrchestrationRouter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#id EventOrchestrationRouter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,42 +26,42 @@ export interface EventOrchestrationRouterConfig extends cdktf.TerraformMetaArgum
   /**
   * catch_all block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#catch_all EventOrchestrationRouter#catch_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#catch_all EventOrchestrationRouter#catch_all}
   */
   readonly catchAll: EventOrchestrationRouterCatchAll;
   /**
   * set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#set EventOrchestrationRouter#set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#set EventOrchestrationRouter#set}
   */
   readonly set: EventOrchestrationRouterSet;
 }
 export interface EventOrchestrationRouterCatchAllActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#route_to EventOrchestrationRouter#route_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#route_to EventOrchestrationRouter#route_to}
   */
   readonly routeTo: string;
 }
 
 export function eventOrchestrationRouterCatchAllActionsToTerraform(struct?: EventOrchestrationRouterCatchAllActionsOutputReference | EventOrchestrationRouterCatchAllActions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    route_to: cdktf.stringToTerraform(struct!.routeTo),
+    route_to: cdktn.stringToTerraform(struct!.routeTo),
   }
 }
 
 
 export function eventOrchestrationRouterCatchAllActionsToHclTerraform(struct?: EventOrchestrationRouterCatchAllActionsOutputReference | EventOrchestrationRouterCatchAllActions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     route_to: {
-      value: cdktf.stringToHclTerraform(struct!.routeTo),
+      value: cdktn.stringToHclTerraform(struct!.routeTo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -72,14 +72,14 @@ export function eventOrchestrationRouterCatchAllActionsToHclTerraform(struct?: E
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventOrchestrationRouterCatchAllActionsOutputReference extends cdktf.ComplexObject {
+export class EventOrchestrationRouterCatchAllActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -121,14 +121,14 @@ export interface EventOrchestrationRouterCatchAll {
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#actions EventOrchestrationRouter#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#actions EventOrchestrationRouter#actions}
   */
   readonly actions: EventOrchestrationRouterCatchAllActions;
 }
 
 export function eventOrchestrationRouterCatchAllToTerraform(struct?: EventOrchestrationRouterCatchAllOutputReference | EventOrchestrationRouterCatchAll): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -138,8 +138,8 @@ export function eventOrchestrationRouterCatchAllToTerraform(struct?: EventOrches
 
 
 export function eventOrchestrationRouterCatchAllToHclTerraform(struct?: EventOrchestrationRouterCatchAllOutputReference | EventOrchestrationRouterCatchAll): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -155,14 +155,14 @@ export function eventOrchestrationRouterCatchAllToHclTerraform(struct?: EventOrc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventOrchestrationRouterCatchAllOutputReference extends cdktf.ComplexObject {
+export class EventOrchestrationRouterCatchAllOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -202,52 +202,52 @@ export class EventOrchestrationRouterCatchAllOutputReference extends cdktf.Compl
 }
 export interface EventOrchestrationRouterSetRuleActionsDynamicRouteTo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#lookup_by EventOrchestrationRouter#lookup_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#lookup_by EventOrchestrationRouter#lookup_by}
   */
   readonly lookupBy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#regex EventOrchestrationRouter#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#regex EventOrchestrationRouter#regex}
   */
   readonly regex: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#source EventOrchestrationRouter#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#source EventOrchestrationRouter#source}
   */
   readonly source: string;
 }
 
-export function eventOrchestrationRouterSetRuleActionsDynamicRouteToToTerraform(struct?: EventOrchestrationRouterSetRuleActionsDynamicRouteTo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventOrchestrationRouterSetRuleActionsDynamicRouteToToTerraform(struct?: EventOrchestrationRouterSetRuleActionsDynamicRouteTo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lookup_by: cdktf.stringToTerraform(struct!.lookupBy),
-    regex: cdktf.stringToTerraform(struct!.regex),
-    source: cdktf.stringToTerraform(struct!.source),
+    lookup_by: cdktn.stringToTerraform(struct!.lookupBy),
+    regex: cdktn.stringToTerraform(struct!.regex),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function eventOrchestrationRouterSetRuleActionsDynamicRouteToToHclTerraform(struct?: EventOrchestrationRouterSetRuleActionsDynamicRouteTo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventOrchestrationRouterSetRuleActionsDynamicRouteToToHclTerraform(struct?: EventOrchestrationRouterSetRuleActionsDynamicRouteTo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lookup_by: {
-      value: cdktf.stringToHclTerraform(struct!.lookupBy),
+      value: cdktn.stringToHclTerraform(struct!.lookupBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     regex: {
-      value: cdktf.stringToHclTerraform(struct!.regex),
+      value: cdktn.stringToHclTerraform(struct!.regex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -258,9 +258,9 @@ export function eventOrchestrationRouterSetRuleActionsDynamicRouteToToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventOrchestrationRouterSetRuleActionsDynamicRouteToOutputReference extends cdktf.ComplexObject {
+export class EventOrchestrationRouterSetRuleActionsDynamicRouteToOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -268,11 +268,11 @@ export class EventOrchestrationRouterSetRuleActionsDynamicRouteToOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventOrchestrationRouterSetRuleActionsDynamicRouteTo | cdktf.IResolvable | undefined {
+  public get internalValue(): EventOrchestrationRouterSetRuleActionsDynamicRouteTo | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -293,7 +293,7 @@ export class EventOrchestrationRouterSetRuleActionsDynamicRouteToOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventOrchestrationRouterSetRuleActionsDynamicRouteTo | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventOrchestrationRouterSetRuleActionsDynamicRouteTo | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -301,7 +301,7 @@ export class EventOrchestrationRouterSetRuleActionsDynamicRouteToOutputReference
       this._regex = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -354,15 +354,15 @@ export class EventOrchestrationRouterSetRuleActionsDynamicRouteToOutputReference
   }
 }
 
-export class EventOrchestrationRouterSetRuleActionsDynamicRouteToList extends cdktf.ComplexList {
-  public internalValue? : EventOrchestrationRouterSetRuleActionsDynamicRouteTo[] | cdktf.IResolvable
+export class EventOrchestrationRouterSetRuleActionsDynamicRouteToList extends cdktn.ComplexList {
+  public internalValue? : EventOrchestrationRouterSetRuleActionsDynamicRouteTo[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -375,43 +375,43 @@ export class EventOrchestrationRouterSetRuleActionsDynamicRouteToList extends cd
 }
 export interface EventOrchestrationRouterSetRuleActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#route_to EventOrchestrationRouter#route_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#route_to EventOrchestrationRouter#route_to}
   */
   readonly routeTo?: string;
   /**
   * dynamic_route_to block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#dynamic_route_to EventOrchestrationRouter#dynamic_route_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#dynamic_route_to EventOrchestrationRouter#dynamic_route_to}
   */
-  readonly dynamicRouteTo?: EventOrchestrationRouterSetRuleActionsDynamicRouteTo[] | cdktf.IResolvable;
+  readonly dynamicRouteTo?: EventOrchestrationRouterSetRuleActionsDynamicRouteTo[] | cdktn.IResolvable;
 }
 
 export function eventOrchestrationRouterSetRuleActionsToTerraform(struct?: EventOrchestrationRouterSetRuleActionsOutputReference | EventOrchestrationRouterSetRuleActions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    route_to: cdktf.stringToTerraform(struct!.routeTo),
-    dynamic_route_to: cdktf.listMapper(eventOrchestrationRouterSetRuleActionsDynamicRouteToToTerraform, true)(struct!.dynamicRouteTo),
+    route_to: cdktn.stringToTerraform(struct!.routeTo),
+    dynamic_route_to: cdktn.listMapper(eventOrchestrationRouterSetRuleActionsDynamicRouteToToTerraform, true)(struct!.dynamicRouteTo),
   }
 }
 
 
 export function eventOrchestrationRouterSetRuleActionsToHclTerraform(struct?: EventOrchestrationRouterSetRuleActionsOutputReference | EventOrchestrationRouterSetRuleActions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     route_to: {
-      value: cdktf.stringToHclTerraform(struct!.routeTo),
+      value: cdktn.stringToHclTerraform(struct!.routeTo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dynamic_route_to: {
-      value: cdktf.listMapperHcl(eventOrchestrationRouterSetRuleActionsDynamicRouteToToHclTerraform, true)(struct!.dynamicRouteTo),
+      value: cdktn.listMapperHcl(eventOrchestrationRouterSetRuleActionsDynamicRouteToToHclTerraform, true)(struct!.dynamicRouteTo),
       isBlock: true,
       type: "list",
       storageClassType: "EventOrchestrationRouterSetRuleActionsDynamicRouteToList",
@@ -422,14 +422,14 @@ export function eventOrchestrationRouterSetRuleActionsToHclTerraform(struct?: Ev
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventOrchestrationRouterSetRuleActionsOutputReference extends cdktf.ComplexObject {
+export class EventOrchestrationRouterSetRuleActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -481,7 +481,7 @@ export class EventOrchestrationRouterSetRuleActionsOutputReference extends cdktf
   public get dynamicRouteTo() {
     return this._dynamicRouteTo;
   }
-  public putDynamicRouteTo(value: EventOrchestrationRouterSetRuleActionsDynamicRouteTo[] | cdktf.IResolvable) {
+  public putDynamicRouteTo(value: EventOrchestrationRouterSetRuleActionsDynamicRouteTo[] | cdktn.IResolvable) {
     this._dynamicRouteTo.internalValue = value;
   }
   public resetDynamicRouteTo() {
@@ -494,30 +494,30 @@ export class EventOrchestrationRouterSetRuleActionsOutputReference extends cdktf
 }
 export interface EventOrchestrationRouterSetRuleCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#expression EventOrchestrationRouter#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#expression EventOrchestrationRouter#expression}
   */
   readonly expression: string;
 }
 
-export function eventOrchestrationRouterSetRuleConditionToTerraform(struct?: EventOrchestrationRouterSetRuleCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventOrchestrationRouterSetRuleConditionToTerraform(struct?: EventOrchestrationRouterSetRuleCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expression: cdktf.stringToTerraform(struct!.expression),
+    expression: cdktn.stringToTerraform(struct!.expression),
   }
 }
 
 
-export function eventOrchestrationRouterSetRuleConditionToHclTerraform(struct?: EventOrchestrationRouterSetRuleCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventOrchestrationRouterSetRuleConditionToHclTerraform(struct?: EventOrchestrationRouterSetRuleCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -528,9 +528,9 @@ export function eventOrchestrationRouterSetRuleConditionToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventOrchestrationRouterSetRuleConditionOutputReference extends cdktf.ComplexObject {
+export class EventOrchestrationRouterSetRuleConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -538,11 +538,11 @@ export class EventOrchestrationRouterSetRuleConditionOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventOrchestrationRouterSetRuleCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): EventOrchestrationRouterSetRuleCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -555,13 +555,13 @@ export class EventOrchestrationRouterSetRuleConditionOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventOrchestrationRouterSetRuleCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventOrchestrationRouterSetRuleCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._expression = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -586,15 +586,15 @@ export class EventOrchestrationRouterSetRuleConditionOutputReference extends cdk
   }
 }
 
-export class EventOrchestrationRouterSetRuleConditionList extends cdktf.ComplexList {
-  public internalValue? : EventOrchestrationRouterSetRuleCondition[] | cdktf.IResolvable
+export class EventOrchestrationRouterSetRuleConditionList extends cdktn.ComplexList {
+  public internalValue? : EventOrchestrationRouterSetRuleCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -607,55 +607,55 @@ export class EventOrchestrationRouterSetRuleConditionList extends cdktf.ComplexL
 }
 export interface EventOrchestrationRouterSetRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#disabled EventOrchestrationRouter#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#disabled EventOrchestrationRouter#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#label EventOrchestrationRouter#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#label EventOrchestrationRouter#label}
   */
   readonly label?: string;
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#actions EventOrchestrationRouter#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#actions EventOrchestrationRouter#actions}
   */
   readonly actions: EventOrchestrationRouterSetRuleActions;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#condition EventOrchestrationRouter#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#condition EventOrchestrationRouter#condition}
   */
-  readonly condition?: EventOrchestrationRouterSetRuleCondition[] | cdktf.IResolvable;
+  readonly condition?: EventOrchestrationRouterSetRuleCondition[] | cdktn.IResolvable;
 }
 
-export function eventOrchestrationRouterSetRuleToTerraform(struct?: EventOrchestrationRouterSetRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventOrchestrationRouterSetRuleToTerraform(struct?: EventOrchestrationRouterSetRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disabled: cdktf.booleanToTerraform(struct!.disabled),
-    label: cdktf.stringToTerraform(struct!.label),
+    disabled: cdktn.booleanToTerraform(struct!.disabled),
+    label: cdktn.stringToTerraform(struct!.label),
     actions: eventOrchestrationRouterSetRuleActionsToTerraform(struct!.actions),
-    condition: cdktf.listMapper(eventOrchestrationRouterSetRuleConditionToTerraform, true)(struct!.condition),
+    condition: cdktn.listMapper(eventOrchestrationRouterSetRuleConditionToTerraform, true)(struct!.condition),
   }
 }
 
 
-export function eventOrchestrationRouterSetRuleToHclTerraform(struct?: EventOrchestrationRouterSetRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventOrchestrationRouterSetRuleToHclTerraform(struct?: EventOrchestrationRouterSetRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      value: cdktn.booleanToHclTerraform(struct!.disabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -667,7 +667,7 @@ export function eventOrchestrationRouterSetRuleToHclTerraform(struct?: EventOrch
       storageClassType: "EventOrchestrationRouterSetRuleActionsList",
     },
     condition: {
-      value: cdktf.listMapperHcl(eventOrchestrationRouterSetRuleConditionToHclTerraform, true)(struct!.condition),
+      value: cdktn.listMapperHcl(eventOrchestrationRouterSetRuleConditionToHclTerraform, true)(struct!.condition),
       isBlock: true,
       type: "list",
       storageClassType: "EventOrchestrationRouterSetRuleConditionList",
@@ -678,9 +678,9 @@ export function eventOrchestrationRouterSetRuleToHclTerraform(struct?: EventOrch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventOrchestrationRouterSetRuleOutputReference extends cdktf.ComplexObject {
+export class EventOrchestrationRouterSetRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -688,11 +688,11 @@ export class EventOrchestrationRouterSetRuleOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventOrchestrationRouterSetRule | cdktf.IResolvable | undefined {
+  public get internalValue(): EventOrchestrationRouterSetRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -717,7 +717,7 @@ export class EventOrchestrationRouterSetRuleOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventOrchestrationRouterSetRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventOrchestrationRouterSetRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -726,7 +726,7 @@ export class EventOrchestrationRouterSetRuleOutputReference extends cdktf.Comple
       this._actions.internalValue = undefined;
       this._condition.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -741,11 +741,11 @@ export class EventOrchestrationRouterSetRuleOutputReference extends cdktf.Comple
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -795,7 +795,7 @@ export class EventOrchestrationRouterSetRuleOutputReference extends cdktf.Comple
   public get condition() {
     return this._condition;
   }
-  public putCondition(value: EventOrchestrationRouterSetRuleCondition[] | cdktf.IResolvable) {
+  public putCondition(value: EventOrchestrationRouterSetRuleCondition[] | cdktn.IResolvable) {
     this._condition.internalValue = value;
   }
   public resetCondition() {
@@ -807,15 +807,15 @@ export class EventOrchestrationRouterSetRuleOutputReference extends cdktf.Comple
   }
 }
 
-export class EventOrchestrationRouterSetRuleList extends cdktf.ComplexList {
-  public internalValue? : EventOrchestrationRouterSetRule[] | cdktf.IResolvable
+export class EventOrchestrationRouterSetRuleList extends cdktn.ComplexList {
+  public internalValue? : EventOrchestrationRouterSetRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -828,7 +828,7 @@ export class EventOrchestrationRouterSetRuleList extends cdktf.ComplexList {
 }
 export interface EventOrchestrationRouterSet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#id EventOrchestrationRouter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#id EventOrchestrationRouter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -837,37 +837,37 @@ export interface EventOrchestrationRouterSet {
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#rule EventOrchestrationRouter#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#rule EventOrchestrationRouter#rule}
   */
-  readonly rule?: EventOrchestrationRouterSetRule[] | cdktf.IResolvable;
+  readonly rule?: EventOrchestrationRouterSetRule[] | cdktn.IResolvable;
 }
 
 export function eventOrchestrationRouterSetToTerraform(struct?: EventOrchestrationRouterSetOutputReference | EventOrchestrationRouterSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    rule: cdktf.listMapper(eventOrchestrationRouterSetRuleToTerraform, true)(struct!.rule),
+    id: cdktn.stringToTerraform(struct!.id),
+    rule: cdktn.listMapper(eventOrchestrationRouterSetRuleToTerraform, true)(struct!.rule),
   }
 }
 
 
 export function eventOrchestrationRouterSetToHclTerraform(struct?: EventOrchestrationRouterSetOutputReference | EventOrchestrationRouterSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule: {
-      value: cdktf.listMapperHcl(eventOrchestrationRouterSetRuleToHclTerraform, true)(struct!.rule),
+      value: cdktn.listMapperHcl(eventOrchestrationRouterSetRuleToHclTerraform, true)(struct!.rule),
       isBlock: true,
       type: "list",
       storageClassType: "EventOrchestrationRouterSetRuleList",
@@ -878,14 +878,14 @@ export function eventOrchestrationRouterSetToHclTerraform(struct?: EventOrchestr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventOrchestrationRouterSetOutputReference extends cdktf.ComplexObject {
+export class EventOrchestrationRouterSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -934,7 +934,7 @@ export class EventOrchestrationRouterSetOutputReference extends cdktf.ComplexObj
   public get rule() {
     return this._rule;
   }
-  public putRule(value: EventOrchestrationRouterSetRule[] | cdktf.IResolvable) {
+  public putRule(value: EventOrchestrationRouterSetRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -947,9 +947,9 @@ export class EventOrchestrationRouterSetOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router pagerduty_event_orchestration_router}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router pagerduty_event_orchestration_router}
 */
-export class EventOrchestrationRouter extends cdktf.TerraformResource {
+export class EventOrchestrationRouter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -960,14 +960,14 @@ export class EventOrchestrationRouter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EventOrchestrationRouter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EventOrchestrationRouter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventOrchestrationRouter to import
-  * @param importFromId The id of the existing EventOrchestrationRouter that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventOrchestrationRouter that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventOrchestrationRouter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_event_orchestration_router", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_event_orchestration_router", importId: importFromId, provider });
       }
 
   // ===========
@@ -975,7 +975,7 @@ export class EventOrchestrationRouter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/event_orchestration_router pagerduty_event_orchestration_router} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/event_orchestration_router pagerduty_event_orchestration_router} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -986,7 +986,7 @@ export class EventOrchestrationRouter extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_event_orchestration_router',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -1068,8 +1068,8 @@ export class EventOrchestrationRouter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      event_orchestration: cdktf.stringToTerraform(this._eventOrchestration),
-      id: cdktf.stringToTerraform(this._id),
+      event_orchestration: cdktn.stringToTerraform(this._eventOrchestration),
+      id: cdktn.stringToTerraform(this._id),
       catch_all: eventOrchestrationRouterCatchAllToTerraform(this._catchAll.internalValue),
       set: eventOrchestrationRouterSetToTerraform(this._set.internalValue),
     };
@@ -1078,13 +1078,13 @@ export class EventOrchestrationRouter extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       event_orchestration: {
-        value: cdktf.stringToHclTerraform(this._eventOrchestration),
+        value: cdktn.stringToHclTerraform(this._eventOrchestration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

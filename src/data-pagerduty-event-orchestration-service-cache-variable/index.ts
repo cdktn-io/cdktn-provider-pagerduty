@@ -1,30 +1,30 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/event_orchestration_service_cache_variable
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/event_orchestration_service_cache_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataPagerdutyEventOrchestrationServiceCacheVariableConfig extends cdktf.TerraformMetaArguments {
+export interface DataPagerdutyEventOrchestrationServiceCacheVariableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/event_orchestration_service_cache_variable#id DataPagerdutyEventOrchestrationServiceCacheVariable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/event_orchestration_service_cache_variable#id DataPagerdutyEventOrchestrationServiceCacheVariable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/event_orchestration_service_cache_variable#name DataPagerdutyEventOrchestrationServiceCacheVariable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/event_orchestration_service_cache_variable#name DataPagerdutyEventOrchestrationServiceCacheVariable#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/event_orchestration_service_cache_variable#service DataPagerdutyEventOrchestrationServiceCacheVariable#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/event_orchestration_service_cache_variable#service DataPagerdutyEventOrchestrationServiceCacheVariable#service}
   */
   readonly service: string;
 }
@@ -32,8 +32,8 @@ export interface DataPagerdutyEventOrchestrationServiceCacheVariableCondition {
 }
 
 export function dataPagerdutyEventOrchestrationServiceCacheVariableConditionToTerraform(struct?: DataPagerdutyEventOrchestrationServiceCacheVariableCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -42,8 +42,8 @@ export function dataPagerdutyEventOrchestrationServiceCacheVariableConditionToTe
 
 
 export function dataPagerdutyEventOrchestrationServiceCacheVariableConditionToHclTerraform(struct?: DataPagerdutyEventOrchestrationServiceCacheVariableCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -51,7 +51,7 @@ export function dataPagerdutyEventOrchestrationServiceCacheVariableConditionToHc
   return attrs;
 }
 
-export class DataPagerdutyEventOrchestrationServiceCacheVariableConditionOutputReference extends cdktf.ComplexObject {
+export class DataPagerdutyEventOrchestrationServiceCacheVariableConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -60,7 +60,7 @@ export class DataPagerdutyEventOrchestrationServiceCacheVariableConditionOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -85,14 +85,14 @@ export class DataPagerdutyEventOrchestrationServiceCacheVariableConditionOutputR
   }
 }
 
-export class DataPagerdutyEventOrchestrationServiceCacheVariableConditionList extends cdktf.ComplexList {
+export class DataPagerdutyEventOrchestrationServiceCacheVariableConditionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -107,8 +107,8 @@ export interface DataPagerdutyEventOrchestrationServiceCacheVariableConfiguratio
 }
 
 export function dataPagerdutyEventOrchestrationServiceCacheVariableConfigurationToTerraform(struct?: DataPagerdutyEventOrchestrationServiceCacheVariableConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -117,8 +117,8 @@ export function dataPagerdutyEventOrchestrationServiceCacheVariableConfiguration
 
 
 export function dataPagerdutyEventOrchestrationServiceCacheVariableConfigurationToHclTerraform(struct?: DataPagerdutyEventOrchestrationServiceCacheVariableConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -126,7 +126,7 @@ export function dataPagerdutyEventOrchestrationServiceCacheVariableConfiguration
   return attrs;
 }
 
-export class DataPagerdutyEventOrchestrationServiceCacheVariableConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataPagerdutyEventOrchestrationServiceCacheVariableConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -135,7 +135,7 @@ export class DataPagerdutyEventOrchestrationServiceCacheVariableConfigurationOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -180,14 +180,14 @@ export class DataPagerdutyEventOrchestrationServiceCacheVariableConfigurationOut
   }
 }
 
-export class DataPagerdutyEventOrchestrationServiceCacheVariableConfigurationList extends cdktf.ComplexList {
+export class DataPagerdutyEventOrchestrationServiceCacheVariableConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -200,9 +200,9 @@ export class DataPagerdutyEventOrchestrationServiceCacheVariableConfigurationLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/event_orchestration_service_cache_variable pagerduty_event_orchestration_service_cache_variable}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/event_orchestration_service_cache_variable pagerduty_event_orchestration_service_cache_variable}
 */
-export class DataPagerdutyEventOrchestrationServiceCacheVariable extends cdktf.TerraformDataSource {
+export class DataPagerdutyEventOrchestrationServiceCacheVariable extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -213,14 +213,14 @@ export class DataPagerdutyEventOrchestrationServiceCacheVariable extends cdktf.T
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataPagerdutyEventOrchestrationServiceCacheVariable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataPagerdutyEventOrchestrationServiceCacheVariable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyEventOrchestrationServiceCacheVariable to import
-  * @param importFromId The id of the existing DataPagerdutyEventOrchestrationServiceCacheVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/event_orchestration_service_cache_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyEventOrchestrationServiceCacheVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/event_orchestration_service_cache_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyEventOrchestrationServiceCacheVariable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_event_orchestration_service_cache_variable", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_event_orchestration_service_cache_variable", importId: importFromId, provider });
       }
 
   // ===========
@@ -228,7 +228,7 @@ export class DataPagerdutyEventOrchestrationServiceCacheVariable extends cdktf.T
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/event_orchestration_service_cache_variable pagerduty_event_orchestration_service_cache_variable} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/event_orchestration_service_cache_variable pagerduty_event_orchestration_service_cache_variable} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -239,7 +239,7 @@ export class DataPagerdutyEventOrchestrationServiceCacheVariable extends cdktf.T
       terraformResourceType: 'pagerduty_event_orchestration_service_cache_variable',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -327,28 +327,28 @@ export class DataPagerdutyEventOrchestrationServiceCacheVariable extends cdktf.T
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      service: cdktf.stringToTerraform(this._service),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      service: cdktn.stringToTerraform(this._service),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service: {
-        value: cdktf.stringToHclTerraform(this._service),
+        value: cdktn.stringToHclTerraform(this._service),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

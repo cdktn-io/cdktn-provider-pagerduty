@@ -1,90 +1,90 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WebhookSubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface WebhookSubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#active WebhookSubscription#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#active WebhookSubscription#active}
   */
-  readonly active?: boolean | cdktf.IResolvable;
+  readonly active?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#description WebhookSubscription#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#description WebhookSubscription#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#events WebhookSubscription#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#events WebhookSubscription#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#id WebhookSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#id WebhookSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#type WebhookSubscription#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#type WebhookSubscription#type}
   */
   readonly type?: string;
   /**
   * delivery_method block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#delivery_method WebhookSubscription#delivery_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#delivery_method WebhookSubscription#delivery_method}
   */
-  readonly deliveryMethod: WebhookSubscriptionDeliveryMethod[] | cdktf.IResolvable;
+  readonly deliveryMethod: WebhookSubscriptionDeliveryMethod[] | cdktn.IResolvable;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#filter WebhookSubscription#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#filter WebhookSubscription#filter}
   */
-  readonly filter: WebhookSubscriptionFilter[] | cdktf.IResolvable;
+  readonly filter: WebhookSubscriptionFilter[] | cdktn.IResolvable;
 }
 export interface WebhookSubscriptionDeliveryMethodCustomHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#name WebhookSubscription#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#name WebhookSubscription#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#value WebhookSubscription#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#value WebhookSubscription#value}
   */
   readonly value: string;
 }
 
-export function webhookSubscriptionDeliveryMethodCustomHeaderToTerraform(struct?: WebhookSubscriptionDeliveryMethodCustomHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webhookSubscriptionDeliveryMethodCustomHeaderToTerraform(struct?: WebhookSubscriptionDeliveryMethodCustomHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function webhookSubscriptionDeliveryMethodCustomHeaderToHclTerraform(struct?: WebhookSubscriptionDeliveryMethodCustomHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webhookSubscriptionDeliveryMethodCustomHeaderToHclTerraform(struct?: WebhookSubscriptionDeliveryMethodCustomHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -95,9 +95,9 @@ export function webhookSubscriptionDeliveryMethodCustomHeaderToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference extends cdktf.ComplexObject {
+export class WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -105,11 +105,11 @@ export class WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WebhookSubscriptionDeliveryMethodCustomHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): WebhookSubscriptionDeliveryMethodCustomHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -126,14 +126,14 @@ export class WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WebhookSubscriptionDeliveryMethodCustomHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WebhookSubscriptionDeliveryMethodCustomHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -172,15 +172,15 @@ export class WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference extend
   }
 }
 
-export class WebhookSubscriptionDeliveryMethodCustomHeaderList extends cdktf.ComplexList {
-  public internalValue? : WebhookSubscriptionDeliveryMethodCustomHeader[] | cdktf.IResolvable
+export class WebhookSubscriptionDeliveryMethodCustomHeaderList extends cdktn.ComplexList {
+  public internalValue? : WebhookSubscriptionDeliveryMethodCustomHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -193,65 +193,65 @@ export class WebhookSubscriptionDeliveryMethodCustomHeaderList extends cdktf.Com
 }
 export interface WebhookSubscriptionDeliveryMethod {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#temporarily_disabled WebhookSubscription#temporarily_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#temporarily_disabled WebhookSubscription#temporarily_disabled}
   */
-  readonly temporarilyDisabled?: boolean | cdktf.IResolvable;
+  readonly temporarilyDisabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#type WebhookSubscription#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#type WebhookSubscription#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#url WebhookSubscription#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#url WebhookSubscription#url}
   */
   readonly url?: string;
   /**
   * custom_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#custom_header WebhookSubscription#custom_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#custom_header WebhookSubscription#custom_header}
   */
-  readonly customHeader?: WebhookSubscriptionDeliveryMethodCustomHeader[] | cdktf.IResolvable;
+  readonly customHeader?: WebhookSubscriptionDeliveryMethodCustomHeader[] | cdktn.IResolvable;
 }
 
-export function webhookSubscriptionDeliveryMethodToTerraform(struct?: WebhookSubscriptionDeliveryMethod | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webhookSubscriptionDeliveryMethodToTerraform(struct?: WebhookSubscriptionDeliveryMethod | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    temporarily_disabled: cdktf.booleanToTerraform(struct!.temporarilyDisabled),
-    type: cdktf.stringToTerraform(struct!.type),
-    url: cdktf.stringToTerraform(struct!.url),
-    custom_header: cdktf.listMapper(webhookSubscriptionDeliveryMethodCustomHeaderToTerraform, true)(struct!.customHeader),
+    temporarily_disabled: cdktn.booleanToTerraform(struct!.temporarilyDisabled),
+    type: cdktn.stringToTerraform(struct!.type),
+    url: cdktn.stringToTerraform(struct!.url),
+    custom_header: cdktn.listMapper(webhookSubscriptionDeliveryMethodCustomHeaderToTerraform, true)(struct!.customHeader),
   }
 }
 
 
-export function webhookSubscriptionDeliveryMethodToHclTerraform(struct?: WebhookSubscriptionDeliveryMethod | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webhookSubscriptionDeliveryMethodToHclTerraform(struct?: WebhookSubscriptionDeliveryMethod | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     temporarily_disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.temporarilyDisabled),
+      value: cdktn.booleanToHclTerraform(struct!.temporarilyDisabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_header: {
-      value: cdktf.listMapperHcl(webhookSubscriptionDeliveryMethodCustomHeaderToHclTerraform, true)(struct!.customHeader),
+      value: cdktn.listMapperHcl(webhookSubscriptionDeliveryMethodCustomHeaderToHclTerraform, true)(struct!.customHeader),
       isBlock: true,
       type: "list",
       storageClassType: "WebhookSubscriptionDeliveryMethodCustomHeaderList",
@@ -262,9 +262,9 @@ export function webhookSubscriptionDeliveryMethodToHclTerraform(struct?: Webhook
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebhookSubscriptionDeliveryMethodOutputReference extends cdktf.ComplexObject {
+export class WebhookSubscriptionDeliveryMethodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -272,11 +272,11 @@ export class WebhookSubscriptionDeliveryMethodOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WebhookSubscriptionDeliveryMethod | cdktf.IResolvable | undefined {
+  public get internalValue(): WebhookSubscriptionDeliveryMethod | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -301,7 +301,7 @@ export class WebhookSubscriptionDeliveryMethodOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WebhookSubscriptionDeliveryMethod | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WebhookSubscriptionDeliveryMethod | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -310,7 +310,7 @@ export class WebhookSubscriptionDeliveryMethodOutputReference extends cdktf.Comp
       this._url = undefined;
       this._customHeader.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -325,11 +325,11 @@ export class WebhookSubscriptionDeliveryMethodOutputReference extends cdktf.Comp
   }
 
   // temporarily_disabled - computed: true, optional: true, required: false
-  private _temporarilyDisabled?: boolean | cdktf.IResolvable; 
+  private _temporarilyDisabled?: boolean | cdktn.IResolvable; 
   public get temporarilyDisabled() {
     return this.getBooleanAttribute('temporarily_disabled');
   }
-  public set temporarilyDisabled(value: boolean | cdktf.IResolvable) {
+  public set temporarilyDisabled(value: boolean | cdktn.IResolvable) {
     this._temporarilyDisabled = value;
   }
   public resetTemporarilyDisabled() {
@@ -377,7 +377,7 @@ export class WebhookSubscriptionDeliveryMethodOutputReference extends cdktf.Comp
   public get customHeader() {
     return this._customHeader;
   }
-  public putCustomHeader(value: WebhookSubscriptionDeliveryMethodCustomHeader[] | cdktf.IResolvable) {
+  public putCustomHeader(value: WebhookSubscriptionDeliveryMethodCustomHeader[] | cdktn.IResolvable) {
     this._customHeader.internalValue = value;
   }
   public resetCustomHeader() {
@@ -389,15 +389,15 @@ export class WebhookSubscriptionDeliveryMethodOutputReference extends cdktf.Comp
   }
 }
 
-export class WebhookSubscriptionDeliveryMethodList extends cdktf.ComplexList {
-  public internalValue? : WebhookSubscriptionDeliveryMethod[] | cdktf.IResolvable
+export class WebhookSubscriptionDeliveryMethodList extends cdktn.ComplexList {
+  public internalValue? : WebhookSubscriptionDeliveryMethod[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -410,44 +410,44 @@ export class WebhookSubscriptionDeliveryMethodList extends cdktf.ComplexList {
 }
 export interface WebhookSubscriptionFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#id WebhookSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#id WebhookSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#type WebhookSubscription#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#type WebhookSubscription#type}
   */
   readonly type: string;
 }
 
-export function webhookSubscriptionFilterToTerraform(struct?: WebhookSubscriptionFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webhookSubscriptionFilterToTerraform(struct?: WebhookSubscriptionFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    type: cdktf.stringToTerraform(struct!.type),
+    id: cdktn.stringToTerraform(struct!.id),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function webhookSubscriptionFilterToHclTerraform(struct?: WebhookSubscriptionFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webhookSubscriptionFilterToHclTerraform(struct?: WebhookSubscriptionFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -458,9 +458,9 @@ export function webhookSubscriptionFilterToHclTerraform(struct?: WebhookSubscrip
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebhookSubscriptionFilterOutputReference extends cdktf.ComplexObject {
+export class WebhookSubscriptionFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -468,11 +468,11 @@ export class WebhookSubscriptionFilterOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WebhookSubscriptionFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): WebhookSubscriptionFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -489,14 +489,14 @@ export class WebhookSubscriptionFilterOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WebhookSubscriptionFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WebhookSubscriptionFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -538,15 +538,15 @@ export class WebhookSubscriptionFilterOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class WebhookSubscriptionFilterList extends cdktf.ComplexList {
-  public internalValue? : WebhookSubscriptionFilter[] | cdktf.IResolvable
+export class WebhookSubscriptionFilterList extends cdktn.ComplexList {
+  public internalValue? : WebhookSubscriptionFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -559,9 +559,9 @@ export class WebhookSubscriptionFilterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription pagerduty_webhook_subscription}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription pagerduty_webhook_subscription}
 */
-export class WebhookSubscription extends cdktf.TerraformResource {
+export class WebhookSubscription extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -572,14 +572,14 @@ export class WebhookSubscription extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WebhookSubscription resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WebhookSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WebhookSubscription to import
-  * @param importFromId The id of the existing WebhookSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WebhookSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WebhookSubscription to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_webhook_subscription", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_webhook_subscription", importId: importFromId, provider });
       }
 
   // ===========
@@ -587,7 +587,7 @@ export class WebhookSubscription extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription pagerduty_webhook_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/webhook_subscription pagerduty_webhook_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -598,7 +598,7 @@ export class WebhookSubscription extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_webhook_subscription',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -623,11 +623,11 @@ export class WebhookSubscription extends cdktf.TerraformResource {
   // ==========
 
   // active - computed: true, optional: true, required: false
-  private _active?: boolean | cdktf.IResolvable; 
+  private _active?: boolean | cdktn.IResolvable; 
   public get active() {
     return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean | cdktf.IResolvable) {
+  public set active(value: boolean | cdktn.IResolvable) {
     this._active = value;
   }
   public resetActive() {
@@ -704,7 +704,7 @@ export class WebhookSubscription extends cdktf.TerraformResource {
   public get deliveryMethod() {
     return this._deliveryMethod;
   }
-  public putDeliveryMethod(value: WebhookSubscriptionDeliveryMethod[] | cdktf.IResolvable) {
+  public putDeliveryMethod(value: WebhookSubscriptionDeliveryMethod[] | cdktn.IResolvable) {
     this._deliveryMethod.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -717,7 +717,7 @@ export class WebhookSubscription extends cdktf.TerraformResource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: WebhookSubscriptionFilter[] | cdktf.IResolvable) {
+  public putFilter(value: WebhookSubscriptionFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -731,56 +731,56 @@ export class WebhookSubscription extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      active: cdktf.booleanToTerraform(this._active),
-      description: cdktf.stringToTerraform(this._description),
-      events: cdktf.listMapper(cdktf.stringToTerraform, false)(this._events),
-      id: cdktf.stringToTerraform(this._id),
-      type: cdktf.stringToTerraform(this._type),
-      delivery_method: cdktf.listMapper(webhookSubscriptionDeliveryMethodToTerraform, true)(this._deliveryMethod.internalValue),
-      filter: cdktf.listMapper(webhookSubscriptionFilterToTerraform, true)(this._filter.internalValue),
+      active: cdktn.booleanToTerraform(this._active),
+      description: cdktn.stringToTerraform(this._description),
+      events: cdktn.listMapper(cdktn.stringToTerraform, false)(this._events),
+      id: cdktn.stringToTerraform(this._id),
+      type: cdktn.stringToTerraform(this._type),
+      delivery_method: cdktn.listMapper(webhookSubscriptionDeliveryMethodToTerraform, true)(this._deliveryMethod.internalValue),
+      filter: cdktn.listMapper(webhookSubscriptionFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       active: {
-        value: cdktf.booleanToHclTerraform(this._active),
+        value: cdktn.booleanToHclTerraform(this._active),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       events: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._events),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._events),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delivery_method: {
-        value: cdktf.listMapperHcl(webhookSubscriptionDeliveryMethodToHclTerraform, true)(this._deliveryMethod.internalValue),
+        value: cdktn.listMapperHcl(webhookSubscriptionDeliveryMethodToHclTerraform, true)(this._deliveryMethod.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "WebhookSubscriptionDeliveryMethodList",
       },
       filter: {
-        value: cdktf.listMapperHcl(webhookSubscriptionFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(webhookSubscriptionFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "WebhookSubscriptionFilterList",

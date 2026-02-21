@@ -1,64 +1,64 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_dependency
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_dependency
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServiceDependencyConfig extends cdktf.TerraformMetaArguments {
+export interface ServiceDependencyConfig extends cdktn.TerraformMetaArguments {
   /**
   * dependency block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_dependency#dependency ServiceDependency#dependency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_dependency#dependency ServiceDependency#dependency}
   */
-  readonly dependency?: ServiceDependencyDependency[] | cdktf.IResolvable;
+  readonly dependency?: ServiceDependencyDependency[] | cdktn.IResolvable;
 }
 export interface ServiceDependencyDependencyDependentService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_dependency#id ServiceDependency#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_dependency#id ServiceDependency#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_dependency#type ServiceDependency#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_dependency#type ServiceDependency#type}
   */
   readonly type: string;
 }
 
-export function serviceDependencyDependencyDependentServiceToTerraform(struct?: ServiceDependencyDependencyDependentService | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceDependencyDependencyDependentServiceToTerraform(struct?: ServiceDependencyDependencyDependentService | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    type: cdktf.stringToTerraform(struct!.type),
+    id: cdktn.stringToTerraform(struct!.id),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function serviceDependencyDependencyDependentServiceToHclTerraform(struct?: ServiceDependencyDependencyDependentService | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceDependencyDependencyDependentServiceToHclTerraform(struct?: ServiceDependencyDependencyDependentService | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -69,9 +69,9 @@ export function serviceDependencyDependencyDependentServiceToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceDependencyDependencyDependentServiceOutputReference extends cdktf.ComplexObject {
+export class ServiceDependencyDependencyDependentServiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -79,11 +79,11 @@ export class ServiceDependencyDependencyDependentServiceOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceDependencyDependencyDependentService | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceDependencyDependencyDependentService | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -100,14 +100,14 @@ export class ServiceDependencyDependencyDependentServiceOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceDependencyDependencyDependentService | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceDependencyDependencyDependentService | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -146,15 +146,15 @@ export class ServiceDependencyDependencyDependentServiceOutputReference extends 
   }
 }
 
-export class ServiceDependencyDependencyDependentServiceList extends cdktf.ComplexList {
-  public internalValue? : ServiceDependencyDependencyDependentService[] | cdktf.IResolvable
+export class ServiceDependencyDependencyDependentServiceList extends cdktn.ComplexList {
+  public internalValue? : ServiceDependencyDependencyDependentService[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -167,44 +167,44 @@ export class ServiceDependencyDependencyDependentServiceList extends cdktf.Compl
 }
 export interface ServiceDependencyDependencySupportingService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_dependency#id ServiceDependency#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_dependency#id ServiceDependency#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_dependency#type ServiceDependency#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_dependency#type ServiceDependency#type}
   */
   readonly type: string;
 }
 
-export function serviceDependencyDependencySupportingServiceToTerraform(struct?: ServiceDependencyDependencySupportingService | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceDependencyDependencySupportingServiceToTerraform(struct?: ServiceDependencyDependencySupportingService | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    type: cdktf.stringToTerraform(struct!.type),
+    id: cdktn.stringToTerraform(struct!.id),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function serviceDependencyDependencySupportingServiceToHclTerraform(struct?: ServiceDependencyDependencySupportingService | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceDependencyDependencySupportingServiceToHclTerraform(struct?: ServiceDependencyDependencySupportingService | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -215,9 +215,9 @@ export function serviceDependencyDependencySupportingServiceToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceDependencyDependencySupportingServiceOutputReference extends cdktf.ComplexObject {
+export class ServiceDependencyDependencySupportingServiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -225,11 +225,11 @@ export class ServiceDependencyDependencySupportingServiceOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceDependencyDependencySupportingService | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceDependencyDependencySupportingService | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -246,14 +246,14 @@ export class ServiceDependencyDependencySupportingServiceOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceDependencyDependencySupportingService | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceDependencyDependencySupportingService | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -292,15 +292,15 @@ export class ServiceDependencyDependencySupportingServiceOutputReference extends
   }
 }
 
-export class ServiceDependencyDependencySupportingServiceList extends cdktf.ComplexList {
-  public internalValue? : ServiceDependencyDependencySupportingService[] | cdktf.IResolvable
+export class ServiceDependencyDependencySupportingServiceList extends cdktn.ComplexList {
+  public internalValue? : ServiceDependencyDependencySupportingService[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -313,56 +313,56 @@ export class ServiceDependencyDependencySupportingServiceList extends cdktf.Comp
 }
 export interface ServiceDependencyDependency {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_dependency#type ServiceDependency#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_dependency#type ServiceDependency#type}
   */
   readonly type?: string;
   /**
   * dependent_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_dependency#dependent_service ServiceDependency#dependent_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_dependency#dependent_service ServiceDependency#dependent_service}
   */
-  readonly dependentService?: ServiceDependencyDependencyDependentService[] | cdktf.IResolvable;
+  readonly dependentService?: ServiceDependencyDependencyDependentService[] | cdktn.IResolvable;
   /**
   * supporting_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_dependency#supporting_service ServiceDependency#supporting_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_dependency#supporting_service ServiceDependency#supporting_service}
   */
-  readonly supportingService?: ServiceDependencyDependencySupportingService[] | cdktf.IResolvable;
+  readonly supportingService?: ServiceDependencyDependencySupportingService[] | cdktn.IResolvable;
 }
 
-export function serviceDependencyDependencyToTerraform(struct?: ServiceDependencyDependency | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceDependencyDependencyToTerraform(struct?: ServiceDependencyDependency | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    dependent_service: cdktf.listMapper(serviceDependencyDependencyDependentServiceToTerraform, true)(struct!.dependentService),
-    supporting_service: cdktf.listMapper(serviceDependencyDependencySupportingServiceToTerraform, true)(struct!.supportingService),
+    type: cdktn.stringToTerraform(struct!.type),
+    dependent_service: cdktn.listMapper(serviceDependencyDependencyDependentServiceToTerraform, true)(struct!.dependentService),
+    supporting_service: cdktn.listMapper(serviceDependencyDependencySupportingServiceToTerraform, true)(struct!.supportingService),
   }
 }
 
 
-export function serviceDependencyDependencyToHclTerraform(struct?: ServiceDependencyDependency | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceDependencyDependencyToHclTerraform(struct?: ServiceDependencyDependency | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dependent_service: {
-      value: cdktf.listMapperHcl(serviceDependencyDependencyDependentServiceToHclTerraform, true)(struct!.dependentService),
+      value: cdktn.listMapperHcl(serviceDependencyDependencyDependentServiceToHclTerraform, true)(struct!.dependentService),
       isBlock: true,
       type: "list",
       storageClassType: "ServiceDependencyDependencyDependentServiceList",
     },
     supporting_service: {
-      value: cdktf.listMapperHcl(serviceDependencyDependencySupportingServiceToHclTerraform, true)(struct!.supportingService),
+      value: cdktn.listMapperHcl(serviceDependencyDependencySupportingServiceToHclTerraform, true)(struct!.supportingService),
       isBlock: true,
       type: "list",
       storageClassType: "ServiceDependencyDependencySupportingServiceList",
@@ -373,9 +373,9 @@ export function serviceDependencyDependencyToHclTerraform(struct?: ServiceDepend
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceDependencyDependencyOutputReference extends cdktf.ComplexObject {
+export class ServiceDependencyDependencyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -383,11 +383,11 @@ export class ServiceDependencyDependencyOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceDependencyDependency | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceDependencyDependency | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -408,7 +408,7 @@ export class ServiceDependencyDependencyOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceDependencyDependency | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceDependencyDependency | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -416,7 +416,7 @@ export class ServiceDependencyDependencyOutputReference extends cdktf.ComplexObj
       this._dependentService.internalValue = undefined;
       this._supportingService.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -450,7 +450,7 @@ export class ServiceDependencyDependencyOutputReference extends cdktf.ComplexObj
   public get dependentService() {
     return this._dependentService;
   }
-  public putDependentService(value: ServiceDependencyDependencyDependentService[] | cdktf.IResolvable) {
+  public putDependentService(value: ServiceDependencyDependencyDependentService[] | cdktn.IResolvable) {
     this._dependentService.internalValue = value;
   }
   public resetDependentService() {
@@ -466,7 +466,7 @@ export class ServiceDependencyDependencyOutputReference extends cdktf.ComplexObj
   public get supportingService() {
     return this._supportingService;
   }
-  public putSupportingService(value: ServiceDependencyDependencySupportingService[] | cdktf.IResolvable) {
+  public putSupportingService(value: ServiceDependencyDependencySupportingService[] | cdktn.IResolvable) {
     this._supportingService.internalValue = value;
   }
   public resetSupportingService() {
@@ -478,15 +478,15 @@ export class ServiceDependencyDependencyOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class ServiceDependencyDependencyList extends cdktf.ComplexList {
-  public internalValue? : ServiceDependencyDependency[] | cdktf.IResolvable
+export class ServiceDependencyDependencyList extends cdktn.ComplexList {
+  public internalValue? : ServiceDependencyDependency[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -499,9 +499,9 @@ export class ServiceDependencyDependencyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_dependency pagerduty_service_dependency}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_dependency pagerduty_service_dependency}
 */
-export class ServiceDependency extends cdktf.TerraformResource {
+export class ServiceDependency extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -512,14 +512,14 @@ export class ServiceDependency extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServiceDependency resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServiceDependency resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceDependency to import
-  * @param importFromId The id of the existing ServiceDependency that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_dependency#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceDependency that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_dependency#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceDependency to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_service_dependency", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_service_dependency", importId: importFromId, provider });
       }
 
   // ===========
@@ -527,7 +527,7 @@ export class ServiceDependency extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_dependency pagerduty_service_dependency} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/service_dependency pagerduty_service_dependency} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -538,7 +538,7 @@ export class ServiceDependency extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_service_dependency',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.8',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -566,7 +566,7 @@ export class ServiceDependency extends cdktf.TerraformResource {
   public get dependency() {
     return this._dependency;
   }
-  public putDependency(value: ServiceDependencyDependency[] | cdktf.IResolvable) {
+  public putDependency(value: ServiceDependencyDependency[] | cdktn.IResolvable) {
     this._dependency.internalValue = value;
   }
   public resetDependency() {
@@ -583,14 +583,14 @@ export class ServiceDependency extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dependency: cdktf.listMapper(serviceDependencyDependencyToTerraform, true)(this._dependency.internalValue),
+      dependency: cdktn.listMapper(serviceDependencyDependencyToTerraform, true)(this._dependency.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       dependency: {
-        value: cdktf.listMapperHcl(serviceDependencyDependencyToHclTerraform, true)(this._dependency.internalValue),
+        value: cdktn.listMapperHcl(serviceDependencyDependencyToHclTerraform, true)(this._dependency.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ServiceDependencyDependencyList",
