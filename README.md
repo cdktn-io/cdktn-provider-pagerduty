@@ -1,7 +1,7 @@
 
-# CDKTN prebuilt bindings for PagerDuty/pagerduty provider version 3.31.0
+# CDKTN prebuilt bindings for PagerDuty/pagerduty provider version 3.31.1
 
-This repo builds and publishes the [Terraform pagerduty provider](https://registry.terraform.io/providers/PagerDuty/pagerduty/3.31.0/docs) bindings for [CDK Terrain](https://cdktn.io).
+This repo builds and publishes the [Terraform pagerduty provider](https://registry.terraform.io/providers/PagerDuty/pagerduty/3.31.1/docs) bindings for [CDK Terrain](https://cdktn.io).
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform pagerduty provider version
 These are the upstream dependencies:
 
 - [CDK Terrain](https://cdktn.io) - Last official release
-- [Terraform pagerduty provider](https://registry.terraform.io/providers/PagerDuty/pagerduty/3.31.0)
+- [Terraform pagerduty provider](https://registry.terraform.io/providers/PagerDuty/pagerduty/3.31.1)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
