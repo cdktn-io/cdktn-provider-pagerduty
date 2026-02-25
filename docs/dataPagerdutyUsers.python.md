@@ -4,7 +4,7 @@
 
 ### DataPagerdutyUsers <a name="DataPagerdutyUsers" id="@cdktn/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/users pagerduty_users}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/users pagerduty_users}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers.Initializer"></a>
 
@@ -36,7 +36,7 @@ dataPagerdutyUsers.DataPagerdutyUsers(
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers.Initializer.parameter.teamIds">team_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers.Initializer.parameter.teamIds">team_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}.
 
 ---
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the DataPagerdutyUsers to impo
 
 The id of the existing DataPagerdutyUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -741,7 +741,7 @@ dataPagerdutyUsers.DataPagerdutyUsersConfig(
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersConfig.property.teamIds">team_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersConfig.property.teamIds">team_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}. |
 
 ---
 
@@ -823,7 +823,7 @@ team_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}.
 
 ---
 

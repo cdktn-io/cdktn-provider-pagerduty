@@ -4,7 +4,7 @@
 
 ### UserNotificationRule <a name="UserNotificationRule" id="@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule pagerduty_user_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule pagerduty_user_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRule.Initializer"></a>
 
@@ -40,9 +40,9 @@ userNotificationRule.UserNotificationRule(
 | <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRule.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRule.Initializer.parameter.contactMethod">contact_method</a></code> | <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleContactMethod">UserNotificationRuleContactMethod</a></code> | contact_method block. |
-| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRule.Initializer.parameter.startDelayInMinutes">start_delay_in_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}. |
-| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRule.Initializer.parameter.urgency">urgency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#urgency UserNotificationRule#urgency}. |
-| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRule.Initializer.parameter.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#user_id UserNotificationRule#user_id}. |
+| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRule.Initializer.parameter.startDelayInMinutes">start_delay_in_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}. |
+| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRule.Initializer.parameter.urgency">urgency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#urgency UserNotificationRule#urgency}. |
+| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRule.Initializer.parameter.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#user_id UserNotificationRule#user_id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 contact_method block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#contact_method UserNotificationRule#contact_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#contact_method UserNotificationRule#contact_method}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#urgency UserNotificationRule#urgency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#urgency UserNotificationRule#urgency}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#user_id UserNotificationRule#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#user_id UserNotificationRule#user_id}.
 
 ---
 
@@ -533,7 +533,7 @@ def put_contact_method(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#id UserNotificationRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#id UserNotificationRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -544,7 +544,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#type UserNotificationRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#type UserNotificationRule#type}.
 
 ---
 
@@ -662,7 +662,7 @@ The construct id used in the generated config for the UserNotificationRule to im
 
 The id of the existing UserNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -990,9 +990,9 @@ userNotificationRule.UserNotificationRuleConfig(
 | <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleConfig.property.contactMethod">contact_method</a></code> | <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleContactMethod">UserNotificationRuleContactMethod</a></code> | contact_method block. |
-| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleConfig.property.startDelayInMinutes">start_delay_in_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}. |
-| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleConfig.property.urgency">urgency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#urgency UserNotificationRule#urgency}. |
-| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleConfig.property.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#user_id UserNotificationRule#user_id}. |
+| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleConfig.property.startDelayInMinutes">start_delay_in_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}. |
+| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleConfig.property.urgency">urgency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#urgency UserNotificationRule#urgency}. |
+| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleConfig.property.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#user_id UserNotificationRule#user_id}. |
 
 ---
 
@@ -1076,7 +1076,7 @@ contact_method: UserNotificationRuleContactMethod
 
 contact_method block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#contact_method UserNotificationRule#contact_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#contact_method UserNotificationRule#contact_method}
 
 ---
 
@@ -1088,7 +1088,7 @@ start_delay_in_minutes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}.
 
 ---
 
@@ -1100,7 +1100,7 @@ urgency: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#urgency UserNotificationRule#urgency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#urgency UserNotificationRule#urgency}.
 
 ---
 
@@ -1112,7 +1112,7 @@ user_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#user_id UserNotificationRule#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#user_id UserNotificationRule#user_id}.
 
 ---
 
@@ -1133,8 +1133,8 @@ userNotificationRule.UserNotificationRuleContactMethod(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleContactMethod.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#id UserNotificationRule#id}. |
-| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleContactMethod.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#type UserNotificationRule#type}. |
+| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleContactMethod.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#id UserNotificationRule#id}. |
+| <code><a href="#@cdktn/provider-pagerduty.userNotificationRule.UserNotificationRuleContactMethod.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#type UserNotificationRule#type}. |
 
 ---
 
@@ -1146,7 +1146,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#id UserNotificationRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#id UserNotificationRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1161,7 +1161,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/user_notification_rule#type UserNotificationRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_notification_rule#type UserNotificationRule#type}.
 
 ---
 

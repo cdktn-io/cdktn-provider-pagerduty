@@ -4,7 +4,7 @@
 
 ### DataPagerdutyAlertGroupingSetting <a name="DataPagerdutyAlertGroupingSetting" id="@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.Initializer"></a>
 
@@ -36,7 +36,7 @@ dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting(
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}.
 
 ---
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the DataPagerdutyAlertGrouping
 
 The id of the existing DataPagerdutyAlertGroupingSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/alert_grouping_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/alert_grouping_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -767,7 +767,7 @@ dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig(
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}. |
 
 ---
 
@@ -849,7 +849,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}.
 
 ---
 

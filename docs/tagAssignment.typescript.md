@@ -4,7 +4,7 @@
 
 ### TagAssignment <a name="TagAssignment" id="@cdktn/provider-pagerduty.tagAssignment.TagAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment pagerduty_tag_assignment}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/tag_assignment pagerduty_tag_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.tagAssignment.TagAssignment.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the TagAssignment to import.
 
 The id of the existing TagAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/tag_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,9 +782,9 @@ const tagAssignmentConfig: tagAssignment.TagAssignmentConfig = { ... }
 | <code><a href="#@cdktn/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.entityId">entityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment#entity_id TagAssignment#entity_id}. |
-| <code><a href="#@cdktn/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.entityType">entityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment#entity_type TagAssignment#entity_type}. |
-| <code><a href="#@cdktn/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.tagId">tagId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment#tag_id TagAssignment#tag_id}. |
+| <code><a href="#@cdktn/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.entityId">entityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/tag_assignment#entity_id TagAssignment#entity_id}. |
+| <code><a href="#@cdktn/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.entityType">entityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/tag_assignment#entity_type TagAssignment#entity_type}. |
+| <code><a href="#@cdktn/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.tagId">tagId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/tag_assignment#tag_id TagAssignment#tag_id}. |
 
 ---
 
@@ -866,7 +866,7 @@ public readonly entityId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment#entity_id TagAssignment#entity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/tag_assignment#entity_id TagAssignment#entity_id}.
 
 ---
 
@@ -878,7 +878,7 @@ public readonly entityType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment#entity_type TagAssignment#entity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/tag_assignment#entity_type TagAssignment#entity_type}.
 
 ---
 
@@ -890,7 +890,7 @@ public readonly tagId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/resources/tag_assignment#tag_id TagAssignment#tag_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/tag_assignment#tag_id TagAssignment#tag_id}.
 
 ---
 
