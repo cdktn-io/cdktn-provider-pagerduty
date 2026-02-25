@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/service
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataPagerdutyServiceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/service#name DataPagerdutyService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/service#name DataPagerdutyService#name}
   */
   readonly name: string;
 }
@@ -99,7 +99,7 @@ export class DataPagerdutyServiceTeamsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/service pagerduty_service}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/service pagerduty_service}
 */
 export class DataPagerdutyService extends cdktn.TerraformDataSource {
 
@@ -115,7 +115,7 @@ export class DataPagerdutyService extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataPagerdutyService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyService to import
-  * @param importFromId The id of the existing DataPagerdutyService that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyService that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -127,7 +127,7 @@ export class DataPagerdutyService extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/service pagerduty_service} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/service pagerduty_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -138,7 +138,7 @@ export class DataPagerdutyService extends cdktn.TerraformDataSource {
       terraformResourceType: 'pagerduty_service',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.31.0',
+        providerVersion: '3.31.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

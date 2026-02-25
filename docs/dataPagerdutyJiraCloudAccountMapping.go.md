@@ -4,7 +4,7 @@
 
 ### DataPagerdutyJiraCloudAccountMapping <a name="DataPagerdutyJiraCloudAccountMapping" id="@cdktn/provider-pagerduty.dataPagerdutyJiraCloudAccountMapping.DataPagerdutyJiraCloudAccountMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/jira_cloud_account_mapping pagerduty_jira_cloud_account_mapping}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/jira_cloud_account_mapping pagerduty_jira_cloud_account_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyJiraCloudAccountMapping.DataPagerdutyJiraCloudAccountMapping.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataPagerdutyJiraCloudAcco
 
 The id of the existing DataPagerdutyJiraCloudAccountMapping that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/jira_cloud_account_mapping#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/jira_cloud_account_mapping#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerd
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyJiraCloudAccountMapping.DataPagerdutyJiraCloudAccountMappingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyJiraCloudAccountMapping.DataPagerdutyJiraCloudAccountMappingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyJiraCloudAccountMapping.DataPagerdutyJiraCloudAccountMappingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyJiraCloudAccountMapping.DataPagerdutyJiraCloudAccountMappingConfig.property.subdomain">Subdomain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/jira_cloud_account_mapping#subdomain DataPagerdutyJiraCloudAccountMapping#subdomain}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyJiraCloudAccountMapping.DataPagerdutyJiraCloudAccountMappingConfig.property.subdomain">Subdomain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/jira_cloud_account_mapping#subdomain DataPagerdutyJiraCloudAccountMapping#subdomain}. |
 
 ---
 
@@ -716,7 +716,7 @@ Subdomain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.0/docs/data-sources/jira_cloud_account_mapping#subdomain DataPagerdutyJiraCloudAccountMapping#subdomain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/jira_cloud_account_mapping#subdomain DataPagerdutyJiraCloudAccountMapping#subdomain}.
 
 ---
 
