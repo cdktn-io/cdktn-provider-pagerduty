@@ -4,7 +4,7 @@
 
 ### Extension <a name="Extension" id="@cdktn/provider-pagerduty.extension.Extension"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/extension pagerduty_extension}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/extension pagerduty_extension}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.extension.Extension.Initializer"></a>
 
@@ -517,7 +517,7 @@ The construct id used in the generated config for the Extension to import.
 
 The id of the existing Extension that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/extension#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/extension#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -912,12 +912,12 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/extension"
 | <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.extensionObjects">ExtensionObjects</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/extension#extension_objects Extension#extension_objects}. |
-| <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.extensionSchema">ExtensionSchema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/extension#extension_schema Extension#extension_schema}. |
-| <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.config">Config</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/extension#config Extension#config}. |
-| <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.endpointUrl">EndpointUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/extension#endpoint_url Extension#endpoint_url}. |
-| <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/extension#name Extension#name}. |
-| <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/extension#type Extension#type}. |
+| <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.extensionObjects">ExtensionObjects</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/extension#extension_objects Extension#extension_objects}. |
+| <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.extensionSchema">ExtensionSchema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/extension#extension_schema Extension#extension_schema}. |
+| <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.config">Config</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/extension#config Extension#config}. |
+| <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.endpointUrl">EndpointUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/extension#endpoint_url Extension#endpoint_url}. |
+| <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/extension#name Extension#name}. |
+| <code><a href="#@cdktn/provider-pagerduty.extension.ExtensionConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/extension#type Extension#type}. |
 
 ---
 
@@ -999,7 +999,7 @@ ExtensionObjects *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/extension#extension_objects Extension#extension_objects}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/extension#extension_objects Extension#extension_objects}.
 
 ---
 
@@ -1011,7 +1011,7 @@ ExtensionSchema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/extension#extension_schema Extension#extension_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/extension#extension_schema Extension#extension_schema}.
 
 ---
 
@@ -1023,7 +1023,7 @@ Config *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/extension#config Extension#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/extension#config Extension#config}.
 
 ---
 
@@ -1035,7 +1035,7 @@ EndpointUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/extension#endpoint_url Extension#endpoint_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/extension#endpoint_url Extension#endpoint_url}.
 
 ---
 
@@ -1047,7 +1047,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/extension#name Extension#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/extension#name Extension#name}.
 
 ---
 
@@ -1059,7 +1059,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/extension#type Extension#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/extension#type Extension#type}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataPagerdutySchedule <a name="DataPagerdutySchedule" id="@cdktn/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/schedule pagerduty_schedule}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/schedule pagerduty_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataPagerdutySchedule to i
 
 The id of the existing DataPagerdutySchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -623,7 +623,7 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerd
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/schedule#name DataPagerdutySchedule#name}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/schedule#name DataPagerdutySchedule#name}. |
 
 ---
 
@@ -705,7 +705,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/schedule#name DataPagerdutySchedule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/schedule#name DataPagerdutySchedule#name}.
 
 ---
 

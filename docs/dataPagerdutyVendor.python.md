@@ -4,7 +4,7 @@
 
 ### DataPagerdutyVendor <a name="DataPagerdutyVendor" id="@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/vendor pagerduty_vendor}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/vendor pagerduty_vendor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.Initializer"></a>
 
@@ -36,7 +36,7 @@ dataPagerdutyVendor.DataPagerdutyVendor(
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/vendor#name DataPagerdutyVendor#name}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/vendor#name DataPagerdutyVendor#name}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/vendor#name DataPagerdutyVendor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/vendor#name DataPagerdutyVendor#name}.
 
 ---
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the DataPagerdutyVendor to imp
 
 The id of the existing DataPagerdutyVendor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/vendor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/vendor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -734,7 +734,7 @@ dataPagerdutyVendor.DataPagerdutyVendorConfig(
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/vendor#name DataPagerdutyVendor#name}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/vendor#name DataPagerdutyVendor#name}. |
 
 ---
 
@@ -816,7 +816,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/vendor#name DataPagerdutyVendor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/vendor#name DataPagerdutyVendor#name}.
 
 ---
 
