@@ -4,7 +4,7 @@
 
 ### Enablement <a name="Enablement" id="@cdktn/provider-pagerduty.enablement.Enablement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/enablement pagerduty_enablement}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/enablement pagerduty_enablement}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.enablement.Enablement.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the Enablement to import.
 
 The id of the existing Enablement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/enablement#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/enablement#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -811,10 +811,10 @@ const enablementConfig: enablement.EnablementConfig = { ... }
 | <code><a href="#@cdktn/provider-pagerduty.enablement.EnablementConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.enablement.EnablementConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.enablement.EnablementConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.enablement.EnablementConfig.property.entityId">entityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/enablement#entity_id Enablement#entity_id}. |
-| <code><a href="#@cdktn/provider-pagerduty.enablement.EnablementConfig.property.entityType">entityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/enablement#entity_type Enablement#entity_type}. |
-| <code><a href="#@cdktn/provider-pagerduty.enablement.EnablementConfig.property.feature">feature</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/enablement#feature Enablement#feature}. |
-| <code><a href="#@cdktn/provider-pagerduty.enablement.EnablementConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/enablement#enabled Enablement#enabled}. |
+| <code><a href="#@cdktn/provider-pagerduty.enablement.EnablementConfig.property.entityId">entityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/enablement#entity_id Enablement#entity_id}. |
+| <code><a href="#@cdktn/provider-pagerduty.enablement.EnablementConfig.property.entityType">entityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/enablement#entity_type Enablement#entity_type}. |
+| <code><a href="#@cdktn/provider-pagerduty.enablement.EnablementConfig.property.feature">feature</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/enablement#feature Enablement#feature}. |
+| <code><a href="#@cdktn/provider-pagerduty.enablement.EnablementConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/enablement#enabled Enablement#enabled}. |
 
 ---
 
@@ -896,7 +896,7 @@ public readonly entityId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/enablement#entity_id Enablement#entity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/enablement#entity_id Enablement#entity_id}.
 
 ---
 
@@ -908,7 +908,7 @@ public readonly entityType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/enablement#entity_type Enablement#entity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/enablement#entity_type Enablement#entity_type}.
 
 ---
 
@@ -920,7 +920,7 @@ public readonly feature: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/enablement#feature Enablement#feature}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/enablement#feature Enablement#feature}.
 
 ---
 
@@ -932,7 +932,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/enablement#enabled Enablement#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/enablement#enabled Enablement#enabled}.
 
 ---
 

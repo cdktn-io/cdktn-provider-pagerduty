@@ -4,7 +4,7 @@
 
 ### DataPagerdutyBusinessService <a name="DataPagerdutyBusinessService" id="@cdktn/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/business_service pagerduty_business_service}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/business_service pagerduty_business_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataPagerdutyBusinessServi
 
 The id of the existing DataPagerdutyBusinessService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/business_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/business_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -625,7 +625,7 @@ const dataPagerdutyBusinessServiceConfig: dataPagerdutyBusinessService.DataPager
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/business_service#name DataPagerdutyBusinessService#name}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/business_service#name DataPagerdutyBusinessService#name}. |
 
 ---
 
@@ -707,7 +707,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/business_service#name DataPagerdutyBusinessService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/business_service#name DataPagerdutyBusinessService#name}.
 
 ---
 

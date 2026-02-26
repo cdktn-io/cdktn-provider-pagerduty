@@ -4,7 +4,7 @@
 
 ### DataPagerdutyService <a name="DataPagerdutyService" id="@cdktn/provider-pagerduty.dataPagerdutyService.DataPagerdutyService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/service pagerduty_service}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/service pagerduty_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataPagerdutyService to im
 
 The id of the existing DataPagerdutyService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -691,7 +691,7 @@ const dataPagerdutyServiceConfig: dataPagerdutyService.DataPagerdutyServiceConfi
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/service#name DataPagerdutyService#name}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/service#name DataPagerdutyService#name}. |
 
 ---
 
@@ -773,7 +773,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/service#name DataPagerdutyService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/service#name DataPagerdutyService#name}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataPagerdutyIncidentTypeCustomField <a name="DataPagerdutyIncidentTypeCustomField" id="@cdktn/provider-pagerduty.dataPagerdutyIncidentTypeCustomField.DataPagerdutyIncidentTypeCustomField"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/incident_type_custom_field pagerduty_incident_type_custom_field}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/incident_type_custom_field pagerduty_incident_type_custom_field}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyIncidentTypeCustomField.DataPagerdutyIncidentTypeCustomField.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataPagerdutyIncidentTypeC
 
 The id of the existing DataPagerdutyIncidentTypeCustomField that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/incident_type_custom_field#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/incident_type_custom_field#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -746,8 +746,8 @@ const dataPagerdutyIncidentTypeCustomFieldConfig: dataPagerdutyIncidentTypeCusto
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyIncidentTypeCustomField.DataPagerdutyIncidentTypeCustomFieldConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyIncidentTypeCustomField.DataPagerdutyIncidentTypeCustomFieldConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyIncidentTypeCustomField.DataPagerdutyIncidentTypeCustomFieldConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyIncidentTypeCustomField.DataPagerdutyIncidentTypeCustomFieldConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/incident_type_custom_field#display_name DataPagerdutyIncidentTypeCustomField#display_name}. |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyIncidentTypeCustomField.DataPagerdutyIncidentTypeCustomFieldConfig.property.incidentType">incidentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/incident_type_custom_field#incident_type DataPagerdutyIncidentTypeCustomField#incident_type}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyIncidentTypeCustomField.DataPagerdutyIncidentTypeCustomFieldConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/incident_type_custom_field#display_name DataPagerdutyIncidentTypeCustomField#display_name}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyIncidentTypeCustomField.DataPagerdutyIncidentTypeCustomFieldConfig.property.incidentType">incidentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/incident_type_custom_field#incident_type DataPagerdutyIncidentTypeCustomField#incident_type}. |
 
 ---
 
@@ -829,7 +829,7 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/incident_type_custom_field#display_name DataPagerdutyIncidentTypeCustomField#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/incident_type_custom_field#display_name DataPagerdutyIncidentTypeCustomField#display_name}.
 
 ---
 
@@ -841,7 +841,7 @@ public readonly incidentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/incident_type_custom_field#incident_type DataPagerdutyIncidentTypeCustomField#incident_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/incident_type_custom_field#incident_type DataPagerdutyIncidentTypeCustomField#incident_type}.
 
 ---
 

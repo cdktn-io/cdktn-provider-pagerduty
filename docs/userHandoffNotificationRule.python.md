@@ -4,7 +4,7 @@
 
 ### UserHandoffNotificationRule <a name="UserHandoffNotificationRule" id="@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule pagerduty_user_handoff_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule pagerduty_user_handoff_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRule.Initializer"></a>
 
@@ -40,7 +40,7 @@ userHandoffNotificationRule.UserHandoffNotificationRule(
 | <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRule.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRule.Initializer.parameter.notifyAdvanceInMinutes">notify_advance_in_minutes</a></code> | <code>typing.Union[int, float]</code> | The number of minutes before the handoff to notify the user. Must be greater than or equal to 0. |
-| <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRule.Initializer.parameter.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule#user_id UserHandoffNotificationRule#user_id}. |
+| <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRule.Initializer.parameter.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule#user_id UserHandoffNotificationRule#user_id}. |
 | <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRule.Initializer.parameter.contactMethod">contact_method</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleContactMethod">UserHandoffNotificationRuleContactMethod</a>]</code> | contact_method block. |
 | <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRule.Initializer.parameter.handoffType">handoff_type</a></code> | <code>str</code> | The type of handoff to notify for. Possible values are 'both', 'oncall', 'offcall'. |
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The number of minutes before the handoff to notify the user. Must be greater than or equal to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule#notify_advance_in_minutes UserHandoffNotificationRule#notify_advance_in_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule#notify_advance_in_minutes UserHandoffNotificationRule#notify_advance_in_minutes}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule#user_id UserHandoffNotificationRule#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule#user_id UserHandoffNotificationRule#user_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 contact_method block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule#contact_method UserHandoffNotificationRule#contact_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule#contact_method UserHandoffNotificationRule#contact_method}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 The type of handoff to notify for. Possible values are 'both', 'oncall', 'offcall'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule#handoff_type UserHandoffNotificationRule#handoff_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule#handoff_type UserHandoffNotificationRule#handoff_type}
 
 ---
 
@@ -666,7 +666,7 @@ The construct id used in the generated config for the UserHandoffNotificationRul
 
 The id of the existing UserHandoffNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -994,7 +994,7 @@ userHandoffNotificationRule.UserHandoffNotificationRuleConfig(
 | <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleConfig.property.notifyAdvanceInMinutes">notify_advance_in_minutes</a></code> | <code>typing.Union[int, float]</code> | The number of minutes before the handoff to notify the user. Must be greater than or equal to 0. |
-| <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleConfig.property.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule#user_id UserHandoffNotificationRule#user_id}. |
+| <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleConfig.property.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule#user_id UserHandoffNotificationRule#user_id}. |
 | <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleConfig.property.contactMethod">contact_method</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleContactMethod">UserHandoffNotificationRuleContactMethod</a>]</code> | contact_method block. |
 | <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleConfig.property.handoffType">handoff_type</a></code> | <code>str</code> | The type of handoff to notify for. Possible values are 'both', 'oncall', 'offcall'. |
 
@@ -1080,7 +1080,7 @@ notify_advance_in_minutes: typing.Union[int, float]
 
 The number of minutes before the handoff to notify the user. Must be greater than or equal to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule#notify_advance_in_minutes UserHandoffNotificationRule#notify_advance_in_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule#notify_advance_in_minutes UserHandoffNotificationRule#notify_advance_in_minutes}
 
 ---
 
@@ -1092,7 +1092,7 @@ user_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule#user_id UserHandoffNotificationRule#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule#user_id UserHandoffNotificationRule#user_id}.
 
 ---
 
@@ -1106,7 +1106,7 @@ contact_method: IResolvable | typing.List[UserHandoffNotificationRuleContactMeth
 
 contact_method block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule#contact_method UserHandoffNotificationRule#contact_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule#contact_method UserHandoffNotificationRule#contact_method}
 
 ---
 
@@ -1120,7 +1120,7 @@ handoff_type: str
 
 The type of handoff to notify for. Possible values are 'both', 'oncall', 'offcall'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule#handoff_type UserHandoffNotificationRule#handoff_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule#handoff_type UserHandoffNotificationRule#handoff_type}
 
 ---
 
@@ -1141,7 +1141,7 @@ userHandoffNotificationRule.UserHandoffNotificationRuleContactMethod(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleContactMethod.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule#id UserHandoffNotificationRule#id}. |
+| <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleContactMethod.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule#id UserHandoffNotificationRule#id}. |
 | <code><a href="#@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleContactMethod.property.type">type</a></code> | <code>str</code> | The type of contact method to notify for. Possible values are 'email_contact_method', 'email_contact_method_reference', 'phone_contact_method', 'phone_contact_method_reference', 'push_notification_contact_method', 'push_notification_contact_method_reference', 'sms_contact_method', 'sms_contact_method_reference'. |
 
 ---
@@ -1154,7 +1154,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule#id UserHandoffNotificationRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule#id UserHandoffNotificationRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1171,7 +1171,7 @@ type: str
 
 The type of contact method to notify for. Possible values are 'email_contact_method', 'email_contact_method_reference', 'phone_contact_method', 'phone_contact_method_reference', 'push_notification_contact_method', 'push_notification_contact_method_reference', 'sms_contact_method', 'sms_contact_method_reference'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/user_handoff_notification_rule#type UserHandoffNotificationRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/user_handoff_notification_rule#type UserHandoffNotificationRule#type}
 
 ---
 
