@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,52 @@ import * as cdktn from 'cdktn';
 
 export interface ServiceEventRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#disabled ServiceEventRule#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#disabled ServiceEventRule#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#id ServiceEventRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#id ServiceEventRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#position ServiceEventRule#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#position ServiceEventRule#position}
   */
   readonly position?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#service ServiceEventRule#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#service ServiceEventRule#service}
   */
   readonly service: string;
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#actions ServiceEventRule#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#actions ServiceEventRule#actions}
   */
   readonly actions?: ServiceEventRuleActions;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#conditions ServiceEventRule#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#conditions ServiceEventRule#conditions}
   */
   readonly conditions?: ServiceEventRuleConditions;
   /**
   * time_frame block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#time_frame ServiceEventRule#time_frame}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#time_frame ServiceEventRule#time_frame}
   */
   readonly timeFrame?: ServiceEventRuleTimeFrame;
   /**
   * variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#variable ServiceEventRule#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#variable ServiceEventRule#variable}
   */
   readonly variable?: ServiceEventRuleVariable[] | cdktn.IResolvable;
 }
 export interface ServiceEventRuleActionsAnnotate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#value ServiceEventRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#value ServiceEventRule#value}
   */
   readonly value?: string;
 }
@@ -174,7 +174,7 @@ export class ServiceEventRuleActionsAnnotateList extends cdktn.ComplexList {
 }
 export interface ServiceEventRuleActionsEventAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#value ServiceEventRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#value ServiceEventRule#value}
   */
   readonly value?: string;
 }
@@ -290,19 +290,19 @@ export class ServiceEventRuleActionsEventActionList extends cdktn.ComplexList {
 }
 export interface ServiceEventRuleActionsExtractions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#regex ServiceEventRule#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#regex ServiceEventRule#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#source ServiceEventRule#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#source ServiceEventRule#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#target ServiceEventRule#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#target ServiceEventRule#target}
   */
   readonly target?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#template ServiceEventRule#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#template ServiceEventRule#template}
   */
   readonly template?: string;
 }
@@ -505,7 +505,7 @@ export class ServiceEventRuleActionsExtractionsList extends cdktn.ComplexList {
 }
 export interface ServiceEventRuleActionsPriority {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#value ServiceEventRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#value ServiceEventRule#value}
   */
   readonly value?: string;
 }
@@ -621,7 +621,7 @@ export class ServiceEventRuleActionsPriorityList extends cdktn.ComplexList {
 }
 export interface ServiceEventRuleActionsSeverity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#value ServiceEventRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#value ServiceEventRule#value}
   */
   readonly value?: string;
 }
@@ -737,19 +737,19 @@ export class ServiceEventRuleActionsSeverityList extends cdktn.ComplexList {
 }
 export interface ServiceEventRuleActionsSuppress {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#threshold_time_amount ServiceEventRule#threshold_time_amount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#threshold_time_amount ServiceEventRule#threshold_time_amount}
   */
   readonly thresholdTimeAmount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#threshold_time_unit ServiceEventRule#threshold_time_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#threshold_time_unit ServiceEventRule#threshold_time_unit}
   */
   readonly thresholdTimeUnit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#threshold_value ServiceEventRule#threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#threshold_value ServiceEventRule#threshold_value}
   */
   readonly thresholdValue?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#value ServiceEventRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#value ServiceEventRule#value}
   */
   readonly value?: boolean | cdktn.IResolvable;
 }
@@ -952,7 +952,7 @@ export class ServiceEventRuleActionsSuppressList extends cdktn.ComplexList {
 }
 export interface ServiceEventRuleActionsSuspend {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#value ServiceEventRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#value ServiceEventRule#value}
   */
   readonly value?: number;
 }
@@ -1070,43 +1070,43 @@ export interface ServiceEventRuleActions {
   /**
   * annotate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#annotate ServiceEventRule#annotate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#annotate ServiceEventRule#annotate}
   */
   readonly annotate?: ServiceEventRuleActionsAnnotate[] | cdktn.IResolvable;
   /**
   * event_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#event_action ServiceEventRule#event_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#event_action ServiceEventRule#event_action}
   */
   readonly eventAction?: ServiceEventRuleActionsEventAction[] | cdktn.IResolvable;
   /**
   * extractions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#extractions ServiceEventRule#extractions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#extractions ServiceEventRule#extractions}
   */
   readonly extractions?: ServiceEventRuleActionsExtractions[] | cdktn.IResolvable;
   /**
   * priority block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#priority ServiceEventRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#priority ServiceEventRule#priority}
   */
   readonly priority?: ServiceEventRuleActionsPriority[] | cdktn.IResolvable;
   /**
   * severity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#severity ServiceEventRule#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#severity ServiceEventRule#severity}
   */
   readonly severity?: ServiceEventRuleActionsSeverity[] | cdktn.IResolvable;
   /**
   * suppress block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#suppress ServiceEventRule#suppress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#suppress ServiceEventRule#suppress}
   */
   readonly suppress?: ServiceEventRuleActionsSuppress[] | cdktn.IResolvable;
   /**
   * suspend block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#suspend ServiceEventRule#suspend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#suspend ServiceEventRule#suspend}
   */
   readonly suspend?: ServiceEventRuleActionsSuspend[] | cdktn.IResolvable;
 }
@@ -1364,11 +1364,11 @@ export class ServiceEventRuleActionsOutputReference extends cdktn.ComplexObject 
 }
 export interface ServiceEventRuleConditionsSubconditionsParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#path ServiceEventRule#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#path ServiceEventRule#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#value ServiceEventRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#value ServiceEventRule#value}
   */
   readonly value?: string;
 }
@@ -1513,13 +1513,13 @@ export class ServiceEventRuleConditionsSubconditionsParameterList extends cdktn.
 }
 export interface ServiceEventRuleConditionsSubconditions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#operator ServiceEventRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#operator ServiceEventRule#operator}
   */
   readonly operator?: string;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#parameter ServiceEventRule#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#parameter ServiceEventRule#parameter}
   */
   readonly parameter?: ServiceEventRuleConditionsSubconditionsParameter[] | cdktn.IResolvable;
 }
@@ -1664,13 +1664,13 @@ export class ServiceEventRuleConditionsSubconditionsList extends cdktn.ComplexLi
 }
 export interface ServiceEventRuleConditions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#operator ServiceEventRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#operator ServiceEventRule#operator}
   */
   readonly operator?: string;
   /**
   * subconditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#subconditions ServiceEventRule#subconditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#subconditions ServiceEventRule#subconditions}
   */
   readonly subconditions?: ServiceEventRuleConditionsSubconditions[] | cdktn.IResolvable;
 }
@@ -1783,11 +1783,11 @@ export class ServiceEventRuleConditionsOutputReference extends cdktn.ComplexObje
 }
 export interface ServiceEventRuleTimeFrameActiveBetween {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#end_time ServiceEventRule#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#end_time ServiceEventRule#end_time}
   */
   readonly endTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#start_time ServiceEventRule#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#start_time ServiceEventRule#start_time}
   */
   readonly startTime?: number;
 }
@@ -1932,19 +1932,19 @@ export class ServiceEventRuleTimeFrameActiveBetweenList extends cdktn.ComplexLis
 }
 export interface ServiceEventRuleTimeFrameScheduledWeekly {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#duration ServiceEventRule#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#duration ServiceEventRule#duration}
   */
   readonly duration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#start_time ServiceEventRule#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#start_time ServiceEventRule#start_time}
   */
   readonly startTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#timezone ServiceEventRule#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#timezone ServiceEventRule#timezone}
   */
   readonly timezone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#weekdays ServiceEventRule#weekdays}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#weekdays ServiceEventRule#weekdays}
   */
   readonly weekdays?: number[];
 }
@@ -2149,13 +2149,13 @@ export interface ServiceEventRuleTimeFrame {
   /**
   * active_between block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#active_between ServiceEventRule#active_between}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#active_between ServiceEventRule#active_between}
   */
   readonly activeBetween?: ServiceEventRuleTimeFrameActiveBetween[] | cdktn.IResolvable;
   /**
   * scheduled_weekly block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#scheduled_weekly ServiceEventRule#scheduled_weekly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#scheduled_weekly ServiceEventRule#scheduled_weekly}
   */
   readonly scheduledWeekly?: ServiceEventRuleTimeFrameScheduledWeekly[] | cdktn.IResolvable;
 }
@@ -2268,11 +2268,11 @@ export class ServiceEventRuleTimeFrameOutputReference extends cdktn.ComplexObjec
 }
 export interface ServiceEventRuleVariableParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#path ServiceEventRule#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#path ServiceEventRule#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#value ServiceEventRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#value ServiceEventRule#value}
   */
   readonly value?: string;
 }
@@ -2417,17 +2417,17 @@ export class ServiceEventRuleVariableParametersList extends cdktn.ComplexList {
 }
 export interface ServiceEventRuleVariable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#name ServiceEventRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#name ServiceEventRule#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#type ServiceEventRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#type ServiceEventRule#type}
   */
   readonly type?: string;
   /**
   * parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#parameters ServiceEventRule#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#parameters ServiceEventRule#parameters}
   */
   readonly parameters?: ServiceEventRuleVariableParameters[] | cdktn.IResolvable;
 }
@@ -2601,7 +2601,7 @@ export class ServiceEventRuleVariableList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule pagerduty_service_event_rule}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule pagerduty_service_event_rule}
 */
 export class ServiceEventRule extends cdktn.TerraformResource {
 
@@ -2617,7 +2617,7 @@ export class ServiceEventRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ServiceEventRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceEventRule to import
-  * @param importFromId The id of the existing ServiceEventRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceEventRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceEventRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2629,7 +2629,7 @@ export class ServiceEventRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/resources/service_event_rule pagerduty_service_event_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/resources/service_event_rule pagerduty_service_event_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2640,7 +2640,7 @@ export class ServiceEventRule extends cdktn.TerraformResource {
       terraformResourceType: 'pagerduty_service_event_rule',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.31.1',
+        providerVersion: '3.31.2',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

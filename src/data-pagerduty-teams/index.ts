@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/teams
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/teams
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataPagerdutyTeamsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/teams#id DataPagerdutyTeams#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/teams#id DataPagerdutyTeams#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataPagerdutyTeamsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Filters the result, showing only the records whose name matches the query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/teams#query DataPagerdutyTeams#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/teams#query DataPagerdutyTeams#query}
   */
   readonly query?: string;
 }
@@ -118,7 +118,7 @@ export class DataPagerdutyTeamsTeamsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/teams pagerduty_teams}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/teams pagerduty_teams}
 */
 export class DataPagerdutyTeams extends cdktn.TerraformDataSource {
 
@@ -134,7 +134,7 @@ export class DataPagerdutyTeams extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataPagerdutyTeams resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyTeams to import
-  * @param importFromId The id of the existing DataPagerdutyTeams that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/teams#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyTeams that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/teams#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyTeams to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -146,7 +146,7 @@ export class DataPagerdutyTeams extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.1/docs/data-sources/teams pagerduty_teams} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.31.2/docs/data-sources/teams pagerduty_teams} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -157,7 +157,7 @@ export class DataPagerdutyTeams extends cdktn.TerraformDataSource {
       terraformResourceType: 'pagerduty_teams',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.31.1',
+        providerVersion: '3.31.2',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
