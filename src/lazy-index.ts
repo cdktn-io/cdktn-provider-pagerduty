@@ -38,6 +38,7 @@ Object.defineProperty(exports, 'responsePlay', { get: function () { return requi
 Object.defineProperty(exports, 'ruleset', { get: function () { return require('./ruleset'); } });
 Object.defineProperty(exports, 'rulesetRule', { get: function () { return require('./ruleset-rule'); } });
 Object.defineProperty(exports, 'schedule', { get: function () { return require('./schedule'); } });
+Object.defineProperty(exports, 'schedulev2', { get: function () { return require('./schedulev2'); } });
 Object.defineProperty(exports, 'service', { get: function () { return require('./service'); } });
 Object.defineProperty(exports, 'serviceCustomField', { get: function () { return require('./service-custom-field'); } });
 Object.defineProperty(exports, 'serviceCustomFieldValue', { get: function () { return require('./service-custom-field-value'); } });
@@ -75,6 +76,7 @@ Object.defineProperty(exports, 'dataPagerdutyLicenses', { get: function () { ret
 Object.defineProperty(exports, 'dataPagerdutyPriority', { get: function () { return require('./data-pagerduty-priority'); } });
 Object.defineProperty(exports, 'dataPagerdutyRuleset', { get: function () { return require('./data-pagerduty-ruleset'); } });
 Object.defineProperty(exports, 'dataPagerdutySchedule', { get: function () { return require('./data-pagerduty-schedule'); } });
+Object.defineProperty(exports, 'dataPagerdutySchedulev2', { get: function () { return require('./data-pagerduty-schedulev2'); } });
 Object.defineProperty(exports, 'dataPagerdutyService', { get: function () { return require('./data-pagerduty-service'); } });
 Object.defineProperty(exports, 'dataPagerdutyServiceCustomField', { get: function () { return require('./data-pagerduty-service-custom-field'); } });
 Object.defineProperty(exports, 'dataPagerdutyServiceCustomFieldValue', { get: function () { return require('./data-pagerduty-service-custom-field-value'); } });
