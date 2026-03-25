@@ -1,3 +1,3 @@
 # `data_pagerduty_schedulev2`
 
-Refer to the Terraform Registry for docs: [`data_pagerduty_schedulev2`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.0/docs/data-sources/schedulev2).
+Refer to the Terraform Registry for docs: [`data_pagerduty_schedulev2`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/data-sources/schedulev2).
