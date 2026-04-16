@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface Schedulev2Config extends cdktn.TerraformMetaArguments {
   /**
   * A description of the schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#description Schedulev2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#description Schedulev2#description}
   */
   readonly description?: string;
   /**
   * The name of the schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#name Schedulev2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#name Schedulev2#name}
   */
   readonly name: string;
   /**
   * List of team IDs to associate with this schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#teams Schedulev2#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#teams Schedulev2#teams}
   */
   readonly teams?: string[];
   /**
   * The time zone of the schedule (IANA format, e.g. 'America/New_York').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#time_zone Schedulev2#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#time_zone Schedulev2#time_zone}
   */
   readonly timeZone: string;
   /**
   * rotation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#rotation Schedulev2#rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#rotation Schedulev2#rotation}
   */
   readonly rotation?: Schedulev2Rotation[] | cdktn.IResolvable;
 }
@@ -47,13 +47,13 @@ export interface Schedulev2RotationEventAssignmentStrategyMember {
   /**
   * The member type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#type Schedulev2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#type Schedulev2#type}
   */
   readonly type: string;
   /**
   * The obfuscated user ID. Required when type is 'user_member'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#user_id Schedulev2#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#user_id Schedulev2#user_id}
   */
   readonly userId?: string;
 }
@@ -182,7 +182,7 @@ export class Schedulev2RotationEventAssignmentStrategyMemberList extends cdktn.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -197,19 +197,19 @@ export interface Schedulev2RotationEventAssignmentStrategy {
   /**
   * Number of shifts per member per recurrence cycle. Defaults to 1 for 'rotating_member_assignment_strategy' when not set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#shifts_per_member Schedulev2#shifts_per_member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#shifts_per_member Schedulev2#shifts_per_member}
   */
   readonly shiftsPerMember?: number;
   /**
   * The assignment strategy type. Use 'rotating_member_assignment_strategy' for user-based rotation, or 'every_member_assignment_strategy' for all-hands coverage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#type Schedulev2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#type Schedulev2#type}
   */
   readonly type: string;
   /**
   * member block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#member Schedulev2#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#member Schedulev2#member}
   */
   readonly member?: Schedulev2RotationEventAssignmentStrategyMember[] | cdktn.IResolvable;
 }
@@ -367,7 +367,7 @@ export class Schedulev2RotationEventAssignmentStrategyList extends cdktn.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -382,43 +382,43 @@ export interface Schedulev2RotationEvent {
   /**
   * When this event configuration starts producing shifts (ISO-8601 UTC). Must be a future time; the API will adjust past times to the current time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#effective_since Schedulev2#effective_since}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#effective_since Schedulev2#effective_since}
   */
   readonly effectiveSince: string;
   /**
   * When this event configuration stops producing shifts (ISO-8601 UTC). Null or omitted means indefinite.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#effective_until Schedulev2#effective_until}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#effective_until Schedulev2#effective_until}
   */
   readonly effectiveUntil?: string;
   /**
   * The shift end time with timezone offset (ISO-8601 format, e.g. '2024-01-01T17:00:00-05:00').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#end_time Schedulev2#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#end_time Schedulev2#end_time}
   */
   readonly endTime: string;
   /**
   * The name of the event.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#name Schedulev2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#name Schedulev2#name}
   */
   readonly name: string;
   /**
   * List of RRULE strings defining the recurrence pattern (RFC 5545, e.g. 'RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#recurrence Schedulev2#recurrence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#recurrence Schedulev2#recurrence}
   */
   readonly recurrence: string[];
   /**
   * The shift start time with timezone offset (ISO-8601 format, e.g. '2024-01-01T09:00:00-05:00').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#start_time Schedulev2#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#start_time Schedulev2#start_time}
   */
   readonly startTime: string;
   /**
   * assignment_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#assignment_strategy Schedulev2#assignment_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#assignment_strategy Schedulev2#assignment_strategy}
   */
   readonly assignmentStrategy?: Schedulev2RotationEventAssignmentStrategy[] | cdktn.IResolvable;
 }
@@ -685,7 +685,7 @@ export class Schedulev2RotationEventList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -700,7 +700,7 @@ export interface Schedulev2Rotation {
   /**
   * event block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#event Schedulev2#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#event Schedulev2#event}
   */
   readonly event?: Schedulev2RotationEvent[] | cdktn.IResolvable;
 }
@@ -808,7 +808,7 @@ export class Schedulev2RotationList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -821,7 +821,7 @@ export class Schedulev2RotationList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2 pagerduty_schedulev2}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2 pagerduty_schedulev2}
 */
 export class Schedulev2 extends cdktn.TerraformResource {
 
@@ -837,7 +837,7 @@ export class Schedulev2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Schedulev2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Schedulev2 to import
-  * @param importFromId The id of the existing Schedulev2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Schedulev2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Schedulev2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -849,7 +849,7 @@ export class Schedulev2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/resources/schedulev2 pagerduty_schedulev2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/resources/schedulev2 pagerduty_schedulev2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -860,7 +860,7 @@ export class Schedulev2 extends cdktn.TerraformResource {
       terraformResourceType: 'pagerduty_schedulev2',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.32.1',
+        providerVersion: '3.32.2',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
