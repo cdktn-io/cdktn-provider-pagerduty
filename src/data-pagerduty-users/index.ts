@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/data-sources/users
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/data-sources/users
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataPagerdutyUsersConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}
   */
   readonly teamIds?: string[];
 }
@@ -116,7 +116,7 @@ export class DataPagerdutyUsersUsersList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -129,7 +129,7 @@ export class DataPagerdutyUsersUsersList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/data-sources/users pagerduty_users}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/data-sources/users pagerduty_users}
 */
 export class DataPagerdutyUsers extends cdktn.TerraformDataSource {
 
@@ -145,7 +145,7 @@ export class DataPagerdutyUsers extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataPagerdutyUsers resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyUsers to import
-  * @param importFromId The id of the existing DataPagerdutyUsers that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyUsers that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyUsers to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -157,7 +157,7 @@ export class DataPagerdutyUsers extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.1/docs/data-sources/users pagerduty_users} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.2/docs/data-sources/users pagerduty_users} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -168,7 +168,7 @@ export class DataPagerdutyUsers extends cdktn.TerraformDataSource {
       terraformResourceType: 'pagerduty_users',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.32.1',
+        providerVersion: '3.32.2',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
