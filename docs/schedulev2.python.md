@@ -4,7 +4,7 @@
 
 ### Schedulev2 <a name="Schedulev2" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2 pagerduty_schedulev2}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2 pagerduty_schedulev2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#name Schedulev2#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#name Schedulev2#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 The time zone of the schedule (IANA format, e.g. 'America/New_York').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#time_zone Schedulev2#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#time_zone Schedulev2#time_zone}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 A description of the schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#description Schedulev2#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#description Schedulev2#description}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 rotation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#rotation Schedulev2#rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#rotation Schedulev2#rotation}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 List of team IDs to associate with this schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#teams Schedulev2#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#teams Schedulev2#teams}
 
 ---
 
@@ -687,7 +687,7 @@ The construct id used in the generated config for the Schedulev2 to import.
 
 The id of the existing Schedulev2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1125,7 +1125,7 @@ name: str
 
 The name of the schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#name Schedulev2#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#name Schedulev2#name}
 
 ---
 
@@ -1139,7 +1139,7 @@ time_zone: str
 
 The time zone of the schedule (IANA format, e.g. 'America/New_York').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#time_zone Schedulev2#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#time_zone Schedulev2#time_zone}
 
 ---
 
@@ -1153,7 +1153,7 @@ description: str
 
 A description of the schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#description Schedulev2#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#description Schedulev2#description}
 
 ---
 
@@ -1167,7 +1167,7 @@ rotation: IResolvable | typing.List[Schedulev2Rotation]
 
 rotation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#rotation Schedulev2#rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#rotation Schedulev2#rotation}
 
 ---
 
@@ -1181,7 +1181,7 @@ teams: typing.List[str]
 
 List of team IDs to associate with this schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#teams Schedulev2#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#teams Schedulev2#teams}
 
 ---
 
@@ -1215,7 +1215,7 @@ event: IResolvable | typing.List[Schedulev2RotationEvent]
 
 event block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#event Schedulev2#event}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#event Schedulev2#event}
 
 ---
 
@@ -1263,7 +1263,7 @@ When this event configuration starts producing shifts (ISO-8601 UTC).
 
 Must be a future time; the API will adjust past times to the current time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#effective_since Schedulev2#effective_since}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#effective_since Schedulev2#effective_since}
 
 ---
 
@@ -1277,7 +1277,7 @@ end_time: str
 
 The shift end time with timezone offset (ISO-8601 format, e.g. '2024-01-01T17:00:00-05:00').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#end_time Schedulev2#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#end_time Schedulev2#end_time}
 
 ---
 
@@ -1291,7 +1291,7 @@ name: str
 
 The name of the event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#name Schedulev2#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#name Schedulev2#name}
 
 ---
 
@@ -1305,7 +1305,7 @@ recurrence: typing.List[str]
 
 List of RRULE strings defining the recurrence pattern (RFC 5545, e.g. 'RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#recurrence Schedulev2#recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#recurrence Schedulev2#recurrence}
 
 ---
 
@@ -1319,7 +1319,7 @@ start_time: str
 
 The shift start time with timezone offset (ISO-8601 format, e.g. '2024-01-01T09:00:00-05:00').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#start_time Schedulev2#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#start_time Schedulev2#start_time}
 
 ---
 
@@ -1333,7 +1333,7 @@ assignment_strategy: IResolvable | typing.List[Schedulev2RotationEventAssignment
 
 assignment_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#assignment_strategy Schedulev2#assignment_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#assignment_strategy Schedulev2#assignment_strategy}
 
 ---
 
@@ -1347,7 +1347,7 @@ effective_until: str
 
 When this event configuration stops producing shifts (ISO-8601 UTC). Null or omitted means indefinite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#effective_until Schedulev2#effective_until}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#effective_until Schedulev2#effective_until}
 
 ---
 
@@ -1385,7 +1385,7 @@ type: str
 
 The assignment strategy type. Use 'rotating_member_assignment_strategy' for user-based rotation, or 'every_member_assignment_strategy' for all-hands coverage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#type Schedulev2#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#type Schedulev2#type}
 
 ---
 
@@ -1399,7 +1399,7 @@ member: IResolvable | typing.List[Schedulev2RotationEventAssignmentStrategyMembe
 
 member block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#member Schedulev2#member}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#member Schedulev2#member}
 
 ---
 
@@ -1413,7 +1413,7 @@ shifts_per_member: typing.Union[int, float]
 
 Number of shifts per member per recurrence cycle. Defaults to 1 for 'rotating_member_assignment_strategy' when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#shifts_per_member Schedulev2#shifts_per_member}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#shifts_per_member Schedulev2#shifts_per_member}
 
 ---
 
@@ -1449,7 +1449,7 @@ type: str
 
 The member type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#type Schedulev2#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#type Schedulev2#type}
 
 ---
 
@@ -1463,7 +1463,7 @@ user_id: str
 
 The obfuscated user ID. Required when type is 'user_member'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.3/docs/resources/schedulev2#user_id Schedulev2#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/schedulev2#user_id Schedulev2#user_id}
 
 ---
 
