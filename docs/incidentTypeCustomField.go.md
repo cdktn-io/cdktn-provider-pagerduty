@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.incidentTypeCustomField.IncidentTypeCustomField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidenttypecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidenttypecustomfield"
 
 incidenttypecustomfield.NewIncidentTypeCustomField(scope Construct, id *string, config IncidentTypeCustomFieldConfig) IncidentTypeCustomField
 ```
@@ -435,7 +435,7 @@ func ResetFieldType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.incidentTypeCustomField.IncidentTypeCustomField.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidenttypecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidenttypecustomfield"
 
 incidenttypecustomfield.IncidentTypeCustomField_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.incidentTypeCustomField.IncidentTypeCustomField.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidenttypecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidenttypecustomfield"
 
 incidenttypecustomfield.IncidentTypeCustomField_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ incidenttypecustomfield.IncidentTypeCustomField_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.incidentTypeCustomField.IncidentTypeCustomField.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidenttypecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidenttypecustomfield"
 
 incidenttypecustomfield.IncidentTypeCustomField_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ incidenttypecustomfield.IncidentTypeCustomField_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.incidentTypeCustomField.IncidentTypeCustomField.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidenttypecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidenttypecustomfield"
 
 incidenttypecustomfield.IncidentTypeCustomField_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -966,7 +966,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.incidentTypeCustomField.IncidentTypeCustomFieldConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidenttypecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidenttypecustomfield"
 
 &incidenttypecustomfield.IncidentTypeCustomFieldConfig {
 	Connection: interface{},

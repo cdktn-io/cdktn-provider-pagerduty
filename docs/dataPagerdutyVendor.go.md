@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyvendor"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyvendor"
 
 datapagerdutyvendor.NewDataPagerdutyVendor(scope Construct, id *string, config DataPagerdutyVendorConfig) DataPagerdutyVendor
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyvendor"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyvendor"
 
 datapagerdutyvendor.DataPagerdutyVendor_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyvendor"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyvendor"
 
 datapagerdutyvendor.DataPagerdutyVendor_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datapagerdutyvendor.DataPagerdutyVendor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyvendor"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyvendor"
 
 datapagerdutyvendor.DataPagerdutyVendor_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datapagerdutyvendor.DataPagerdutyVendor_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyvendor"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyvendor"
 
 datapagerdutyvendor.DataPagerdutyVendor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyvendor"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyvendor"
 
 &datapagerdutyvendor.DataPagerdutyVendorConfig {
 	Connection: interface{},

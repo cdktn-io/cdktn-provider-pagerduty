@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/userhandoffnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/userhandoffnotificationrule"
 
 userhandoffnotificationrule.NewUserHandoffNotificationRule(scope Construct, id *string, config UserHandoffNotificationRuleConfig) UserHandoffNotificationRule
 ```
@@ -427,7 +427,7 @@ func ResetHandoffType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/userhandoffnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/userhandoffnotificationrule"
 
 userhandoffnotificationrule.UserHandoffNotificationRule_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/userhandoffnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/userhandoffnotificationrule"
 
 userhandoffnotificationrule.UserHandoffNotificationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ userhandoffnotificationrule.UserHandoffNotificationRule_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/userhandoffnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/userhandoffnotificationrule"
 
 userhandoffnotificationrule.UserHandoffNotificationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ userhandoffnotificationrule.UserHandoffNotificationRule_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/userhandoffnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/userhandoffnotificationrule"
 
 userhandoffnotificationrule.UserHandoffNotificationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/userhandoffnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/userhandoffnotificationrule"
 
 &userhandoffnotificationrule.UserHandoffNotificationRuleConfig {
 	Connection: interface{},
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleContactMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/userhandoffnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/userhandoffnotificationrule"
 
 &userhandoffnotificationrule.UserHandoffNotificationRuleContactMethod {
 	Id: *string,
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleContactMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/userhandoffnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/userhandoffnotificationrule"
 
 userhandoffnotificationrule.NewUserHandoffNotificationRuleContactMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserHandoffNotificationRuleContactMethodList
 ```
@@ -1192,7 +1192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.userHandoffNotificationRule.UserHandoffNotificationRuleContactMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/userhandoffnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/userhandoffnotificationrule"
 
 userhandoffnotificationrule.NewUserHandoffNotificationRuleContactMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserHandoffNotificationRuleContactMethodOutputReference
 ```

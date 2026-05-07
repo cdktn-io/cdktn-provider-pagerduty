@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.provider.PagerdutyProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/provider"
 
 provider.NewPagerdutyProvider(scope Construct, id *string, config PagerdutyProviderConfig) PagerdutyProvider
 ```
@@ -222,7 +222,7 @@ func ResetUserToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.provider.PagerdutyProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/provider"
 
 provider.PagerdutyProvider_IsConstruct(x interface{}) *bool
 ```
@@ -254,7 +254,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.provider.PagerdutyProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/provider"
 
 provider.PagerdutyProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -268,7 +268,7 @@ provider.PagerdutyProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktn/provider-pagerduty.provider.PagerdutyProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/provider"
 
 provider.PagerdutyProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -282,7 +282,7 @@ provider.PagerdutyProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.provider.PagerdutyProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/provider"
 
 provider.PagerdutyProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -621,7 +621,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.provider.PagerdutyProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/provider"
 
 &provider.PagerdutyProviderConfig {
 	Alias: *string,
@@ -630,7 +630,7 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/provider"
 	ServiceRegion: *string,
 	SkipCredentialsValidation: interface{},
 	Token: *string,
-	UseAppOauthScopedToken: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.provider.PagerdutyProviderUseAppOauthScopedToken,
+	UseAppOauthScopedToken: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.provider.PagerdutyProviderUseAppOauthScopedToken,
 	UserToken: *string,
 }
 ```
@@ -755,7 +755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/provider"
 
 &provider.PagerdutyProviderUseAppOauthScopedToken {
 	PdClientId: *string,

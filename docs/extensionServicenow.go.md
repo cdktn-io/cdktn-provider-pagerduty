@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.extensionServicenow.ExtensionServicenow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/extensionservicenow"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/extensionservicenow"
 
 extensionservicenow.NewExtensionServicenow(scope Construct, id *string, config ExtensionServicenowConfig) ExtensionServicenow
 ```
@@ -428,7 +428,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.extensionServicenow.ExtensionServicenow.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/extensionservicenow"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/extensionservicenow"
 
 extensionservicenow.ExtensionServicenow_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.extensionServicenow.ExtensionServicenow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/extensionservicenow"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/extensionservicenow"
 
 extensionservicenow.ExtensionServicenow_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ extensionservicenow.ExtensionServicenow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.extensionServicenow.ExtensionServicenow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/extensionservicenow"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/extensionservicenow"
 
 extensionservicenow.ExtensionServicenow_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ extensionservicenow.ExtensionServicenow_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.extensionServicenow.ExtensionServicenow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/extensionservicenow"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/extensionservicenow"
 
 extensionservicenow.ExtensionServicenow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1003,7 +1003,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/extensionservicenow"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/extensionservicenow"
 
 &extensionservicenow.ExtensionServicenowConfig {
 	Connection: interface{},

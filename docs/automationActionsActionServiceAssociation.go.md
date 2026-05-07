@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.automationActionsActionServiceAssociation.AutomationActionsActionServiceAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/automationactionsactionserviceassociation"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/automationactionsactionserviceassociation"
 
 automationactionsactionserviceassociation.NewAutomationActionsActionServiceAssociation(scope Construct, id *string, config AutomationActionsActionServiceAssociationConfig) AutomationActionsActionServiceAssociation
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.automationActionsActionServiceAssociation.AutomationActionsActionServiceAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/automationactionsactionserviceassociation"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/automationactionsactionserviceassociation"
 
 automationactionsactionserviceassociation.AutomationActionsActionServiceAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.automationActionsActionServiceAssociation.AutomationActionsActionServiceAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/automationactionsactionserviceassociation"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/automationactionsactionserviceassociation"
 
 automationactionsactionserviceassociation.AutomationActionsActionServiceAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ automationactionsactionserviceassociation.AutomationActionsActionServiceAssociat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.automationActionsActionServiceAssociation.AutomationActionsActionServiceAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/automationactionsactionserviceassociation"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/automationactionsactionserviceassociation"
 
 automationactionsactionserviceassociation.AutomationActionsActionServiceAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ automationactionsactionserviceassociation.AutomationActionsActionServiceAssociat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.automationActionsActionServiceAssociation.AutomationActionsActionServiceAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/automationactionsactionserviceassociation"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/automationactionsactionserviceassociation"
 
 automationactionsactionserviceassociation.AutomationActionsActionServiceAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.automationActionsActionServiceAssociation.AutomationActionsActionServiceAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/automationactionsactionserviceassociation"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/automationactionsactionserviceassociation"
 
 &automationactionsactionserviceassociation.AutomationActionsActionServiceAssociationConfig {
 	Connection: interface{},

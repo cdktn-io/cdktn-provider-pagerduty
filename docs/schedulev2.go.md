@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 schedulev2.NewSchedulev2(scope Construct, id *string, config Schedulev2Config) Schedulev2
 ```
@@ -434,7 +434,7 @@ func ResetTeams()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 schedulev2.Schedulev2_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 schedulev2.Schedulev2_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ schedulev2.Schedulev2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 schedulev2.Schedulev2_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ schedulev2.Schedulev2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 schedulev2.Schedulev2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 &schedulev2.Schedulev2Config {
 	Connection: interface{},
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2Rotation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 &schedulev2.Schedulev2Rotation {
 	Event: interface{},
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2RotationEvent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 &schedulev2.Schedulev2RotationEvent {
 	EffectiveSince: *string,
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2RotationEventAssignmentStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 &schedulev2.Schedulev2RotationEventAssignmentStrategy {
 	Type: *string,
@@ -1258,7 +1258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2RotationEventAssignmentStrategyMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 &schedulev2.Schedulev2RotationEventAssignmentStrategyMember {
 	Type: *string,
@@ -1310,7 +1310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2RotationEventAssignmentStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 schedulev2.NewSchedulev2RotationEventAssignmentStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Schedulev2RotationEventAssignmentStrategyList
 ```
@@ -1470,7 +1470,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2RotationEventAssignmentStrategyMemberList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 schedulev2.NewSchedulev2RotationEventAssignmentStrategyMemberList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Schedulev2RotationEventAssignmentStrategyMemberList
 ```
@@ -1630,7 +1630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2RotationEventAssignmentStrategyMemberOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 schedulev2.NewSchedulev2RotationEventAssignmentStrategyMemberOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Schedulev2RotationEventAssignmentStrategyMemberOutputReference
 ```
@@ -1948,7 +1948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2RotationEventAssignmentStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 schedulev2.NewSchedulev2RotationEventAssignmentStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Schedulev2RotationEventAssignmentStrategyOutputReference
 ```
@@ -2308,7 +2308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2RotationEventList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 schedulev2.NewSchedulev2RotationEventList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Schedulev2RotationEventList
 ```
@@ -2468,7 +2468,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2RotationEventOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 schedulev2.NewSchedulev2RotationEventOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Schedulev2RotationEventOutputReference
 ```
@@ -2927,7 +2927,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2RotationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 schedulev2.NewSchedulev2RotationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Schedulev2RotationList
 ```
@@ -3087,7 +3087,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.schedulev2.Schedulev2RotationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/schedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/schedulev2"
 
 schedulev2.NewSchedulev2RotationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Schedulev2RotationOutputReference
 ```

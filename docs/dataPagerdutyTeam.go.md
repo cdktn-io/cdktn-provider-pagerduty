@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyTeam.DataPagerdutyTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyteam"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyteam"
 
 datapagerdutyteam.NewDataPagerdutyTeam(scope Construct, id *string, config DataPagerdutyTeamConfig) DataPagerdutyTeam
 ```
@@ -319,7 +319,7 @@ func ResetParent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.dataPagerdutyTeam.DataPagerdutyTeam.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyteam"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyteam"
 
 datapagerdutyteam.DataPagerdutyTeam_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.dataPagerdutyTeam.DataPagerdutyTeam.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyteam"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyteam"
 
 datapagerdutyteam.DataPagerdutyTeam_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datapagerdutyteam.DataPagerdutyTeam_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-pagerduty.dataPagerdutyTeam.DataPagerdutyTeam.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyteam"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyteam"
 
 datapagerdutyteam.DataPagerdutyTeam_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datapagerdutyteam.DataPagerdutyTeam_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.dataPagerdutyTeam.DataPagerdutyTeam.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyteam"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyteam"
 
 datapagerdutyteam.DataPagerdutyTeam_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.dataPagerdutyTeam.DataPagerdutyTeamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyteam"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyteam"
 
 &datapagerdutyteam.DataPagerdutyTeamConfig {
 	Connection: interface{},
