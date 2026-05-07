@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/alertgroupingsetting"
 
 alertgroupingsetting.NewAlertGroupingSetting(scope Construct, id *string, config AlertGroupingSettingConfig) AlertGroupingSetting
 ```
@@ -434,7 +434,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/alertgroupingsetting"
 
 alertgroupingsetting.AlertGroupingSetting_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/alertgroupingsetting"
 
 alertgroupingsetting.AlertGroupingSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ alertgroupingsetting.AlertGroupingSetting_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/alertgroupingsetting"
 
 alertgroupingsetting.AlertGroupingSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ alertgroupingsetting.AlertGroupingSetting_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/alertgroupingsetting"
 
 alertgroupingsetting.AlertGroupingSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/alertgroupingsetting"
 
 &alertgroupingsetting.AlertGroupingSettingConfig {
 	Connection: interface{},
@@ -856,7 +856,7 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/alertgroup
 	Provisioners: *[]interface{},
 	Services: *[]*string,
 	Type: *string,
-	Config: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.alertGroupingSetting.AlertGroupingSettingConfigA,
+	Config: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.alertGroupingSetting.AlertGroupingSettingConfigA,
 	Description: *string,
 	Name: *string,
 }
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/alertgroupingsetting"
 
 &alertgroupingsetting.AlertGroupingSettingConfigA {
 	Aggregate: *string,
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/alertgroupingsetting"
 
 alertgroupingsetting.NewAlertGroupingSettingConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertGroupingSettingConfigAOutputReference
 ```

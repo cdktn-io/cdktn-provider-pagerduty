@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.tag.Tag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/tag"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/tag"
 
 tag.NewTag(scope Construct, id *string, config TagConfig) Tag
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.tag.Tag.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/tag"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/tag"
 
 tag.Tag_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.tag.Tag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/tag"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/tag"
 
 tag.Tag_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ tag.Tag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.tag.Tag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/tag"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/tag"
 
 tag.Tag_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ tag.Tag_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.tag.Tag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/tag"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/tag"
 
 tag.Tag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.tag.TagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/tag"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/tag"
 
 &tag.TagConfig {
 	Connection: interface{},

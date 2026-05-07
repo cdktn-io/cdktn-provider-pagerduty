@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.enablement.Enablement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/enablement"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/enablement"
 
 enablement.NewEnablement(scope Construct, id *string, config EnablementConfig) Enablement
 ```
@@ -407,7 +407,7 @@ func ResetEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.enablement.Enablement.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/enablement"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/enablement"
 
 enablement.Enablement_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.enablement.Enablement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/enablement"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/enablement"
 
 enablement.Enablement_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ enablement.Enablement_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.enablement.Enablement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/enablement"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/enablement"
 
 enablement.Enablement_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ enablement.Enablement_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.enablement.Enablement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/enablement"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/enablement"
 
 enablement.Enablement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.enablement.EnablementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/enablement"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/enablement"
 
 &enablement.EnablementConfig {
 	Connection: interface{},

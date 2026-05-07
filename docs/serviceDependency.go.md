@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependency.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 servicedependency.NewServiceDependency(scope Construct, id *string, config ServiceDependencyConfig) ServiceDependency
 ```
@@ -420,7 +420,7 @@ func ResetDependency()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependency.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 servicedependency.ServiceDependency_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependency.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 servicedependency.ServiceDependency_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ servicedependency.ServiceDependency_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependency.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 servicedependency.ServiceDependency_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ servicedependency.ServiceDependency_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependency.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 servicedependency.ServiceDependency_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -742,7 +742,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependencyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 &servicedependency.ServiceDependencyConfig {
 	Connection: interface{},
@@ -860,7 +860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependencyDependency.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 &servicedependency.ServiceDependencyDependency {
 	DependentService: interface{},
@@ -924,7 +924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependencyDependencyDependentService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 &servicedependency.ServiceDependencyDependencyDependentService {
 	Id: *string,
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependencyDependencySupportingService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 &servicedependency.ServiceDependencyDependencySupportingService {
 	Id: *string,
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependencyDependencyDependentServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 servicedependency.NewServiceDependencyDependencyDependentServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceDependencyDependencyDependentServiceList
 ```
@@ -1184,7 +1184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependencyDependencyDependentServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 servicedependency.NewServiceDependencyDependencyDependentServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceDependencyDependencyDependentServiceOutputReference
 ```
@@ -1495,7 +1495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 servicedependency.NewServiceDependencyDependencyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceDependencyDependencyList
 ```
@@ -1655,7 +1655,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 servicedependency.NewServiceDependencyDependencyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceDependencyDependencyOutputReference
 ```
@@ -2035,7 +2035,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependencyDependencySupportingServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 servicedependency.NewServiceDependencyDependencySupportingServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceDependencyDependencySupportingServiceList
 ```
@@ -2195,7 +2195,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.serviceDependency.ServiceDependencyDependencySupportingServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/servicedependency"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/servicedependency"
 
 servicedependency.NewServiceDependencyDependencySupportingServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceDependencyDependencySupportingServiceOutputReference
 ```

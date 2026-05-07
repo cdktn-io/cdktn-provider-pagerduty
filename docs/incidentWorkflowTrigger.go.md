@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.incidentWorkflowTrigger.IncidentWorkflowTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidentworkflowtrigger"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidentworkflowtrigger"
 
 incidentworkflowtrigger.NewIncidentWorkflowTrigger(scope Construct, id *string, config IncidentWorkflowTriggerConfig) IncidentWorkflowTrigger
 ```
@@ -441,7 +441,7 @@ func ResetServices()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.incidentWorkflowTrigger.IncidentWorkflowTrigger.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidentworkflowtrigger"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidentworkflowtrigger"
 
 incidentworkflowtrigger.IncidentWorkflowTrigger_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.incidentWorkflowTrigger.IncidentWorkflowTrigger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidentworkflowtrigger"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidentworkflowtrigger"
 
 incidentworkflowtrigger.IncidentWorkflowTrigger_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ incidentworkflowtrigger.IncidentWorkflowTrigger_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.incidentWorkflowTrigger.IncidentWorkflowTrigger.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidentworkflowtrigger"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidentworkflowtrigger"
 
 incidentworkflowtrigger.IncidentWorkflowTrigger_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ incidentworkflowtrigger.IncidentWorkflowTrigger_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.incidentWorkflowTrigger.IncidentWorkflowTrigger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidentworkflowtrigger"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidentworkflowtrigger"
 
 incidentworkflowtrigger.IncidentWorkflowTrigger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.incidentWorkflowTrigger.IncidentWorkflowTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidentworkflowtrigger"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidentworkflowtrigger"
 
 &incidentworkflowtrigger.IncidentWorkflowTriggerConfig {
 	Connection: interface{},
@@ -899,7 +899,7 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidentwo
 	Workflow: *string,
 	Condition: *string,
 	Id: *string,
-	Permissions: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.incidentWorkflowTrigger.IncidentWorkflowTriggerPermissions,
+	Permissions: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.incidentWorkflowTrigger.IncidentWorkflowTriggerPermissions,
 	Services: *[]*string,
 }
 ```
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.incidentWorkflowTrigger.IncidentWorkflowTriggerPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidentworkflowtrigger"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidentworkflowtrigger"
 
 &incidentworkflowtrigger.IncidentWorkflowTriggerPermissions {
 	Restricted: interface{},
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.incidentWorkflowTrigger.IncidentWorkflowTriggerPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidentworkflowtrigger"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidentworkflowtrigger"
 
 incidentworkflowtrigger.NewIncidentWorkflowTriggerPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IncidentWorkflowTriggerPermissionsOutputReference
 ```

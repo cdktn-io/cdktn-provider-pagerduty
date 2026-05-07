@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.NewJiraCloudAccountMappingRule(scope Construct, id *string, config JiraCloudAccountMappingRuleConfig) JiraCloudAccountMappingRule
 ```
@@ -427,7 +427,7 @@ func ResetEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.JiraCloudAccountMappingRule_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.JiraCloudAccountMappingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ jiracloudaccountmappingrule.JiraCloudAccountMappingRule_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.JiraCloudAccountMappingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ jiracloudaccountmappingrule.JiraCloudAccountMappingRule_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.JiraCloudAccountMappingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 &jiracloudaccountmappingrule.JiraCloudAccountMappingRuleConfig {
 	Connection: interface{},
@@ -849,7 +849,7 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiraclouda
 	Provisioners: *[]interface{},
 	AccountMapping: *string,
 	Name: *string,
-	Config: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigA,
+	Config: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigA,
 	Enabled: interface{},
 }
 ```
@@ -999,11 +999,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 &jiracloudaccountmappingrule.JiraCloudAccountMappingRuleConfigA {
 	Service: *string,
-	Jira: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJira,
+	Jira: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJira,
 }
 ```
 
@@ -1047,16 +1047,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJira.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 &jiracloudaccountmappingrule.JiraCloudAccountMappingRuleConfigJira {
-	IssueType: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraIssueType,
-	Project: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraProject,
+	IssueType: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraIssueType,
+	Project: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraProject,
 	AutocreateJql: *string,
 	CreateIssueOnIncidentTrigger: interface{},
 	CustomFields: interface{},
 	Priorities: interface{},
-	StatusMapping: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMapping,
+	StatusMapping: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMapping,
 	SyncNotesUser: *string,
 }
 ```
@@ -1187,7 +1187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraCustomFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 &jiracloudaccountmappingrule.JiraCloudAccountMappingRuleConfigJiraCustomFields {
 	TargetIssueField: *string,
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraIssueType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 &jiracloudaccountmappingrule.JiraCloudAccountMappingRuleConfigJiraIssueType {
 	Id: *string,
@@ -1324,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraPriorities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 &jiracloudaccountmappingrule.JiraCloudAccountMappingRuleConfigJiraPriorities {
 	JiraId: *string,
@@ -1370,7 +1370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraProject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 &jiracloudaccountmappingrule.JiraCloudAccountMappingRuleConfigJiraProject {
 	Id: *string,
@@ -1433,12 +1433,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 &jiracloudaccountmappingrule.JiraCloudAccountMappingRuleConfigJiraStatusMapping {
-	Triggered: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered,
-	Acknowledged: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged,
-	Resolved: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved,
+	Triggered: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered,
+	Acknowledged: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged,
+	Resolved: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved,
 }
 ```
 
@@ -1499,7 +1499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 &jiracloudaccountmappingrule.JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged {
 	Id: *string,
@@ -1548,7 +1548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 &jiracloudaccountmappingrule.JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved {
 	Id: *string,
@@ -1597,7 +1597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 &jiracloudaccountmappingrule.JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered {
 	Id: *string,
@@ -1648,7 +1648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.NewJiraCloudAccountMappingRuleConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JiraCloudAccountMappingRuleConfigAOutputReference
 ```
@@ -1961,7 +1961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraCustomFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.NewJiraCloudAccountMappingRuleConfigJiraCustomFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JiraCloudAccountMappingRuleConfigJiraCustomFieldsList
 ```
@@ -2121,7 +2121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraCustomFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.NewJiraCloudAccountMappingRuleConfigJiraCustomFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JiraCloudAccountMappingRuleConfigJiraCustomFieldsOutputReference
 ```
@@ -2512,7 +2512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraIssueTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.NewJiraCloudAccountMappingRuleConfigJiraIssueTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JiraCloudAccountMappingRuleConfigJiraIssueTypeOutputReference
 ```
@@ -2805,7 +2805,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.NewJiraCloudAccountMappingRuleConfigJiraOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JiraCloudAccountMappingRuleConfigJiraOutputReference
 ```
@@ -3337,7 +3337,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraPrioritiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.NewJiraCloudAccountMappingRuleConfigJiraPrioritiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JiraCloudAccountMappingRuleConfigJiraPrioritiesList
 ```
@@ -3497,7 +3497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraPrioritiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.NewJiraCloudAccountMappingRuleConfigJiraPrioritiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JiraCloudAccountMappingRuleConfigJiraPrioritiesOutputReference
 ```
@@ -3808,7 +3808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraProjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.NewJiraCloudAccountMappingRuleConfigJiraProjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JiraCloudAccountMappingRuleConfigJiraProjectOutputReference
 ```
@@ -4123,7 +4123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledgedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.NewJiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledgedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledgedOutputReference
 ```
@@ -4430,7 +4430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.NewJiraCloudAccountMappingRuleConfigJiraStatusMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JiraCloudAccountMappingRuleConfigJiraStatusMappingOutputReference
 ```
@@ -4798,7 +4798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMappingResolvedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.NewJiraCloudAccountMappingRuleConfigJiraStatusMappingResolvedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JiraCloudAccountMappingRuleConfigJiraStatusMappingResolvedOutputReference
 ```
@@ -5105,7 +5105,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.jiraCloudAccountMappingRule.JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/jiracloudaccountmappingrule"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/jiracloudaccountmappingrule"
 
 jiracloudaccountmappingrule.NewJiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredOutputReference
 ```

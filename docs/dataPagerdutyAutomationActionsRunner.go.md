@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyautomationactionsrunner"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyautomationactionsrunner"
 
 datapagerdutyautomationactionsrunner.NewDataPagerdutyAutomationActionsRunner(scope Construct, id *string, config DataPagerdutyAutomationActionsRunnerConfig) DataPagerdutyAutomationActionsRunner
 ```
@@ -319,7 +319,7 @@ func ResetRunbookBaseUri()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyautomationactionsrunner"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyautomationactionsrunner"
 
 datapagerdutyautomationactionsrunner.DataPagerdutyAutomationActionsRunner_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyautomationactionsrunner"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyautomationactionsrunner"
 
 datapagerdutyautomationactionsrunner.DataPagerdutyAutomationActionsRunner_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datapagerdutyautomationactionsrunner.DataPagerdutyAutomationActionsRunner_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyautomationactionsrunner"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyautomationactionsrunner"
 
 datapagerdutyautomationactionsrunner.DataPagerdutyAutomationActionsRunner_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datapagerdutyautomationactionsrunner.DataPagerdutyAutomationActionsRunner_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyautomationactionsrunner"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyautomationactionsrunner"
 
 datapagerdutyautomationactionsrunner.DataPagerdutyAutomationActionsRunner_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunnerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/datapagerdutyautomationactionsrunner"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/datapagerdutyautomationactionsrunner"
 
 &datapagerdutyautomationactionsrunner.DataPagerdutyAutomationActionsRunnerConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.service.Service.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.NewService(scope Construct, id *string, config ServiceConfig) Service
 ```
@@ -556,7 +556,7 @@ func ResetSupportHours()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.service.Service.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.Service_IsConstruct(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.service.Service.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.Service_IsTerraformElement(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ service.Service_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.service.Service.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.Service_IsTerraformResource(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ service.Service_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.service.Service.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.Service_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1230,10 +1230,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.service.ServiceAlertGroupingParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 &service.ServiceAlertGroupingParameters {
-	Config: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.service.ServiceAlertGroupingParametersConfig,
+	Config: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.service.ServiceAlertGroupingParametersConfig,
 	Type: *string,
 }
 ```
@@ -1278,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.service.ServiceAlertGroupingParametersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 &service.ServiceAlertGroupingParametersConfig {
 	Aggregate: *string,
@@ -1352,7 +1352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.service.ServiceAutoPauseNotificationsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 &service.ServiceAutoPauseNotificationsParameters {
 	Enabled: interface{},
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.service.ServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 &service.ServiceConfig {
 	Connection: interface{},
@@ -1413,16 +1413,16 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
 	AcknowledgementTimeout: *string,
 	AlertCreation: *string,
 	AlertGrouping: *string,
-	AlertGroupingParameters: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.service.ServiceAlertGroupingParameters,
+	AlertGroupingParameters: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.service.ServiceAlertGroupingParameters,
 	AlertGroupingTimeout: *string,
-	AutoPauseNotificationsParameters: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.service.ServiceAutoPauseNotificationsParameters,
+	AutoPauseNotificationsParameters: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.service.ServiceAutoPauseNotificationsParameters,
 	AutoResolveTimeout: *string,
 	Description: *string,
 	Id: *string,
-	IncidentUrgencyRule: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.service.ServiceIncidentUrgencyRule,
+	IncidentUrgencyRule: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.service.ServiceIncidentUrgencyRule,
 	ResponsePlay: *string,
 	ScheduledActions: interface{},
-	SupportHours: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.service.ServiceSupportHours,
+	SupportHours: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.service.ServiceSupportHours,
 }
 ```
 
@@ -1723,12 +1723,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.service.ServiceIncidentUrgencyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 &service.ServiceIncidentUrgencyRule {
 	Type: *string,
-	DuringSupportHours: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.service.ServiceIncidentUrgencyRuleDuringSupportHours,
-	OutsideSupportHours: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15.service.ServiceIncidentUrgencyRuleOutsideSupportHours,
+	DuringSupportHours: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.service.ServiceIncidentUrgencyRuleDuringSupportHours,
+	OutsideSupportHours: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16.service.ServiceIncidentUrgencyRuleOutsideSupportHours,
 	Urgency: *string,
 }
 ```
@@ -1801,7 +1801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.service.ServiceIncidentUrgencyRuleDuringSupportHours.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 &service.ServiceIncidentUrgencyRuleDuringSupportHours {
 	Type: *string,
@@ -1847,7 +1847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.service.ServiceIncidentUrgencyRuleOutsideSupportHours.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 &service.ServiceIncidentUrgencyRuleOutsideSupportHours {
 	Type: *string,
@@ -1893,7 +1893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.service.ServiceScheduledActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 &service.ServiceScheduledActions {
 	At: interface{},
@@ -1955,7 +1955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.service.ServiceScheduledActionsAt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 &service.ServiceScheduledActionsAt {
 	Name: *string,
@@ -2001,7 +2001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.service.ServiceSupportHours.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 &service.ServiceSupportHours {
 	DaysOfWeek: *[]*f64,
@@ -2091,7 +2091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.service.ServiceAlertGroupingParametersConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.NewServiceAlertGroupingParametersConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceAlertGroupingParametersConfigOutputReference
 ```
@@ -2456,7 +2456,7 @@ func InternalValue() ServiceAlertGroupingParametersConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.service.ServiceAlertGroupingParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.NewServiceAlertGroupingParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceAlertGroupingParametersOutputReference
 ```
@@ -2776,7 +2776,7 @@ func InternalValue() ServiceAlertGroupingParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.service.ServiceAutoPauseNotificationsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.NewServiceAutoPauseNotificationsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceAutoPauseNotificationsParametersOutputReference
 ```
@@ -3083,7 +3083,7 @@ func InternalValue() ServiceAutoPauseNotificationsParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.service.ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.NewServiceIncidentUrgencyRuleDuringSupportHoursOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference
 ```
@@ -3390,7 +3390,7 @@ func InternalValue() ServiceIncidentUrgencyRuleDuringSupportHours
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.service.ServiceIncidentUrgencyRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.NewServiceIncidentUrgencyRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceIncidentUrgencyRuleOutputReference
 ```
@@ -3774,7 +3774,7 @@ func InternalValue() ServiceIncidentUrgencyRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.service.ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.NewServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference
 ```
@@ -4081,7 +4081,7 @@ func InternalValue() ServiceIncidentUrgencyRuleOutsideSupportHours
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.service.ServiceScheduledActionsAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.NewServiceScheduledActionsAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceScheduledActionsAtList
 ```
@@ -4241,7 +4241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.service.ServiceScheduledActionsAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.NewServiceScheduledActionsAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceScheduledActionsAtOutputReference
 ```
@@ -4566,7 +4566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.service.ServiceScheduledActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.NewServiceScheduledActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceScheduledActionsList
 ```
@@ -4726,7 +4726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.service.ServiceScheduledActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.NewServiceScheduledActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceScheduledActionsOutputReference
 ```
@@ -5093,7 +5093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.service.ServiceSupportHoursOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/service"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/service"
 
 service.NewServiceSupportHoursOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceSupportHoursOutputReference
 ```

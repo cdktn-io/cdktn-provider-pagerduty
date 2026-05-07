@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.incidentType.IncidentType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidenttype"
 
 incidenttype.NewIncidentType(scope Construct, id *string, config IncidentTypeConfig) IncidentType
 ```
@@ -414,7 +414,7 @@ func ResetEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.incidentType.IncidentType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidenttype"
 
 incidenttype.IncidentType_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.incidentType.IncidentType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidenttype"
 
 incidenttype.IncidentType_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ incidenttype.IncidentType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.incidentType.IncidentType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidenttype"
 
 incidenttype.IncidentType_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ incidenttype.IncidentType_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.incidentType.IncidentType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidenttype"
 
 incidenttype.IncidentType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.incidentType.IncidentTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v15/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v16/incidenttype"
 
 &incidenttype.IncidentTypeConfig {
 	Connection: interface{},
