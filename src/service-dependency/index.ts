@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_dependency
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_dependency
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,20 +15,20 @@ export interface ServiceDependencyConfig extends cdktn.TerraformMetaArguments {
   /**
   * dependency block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_dependency#dependency ServiceDependency#dependency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_dependency#dependency ServiceDependency#dependency}
   */
   readonly dependency?: ServiceDependencyDependency[] | cdktn.IResolvable;
 }
 export interface ServiceDependencyDependencyDependentService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_dependency#id ServiceDependency#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_dependency#id ServiceDependency#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_dependency#type ServiceDependency#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_dependency#type ServiceDependency#type}
   */
   readonly type: string;
 }
@@ -36,7 +36,7 @@ export interface ServiceDependencyDependencyDependentService {
 export function serviceDependencyDependencyDependentServiceToTerraform(struct?: ServiceDependencyDependencyDependentService | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -48,7 +48,7 @@ export function serviceDependencyDependencyDependentServiceToTerraform(struct?: 
 export function serviceDependencyDependencyDependentServiceToHclTerraform(struct?: ServiceDependencyDependencyDependentService | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -167,14 +167,14 @@ export class ServiceDependencyDependencyDependentServiceList extends cdktn.Compl
 }
 export interface ServiceDependencyDependencySupportingService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_dependency#id ServiceDependency#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_dependency#id ServiceDependency#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_dependency#type ServiceDependency#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_dependency#type ServiceDependency#type}
   */
   readonly type: string;
 }
@@ -182,7 +182,7 @@ export interface ServiceDependencyDependencySupportingService {
 export function serviceDependencyDependencySupportingServiceToTerraform(struct?: ServiceDependencyDependencySupportingService | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -194,7 +194,7 @@ export function serviceDependencyDependencySupportingServiceToTerraform(struct?:
 export function serviceDependencyDependencySupportingServiceToHclTerraform(struct?: ServiceDependencyDependencySupportingService | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -313,19 +313,19 @@ export class ServiceDependencyDependencySupportingServiceList extends cdktn.Comp
 }
 export interface ServiceDependencyDependency {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_dependency#type ServiceDependency#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_dependency#type ServiceDependency#type}
   */
   readonly type?: string;
   /**
   * dependent_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_dependency#dependent_service ServiceDependency#dependent_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_dependency#dependent_service ServiceDependency#dependent_service}
   */
   readonly dependentService?: ServiceDependencyDependencyDependentService[] | cdktn.IResolvable;
   /**
   * supporting_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_dependency#supporting_service ServiceDependency#supporting_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_dependency#supporting_service ServiceDependency#supporting_service}
   */
   readonly supportingService?: ServiceDependencyDependencySupportingService[] | cdktn.IResolvable;
 }
@@ -333,7 +333,7 @@ export interface ServiceDependencyDependency {
 export function serviceDependencyDependencyToTerraform(struct?: ServiceDependencyDependency | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -346,7 +346,7 @@ export function serviceDependencyDependencyToTerraform(struct?: ServiceDependenc
 export function serviceDependencyDependencyToHclTerraform(struct?: ServiceDependencyDependency | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -499,7 +499,7 @@ export class ServiceDependencyDependencyList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_dependency pagerduty_service_dependency}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_dependency pagerduty_service_dependency}
 */
 export class ServiceDependency extends cdktn.TerraformResource {
 
@@ -515,7 +515,7 @@ export class ServiceDependency extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ServiceDependency resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceDependency to import
-  * @param importFromId The id of the existing ServiceDependency that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_dependency#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceDependency that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_dependency#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceDependency to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -527,7 +527,7 @@ export class ServiceDependency extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_dependency pagerduty_service_dependency} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_dependency pagerduty_service_dependency} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -538,7 +538,7 @@ export class ServiceDependency extends cdktn.TerraformResource {
       terraformResourceType: 'pagerduty_service_dependency',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.32.4',
+        providerVersion: '3.33.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

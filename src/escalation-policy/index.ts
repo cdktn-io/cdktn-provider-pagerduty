@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktn from 'cdktn';
 
 export interface EscalationPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy#description EscalationPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy#description EscalationPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy#id EscalationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy#id EscalationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy#name EscalationPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy#name EscalationPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy#num_loops EscalationPolicy#num_loops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy#num_loops EscalationPolicy#num_loops}
   */
   readonly numLoops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy#teams EscalationPolicy#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy#teams EscalationPolicy#teams}
   */
   readonly teams?: string[];
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy#rule EscalationPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy#rule EscalationPolicy#rule}
   */
   readonly rule: EscalationPolicyRule[] | cdktn.IResolvable;
 }
 export interface EscalationPolicyRuleEscalationRuleAssignmentStrategy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy#type EscalationPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy#type EscalationPolicy#type}
   */
   readonly type?: string;
 }
@@ -52,7 +52,7 @@ export interface EscalationPolicyRuleEscalationRuleAssignmentStrategy {
 export function escalationPolicyRuleEscalationRuleAssignmentStrategyToTerraform(struct?: EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference | EscalationPolicyRuleEscalationRuleAssignmentStrategy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -63,7 +63,7 @@ export function escalationPolicyRuleEscalationRuleAssignmentStrategyToTerraform(
 export function escalationPolicyRuleEscalationRuleAssignmentStrategyToHclTerraform(struct?: EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference | EscalationPolicyRuleEscalationRuleAssignmentStrategy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -128,14 +128,14 @@ export class EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference
 }
 export interface EscalationPolicyRuleTarget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy#id EscalationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy#id EscalationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy#type EscalationPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy#type EscalationPolicy#type}
   */
   readonly type?: string;
 }
@@ -143,7 +143,7 @@ export interface EscalationPolicyRuleTarget {
 export function escalationPolicyRuleTargetToTerraform(struct?: EscalationPolicyRuleTarget | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -155,7 +155,7 @@ export function escalationPolicyRuleTargetToTerraform(struct?: EscalationPolicyR
 export function escalationPolicyRuleTargetToHclTerraform(struct?: EscalationPolicyRuleTarget | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -277,19 +277,19 @@ export class EscalationPolicyRuleTargetList extends cdktn.ComplexList {
 }
 export interface EscalationPolicyRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy#escalation_delay_in_minutes EscalationPolicy#escalation_delay_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy#escalation_delay_in_minutes EscalationPolicy#escalation_delay_in_minutes}
   */
   readonly escalationDelayInMinutes: number;
   /**
   * escalation_rule_assignment_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy#escalation_rule_assignment_strategy EscalationPolicy#escalation_rule_assignment_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy#escalation_rule_assignment_strategy EscalationPolicy#escalation_rule_assignment_strategy}
   */
   readonly escalationRuleAssignmentStrategy?: EscalationPolicyRuleEscalationRuleAssignmentStrategy;
   /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy#target EscalationPolicy#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy#target EscalationPolicy#target}
   */
   readonly target: EscalationPolicyRuleTarget[] | cdktn.IResolvable;
 }
@@ -297,7 +297,7 @@ export interface EscalationPolicyRule {
 export function escalationPolicyRuleToTerraform(struct?: EscalationPolicyRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     escalation_delay_in_minutes: cdktn.numberToTerraform(struct!.escalationDelayInMinutes),
@@ -310,7 +310,7 @@ export function escalationPolicyRuleToTerraform(struct?: EscalationPolicyRule | 
 export function escalationPolicyRuleToHclTerraform(struct?: EscalationPolicyRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     escalation_delay_in_minutes: {
@@ -462,7 +462,7 @@ export class EscalationPolicyRuleList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy pagerduty_escalation_policy}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy pagerduty_escalation_policy}
 */
 export class EscalationPolicy extends cdktn.TerraformResource {
 
@@ -478,7 +478,7 @@ export class EscalationPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EscalationPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EscalationPolicy to import
-  * @param importFromId The id of the existing EscalationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EscalationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EscalationPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -490,7 +490,7 @@ export class EscalationPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/escalation_policy pagerduty_escalation_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/escalation_policy pagerduty_escalation_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -501,7 +501,7 @@ export class EscalationPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'pagerduty_escalation_policy',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.32.4',
+        providerVersion: '3.33.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

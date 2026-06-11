@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,56 @@ import * as cdktn from 'cdktn';
 
 export interface RulesetRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#catch_all RulesetRule#catch_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#catch_all RulesetRule#catch_all}
   */
   readonly catchAll?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#disabled RulesetRule#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#disabled RulesetRule#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#id RulesetRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#id RulesetRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#position RulesetRule#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#position RulesetRule#position}
   */
   readonly position?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#ruleset RulesetRule#ruleset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#ruleset RulesetRule#ruleset}
   */
   readonly ruleset: string;
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#actions RulesetRule#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#actions RulesetRule#actions}
   */
   readonly actions?: RulesetRuleActions;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#conditions RulesetRule#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#conditions RulesetRule#conditions}
   */
   readonly conditions?: RulesetRuleConditions;
   /**
   * time_frame block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#time_frame RulesetRule#time_frame}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#time_frame RulesetRule#time_frame}
   */
   readonly timeFrame?: RulesetRuleTimeFrame;
   /**
   * variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#variable RulesetRule#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#variable RulesetRule#variable}
   */
   readonly variable?: RulesetRuleVariable[] | cdktn.IResolvable;
 }
 export interface RulesetRuleActionsAnnotate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: string;
 }
@@ -70,7 +70,7 @@ export interface RulesetRuleActionsAnnotate {
 export function rulesetRuleActionsAnnotateToTerraform(struct?: RulesetRuleActionsAnnotate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.stringToTerraform(struct!.value),
@@ -81,7 +81,7 @@ export function rulesetRuleActionsAnnotateToTerraform(struct?: RulesetRuleAction
 export function rulesetRuleActionsAnnotateToHclTerraform(struct?: RulesetRuleActionsAnnotate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -178,7 +178,7 @@ export class RulesetRuleActionsAnnotateList extends cdktn.ComplexList {
 }
 export interface RulesetRuleActionsEventAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: string;
 }
@@ -186,7 +186,7 @@ export interface RulesetRuleActionsEventAction {
 export function rulesetRuleActionsEventActionToTerraform(struct?: RulesetRuleActionsEventAction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.stringToTerraform(struct!.value),
@@ -197,7 +197,7 @@ export function rulesetRuleActionsEventActionToTerraform(struct?: RulesetRuleAct
 export function rulesetRuleActionsEventActionToHclTerraform(struct?: RulesetRuleActionsEventAction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -294,19 +294,19 @@ export class RulesetRuleActionsEventActionList extends cdktn.ComplexList {
 }
 export interface RulesetRuleActionsExtractions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#regex RulesetRule#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#regex RulesetRule#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#source RulesetRule#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#source RulesetRule#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#target RulesetRule#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#target RulesetRule#target}
   */
   readonly target?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#template RulesetRule#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#template RulesetRule#template}
   */
   readonly template?: string;
 }
@@ -314,7 +314,7 @@ export interface RulesetRuleActionsExtractions {
 export function rulesetRuleActionsExtractionsToTerraform(struct?: RulesetRuleActionsExtractions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     regex: cdktn.stringToTerraform(struct!.regex),
@@ -328,7 +328,7 @@ export function rulesetRuleActionsExtractionsToTerraform(struct?: RulesetRuleAct
 export function rulesetRuleActionsExtractionsToHclTerraform(struct?: RulesetRuleActionsExtractions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     regex: {
@@ -509,7 +509,7 @@ export class RulesetRuleActionsExtractionsList extends cdktn.ComplexList {
 }
 export interface RulesetRuleActionsPriority {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: string;
 }
@@ -517,7 +517,7 @@ export interface RulesetRuleActionsPriority {
 export function rulesetRuleActionsPriorityToTerraform(struct?: RulesetRuleActionsPriority | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.stringToTerraform(struct!.value),
@@ -528,7 +528,7 @@ export function rulesetRuleActionsPriorityToTerraform(struct?: RulesetRuleAction
 export function rulesetRuleActionsPriorityToHclTerraform(struct?: RulesetRuleActionsPriority | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -625,7 +625,7 @@ export class RulesetRuleActionsPriorityList extends cdktn.ComplexList {
 }
 export interface RulesetRuleActionsRoute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: string;
 }
@@ -633,7 +633,7 @@ export interface RulesetRuleActionsRoute {
 export function rulesetRuleActionsRouteToTerraform(struct?: RulesetRuleActionsRoute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.stringToTerraform(struct!.value),
@@ -644,7 +644,7 @@ export function rulesetRuleActionsRouteToTerraform(struct?: RulesetRuleActionsRo
 export function rulesetRuleActionsRouteToHclTerraform(struct?: RulesetRuleActionsRoute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -741,7 +741,7 @@ export class RulesetRuleActionsRouteList extends cdktn.ComplexList {
 }
 export interface RulesetRuleActionsSeverity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: string;
 }
@@ -749,7 +749,7 @@ export interface RulesetRuleActionsSeverity {
 export function rulesetRuleActionsSeverityToTerraform(struct?: RulesetRuleActionsSeverity | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.stringToTerraform(struct!.value),
@@ -760,7 +760,7 @@ export function rulesetRuleActionsSeverityToTerraform(struct?: RulesetRuleAction
 export function rulesetRuleActionsSeverityToHclTerraform(struct?: RulesetRuleActionsSeverity | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -857,19 +857,19 @@ export class RulesetRuleActionsSeverityList extends cdktn.ComplexList {
 }
 export interface RulesetRuleActionsSuppress {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#threshold_time_amount RulesetRule#threshold_time_amount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#threshold_time_amount RulesetRule#threshold_time_amount}
   */
   readonly thresholdTimeAmount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#threshold_time_unit RulesetRule#threshold_time_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#threshold_time_unit RulesetRule#threshold_time_unit}
   */
   readonly thresholdTimeUnit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#threshold_value RulesetRule#threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#threshold_value RulesetRule#threshold_value}
   */
   readonly thresholdValue?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: boolean | cdktn.IResolvable;
 }
@@ -877,7 +877,7 @@ export interface RulesetRuleActionsSuppress {
 export function rulesetRuleActionsSuppressToTerraform(struct?: RulesetRuleActionsSuppress | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     threshold_time_amount: cdktn.numberToTerraform(struct!.thresholdTimeAmount),
@@ -891,7 +891,7 @@ export function rulesetRuleActionsSuppressToTerraform(struct?: RulesetRuleAction
 export function rulesetRuleActionsSuppressToHclTerraform(struct?: RulesetRuleActionsSuppress | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     threshold_time_amount: {
@@ -1072,7 +1072,7 @@ export class RulesetRuleActionsSuppressList extends cdktn.ComplexList {
 }
 export interface RulesetRuleActionsSuspend {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: number;
 }
@@ -1080,7 +1080,7 @@ export interface RulesetRuleActionsSuspend {
 export function rulesetRuleActionsSuspendToTerraform(struct?: RulesetRuleActionsSuspend | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.numberToTerraform(struct!.value),
@@ -1091,7 +1091,7 @@ export function rulesetRuleActionsSuspendToTerraform(struct?: RulesetRuleActions
 export function rulesetRuleActionsSuspendToHclTerraform(struct?: RulesetRuleActionsSuspend | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -1190,49 +1190,49 @@ export interface RulesetRuleActions {
   /**
   * annotate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#annotate RulesetRule#annotate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#annotate RulesetRule#annotate}
   */
   readonly annotate?: RulesetRuleActionsAnnotate[] | cdktn.IResolvable;
   /**
   * event_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#event_action RulesetRule#event_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#event_action RulesetRule#event_action}
   */
   readonly eventAction?: RulesetRuleActionsEventAction[] | cdktn.IResolvable;
   /**
   * extractions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#extractions RulesetRule#extractions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#extractions RulesetRule#extractions}
   */
   readonly extractions?: RulesetRuleActionsExtractions[] | cdktn.IResolvable;
   /**
   * priority block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#priority RulesetRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#priority RulesetRule#priority}
   */
   readonly priority?: RulesetRuleActionsPriority[] | cdktn.IResolvable;
   /**
   * route block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#route RulesetRule#route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#route RulesetRule#route}
   */
   readonly route?: RulesetRuleActionsRoute[] | cdktn.IResolvable;
   /**
   * severity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#severity RulesetRule#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#severity RulesetRule#severity}
   */
   readonly severity?: RulesetRuleActionsSeverity[] | cdktn.IResolvable;
   /**
   * suppress block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#suppress RulesetRule#suppress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#suppress RulesetRule#suppress}
   */
   readonly suppress?: RulesetRuleActionsSuppress[] | cdktn.IResolvable;
   /**
   * suspend block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#suspend RulesetRule#suspend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#suspend RulesetRule#suspend}
   */
   readonly suspend?: RulesetRuleActionsSuspend[] | cdktn.IResolvable;
 }
@@ -1240,7 +1240,7 @@ export interface RulesetRuleActions {
 export function rulesetRuleActionsToTerraform(struct?: RulesetRuleActionsOutputReference | RulesetRuleActions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotate: cdktn.listMapper(rulesetRuleActionsAnnotateToTerraform, true)(struct!.annotate),
@@ -1258,7 +1258,7 @@ export function rulesetRuleActionsToTerraform(struct?: RulesetRuleActionsOutputR
 export function rulesetRuleActionsToHclTerraform(struct?: RulesetRuleActionsOutputReference | RulesetRuleActions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotate: {
@@ -1519,11 +1519,11 @@ export class RulesetRuleActionsOutputReference extends cdktn.ComplexObject {
 }
 export interface RulesetRuleConditionsSubconditionsParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#path RulesetRule#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#path RulesetRule#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: string;
 }
@@ -1531,7 +1531,7 @@ export interface RulesetRuleConditionsSubconditionsParameter {
 export function rulesetRuleConditionsSubconditionsParameterToTerraform(struct?: RulesetRuleConditionsSubconditionsParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -1543,7 +1543,7 @@ export function rulesetRuleConditionsSubconditionsParameterToTerraform(struct?: 
 export function rulesetRuleConditionsSubconditionsParameterToHclTerraform(struct?: RulesetRuleConditionsSubconditionsParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -1668,13 +1668,13 @@ export class RulesetRuleConditionsSubconditionsParameterList extends cdktn.Compl
 }
 export interface RulesetRuleConditionsSubconditions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#operator RulesetRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#operator RulesetRule#operator}
   */
   readonly operator?: string;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#parameter RulesetRule#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#parameter RulesetRule#parameter}
   */
   readonly parameter?: RulesetRuleConditionsSubconditionsParameter[] | cdktn.IResolvable;
 }
@@ -1682,7 +1682,7 @@ export interface RulesetRuleConditionsSubconditions {
 export function rulesetRuleConditionsSubconditionsToTerraform(struct?: RulesetRuleConditionsSubconditions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     operator: cdktn.stringToTerraform(struct!.operator),
@@ -1694,7 +1694,7 @@ export function rulesetRuleConditionsSubconditionsToTerraform(struct?: RulesetRu
 export function rulesetRuleConditionsSubconditionsToHclTerraform(struct?: RulesetRuleConditionsSubconditions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     operator: {
@@ -1819,13 +1819,13 @@ export class RulesetRuleConditionsSubconditionsList extends cdktn.ComplexList {
 }
 export interface RulesetRuleConditions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#operator RulesetRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#operator RulesetRule#operator}
   */
   readonly operator?: string;
   /**
   * subconditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#subconditions RulesetRule#subconditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#subconditions RulesetRule#subconditions}
   */
   readonly subconditions?: RulesetRuleConditionsSubconditions[] | cdktn.IResolvable;
 }
@@ -1833,7 +1833,7 @@ export interface RulesetRuleConditions {
 export function rulesetRuleConditionsToTerraform(struct?: RulesetRuleConditionsOutputReference | RulesetRuleConditions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     operator: cdktn.stringToTerraform(struct!.operator),
@@ -1845,7 +1845,7 @@ export function rulesetRuleConditionsToTerraform(struct?: RulesetRuleConditionsO
 export function rulesetRuleConditionsToHclTerraform(struct?: RulesetRuleConditionsOutputReference | RulesetRuleConditions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     operator: {
@@ -1938,11 +1938,11 @@ export class RulesetRuleConditionsOutputReference extends cdktn.ComplexObject {
 }
 export interface RulesetRuleTimeFrameActiveBetween {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#end_time RulesetRule#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#end_time RulesetRule#end_time}
   */
   readonly endTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#start_time RulesetRule#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#start_time RulesetRule#start_time}
   */
   readonly startTime?: number;
 }
@@ -1950,7 +1950,7 @@ export interface RulesetRuleTimeFrameActiveBetween {
 export function rulesetRuleTimeFrameActiveBetweenToTerraform(struct?: RulesetRuleTimeFrameActiveBetween | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end_time: cdktn.numberToTerraform(struct!.endTime),
@@ -1962,7 +1962,7 @@ export function rulesetRuleTimeFrameActiveBetweenToTerraform(struct?: RulesetRul
 export function rulesetRuleTimeFrameActiveBetweenToHclTerraform(struct?: RulesetRuleTimeFrameActiveBetween | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end_time: {
@@ -2087,19 +2087,19 @@ export class RulesetRuleTimeFrameActiveBetweenList extends cdktn.ComplexList {
 }
 export interface RulesetRuleTimeFrameScheduledWeekly {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#duration RulesetRule#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#duration RulesetRule#duration}
   */
   readonly duration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#start_time RulesetRule#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#start_time RulesetRule#start_time}
   */
   readonly startTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#timezone RulesetRule#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#timezone RulesetRule#timezone}
   */
   readonly timezone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#weekdays RulesetRule#weekdays}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#weekdays RulesetRule#weekdays}
   */
   readonly weekdays?: number[];
 }
@@ -2107,7 +2107,7 @@ export interface RulesetRuleTimeFrameScheduledWeekly {
 export function rulesetRuleTimeFrameScheduledWeeklyToTerraform(struct?: RulesetRuleTimeFrameScheduledWeekly | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     duration: cdktn.numberToTerraform(struct!.duration),
@@ -2121,7 +2121,7 @@ export function rulesetRuleTimeFrameScheduledWeeklyToTerraform(struct?: RulesetR
 export function rulesetRuleTimeFrameScheduledWeeklyToHclTerraform(struct?: RulesetRuleTimeFrameScheduledWeekly | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     duration: {
@@ -2304,13 +2304,13 @@ export interface RulesetRuleTimeFrame {
   /**
   * active_between block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#active_between RulesetRule#active_between}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#active_between RulesetRule#active_between}
   */
   readonly activeBetween?: RulesetRuleTimeFrameActiveBetween[] | cdktn.IResolvable;
   /**
   * scheduled_weekly block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#scheduled_weekly RulesetRule#scheduled_weekly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#scheduled_weekly RulesetRule#scheduled_weekly}
   */
   readonly scheduledWeekly?: RulesetRuleTimeFrameScheduledWeekly[] | cdktn.IResolvable;
 }
@@ -2318,7 +2318,7 @@ export interface RulesetRuleTimeFrame {
 export function rulesetRuleTimeFrameToTerraform(struct?: RulesetRuleTimeFrameOutputReference | RulesetRuleTimeFrame): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     active_between: cdktn.listMapper(rulesetRuleTimeFrameActiveBetweenToTerraform, true)(struct!.activeBetween),
@@ -2330,7 +2330,7 @@ export function rulesetRuleTimeFrameToTerraform(struct?: RulesetRuleTimeFrameOut
 export function rulesetRuleTimeFrameToHclTerraform(struct?: RulesetRuleTimeFrameOutputReference | RulesetRuleTimeFrame): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     active_between: {
@@ -2423,11 +2423,11 @@ export class RulesetRuleTimeFrameOutputReference extends cdktn.ComplexObject {
 }
 export interface RulesetRuleVariableParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#path RulesetRule#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#path RulesetRule#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: string;
 }
@@ -2435,7 +2435,7 @@ export interface RulesetRuleVariableParameters {
 export function rulesetRuleVariableParametersToTerraform(struct?: RulesetRuleVariableParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -2447,7 +2447,7 @@ export function rulesetRuleVariableParametersToTerraform(struct?: RulesetRuleVar
 export function rulesetRuleVariableParametersToHclTerraform(struct?: RulesetRuleVariableParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -2572,17 +2572,17 @@ export class RulesetRuleVariableParametersList extends cdktn.ComplexList {
 }
 export interface RulesetRuleVariable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#name RulesetRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#name RulesetRule#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#type RulesetRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#type RulesetRule#type}
   */
   readonly type?: string;
   /**
   * parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#parameters RulesetRule#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#parameters RulesetRule#parameters}
   */
   readonly parameters?: RulesetRuleVariableParameters[] | cdktn.IResolvable;
 }
@@ -2590,7 +2590,7 @@ export interface RulesetRuleVariable {
 export function rulesetRuleVariableToTerraform(struct?: RulesetRuleVariable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2603,7 +2603,7 @@ export function rulesetRuleVariableToTerraform(struct?: RulesetRuleVariable | cd
 export function rulesetRuleVariableToHclTerraform(struct?: RulesetRuleVariable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2756,7 +2756,7 @@ export class RulesetRuleVariableList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule pagerduty_ruleset_rule}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule pagerduty_ruleset_rule}
 */
 export class RulesetRule extends cdktn.TerraformResource {
 
@@ -2772,7 +2772,7 @@ export class RulesetRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a RulesetRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RulesetRule to import
-  * @param importFromId The id of the existing RulesetRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RulesetRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RulesetRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2784,7 +2784,7 @@ export class RulesetRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/ruleset_rule pagerduty_ruleset_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/ruleset_rule pagerduty_ruleset_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2795,7 +2795,7 @@ export class RulesetRule extends cdktn.TerraformResource {
       terraformResourceType: 'pagerduty_ruleset_rule',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.32.4',
+        providerVersion: '3.33.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

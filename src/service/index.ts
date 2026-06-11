@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,94 +13,94 @@ import * as cdktn from 'cdktn';
 
 export interface ServiceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#acknowledgement_timeout Service#acknowledgement_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#acknowledgement_timeout Service#acknowledgement_timeout}
   */
   readonly acknowledgementTimeout?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#alert_creation Service#alert_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#alert_creation Service#alert_creation}
   */
   readonly alertCreation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#alert_grouping Service#alert_grouping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#alert_grouping Service#alert_grouping}
   */
   readonly alertGrouping?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#alert_grouping_timeout Service#alert_grouping_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#alert_grouping_timeout Service#alert_grouping_timeout}
   */
   readonly alertGroupingTimeout?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#auto_resolve_timeout Service#auto_resolve_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#auto_resolve_timeout Service#auto_resolve_timeout}
   */
   readonly autoResolveTimeout?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#description Service#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#description Service#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#escalation_policy Service#escalation_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#escalation_policy Service#escalation_policy}
   */
   readonly escalationPolicy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#id Service#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#id Service#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#name Service#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#name Service#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#response_play Service#response_play}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#response_play Service#response_play}
   */
   readonly responsePlay?: string;
   /**
   * alert_grouping_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#alert_grouping_parameters Service#alert_grouping_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#alert_grouping_parameters Service#alert_grouping_parameters}
   */
   readonly alertGroupingParameters?: ServiceAlertGroupingParameters;
   /**
   * auto_pause_notifications_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#auto_pause_notifications_parameters Service#auto_pause_notifications_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#auto_pause_notifications_parameters Service#auto_pause_notifications_parameters}
   */
   readonly autoPauseNotificationsParameters?: ServiceAutoPauseNotificationsParameters;
   /**
   * incident_urgency_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#incident_urgency_rule Service#incident_urgency_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#incident_urgency_rule Service#incident_urgency_rule}
   */
   readonly incidentUrgencyRule?: ServiceIncidentUrgencyRule;
   /**
   * scheduled_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#scheduled_actions Service#scheduled_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#scheduled_actions Service#scheduled_actions}
   */
   readonly scheduledActions?: ServiceScheduledActions[] | cdktn.IResolvable;
   /**
   * support_hours block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#support_hours Service#support_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#support_hours Service#support_hours}
   */
   readonly supportHours?: ServiceSupportHours;
 }
 export interface ServiceAlertGroupingParametersConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#aggregate Service#aggregate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#aggregate Service#aggregate}
   */
   readonly aggregate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#fields Service#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#fields Service#fields}
   */
   readonly fields?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#time_window Service#time_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#time_window Service#time_window}
   */
   readonly timeWindow?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#timeout Service#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#timeout Service#timeout}
   */
   readonly timeout?: number;
 }
@@ -108,7 +108,7 @@ export interface ServiceAlertGroupingParametersConfig {
 export function serviceAlertGroupingParametersConfigToTerraform(struct?: ServiceAlertGroupingParametersConfigOutputReference | ServiceAlertGroupingParametersConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregate: cdktn.stringToTerraform(struct!.aggregate),
@@ -122,7 +122,7 @@ export function serviceAlertGroupingParametersConfigToTerraform(struct?: Service
 export function serviceAlertGroupingParametersConfigToHclTerraform(struct?: ServiceAlertGroupingParametersConfigOutputReference | ServiceAlertGroupingParametersConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregate: {
@@ -271,13 +271,13 @@ export class ServiceAlertGroupingParametersConfigOutputReference extends cdktn.C
 }
 export interface ServiceAlertGroupingParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#type Service#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#type Service#type}
   */
   readonly type?: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#config Service#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#config Service#config}
   */
   readonly config?: ServiceAlertGroupingParametersConfig;
 }
@@ -285,7 +285,7 @@ export interface ServiceAlertGroupingParameters {
 export function serviceAlertGroupingParametersToTerraform(struct?: ServiceAlertGroupingParametersOutputReference | ServiceAlertGroupingParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -297,7 +297,7 @@ export function serviceAlertGroupingParametersToTerraform(struct?: ServiceAlertG
 export function serviceAlertGroupingParametersToHclTerraform(struct?: ServiceAlertGroupingParametersOutputReference | ServiceAlertGroupingParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -390,11 +390,11 @@ export class ServiceAlertGroupingParametersOutputReference extends cdktn.Complex
 }
 export interface ServiceAutoPauseNotificationsParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#enabled Service#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#enabled Service#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#timeout Service#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#timeout Service#timeout}
   */
   readonly timeout?: number;
 }
@@ -402,7 +402,7 @@ export interface ServiceAutoPauseNotificationsParameters {
 export function serviceAutoPauseNotificationsParametersToTerraform(struct?: ServiceAutoPauseNotificationsParametersOutputReference | ServiceAutoPauseNotificationsParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -414,7 +414,7 @@ export function serviceAutoPauseNotificationsParametersToTerraform(struct?: Serv
 export function serviceAutoPauseNotificationsParametersToHclTerraform(struct?: ServiceAutoPauseNotificationsParametersOutputReference | ServiceAutoPauseNotificationsParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -507,11 +507,11 @@ export class ServiceAutoPauseNotificationsParametersOutputReference extends cdkt
 }
 export interface ServiceIncidentUrgencyRuleDuringSupportHours {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#type Service#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#type Service#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#urgency Service#urgency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#urgency Service#urgency}
   */
   readonly urgency?: string;
 }
@@ -519,7 +519,7 @@ export interface ServiceIncidentUrgencyRuleDuringSupportHours {
 export function serviceIncidentUrgencyRuleDuringSupportHoursToTerraform(struct?: ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference | ServiceIncidentUrgencyRuleDuringSupportHours): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -531,7 +531,7 @@ export function serviceIncidentUrgencyRuleDuringSupportHoursToTerraform(struct?:
 export function serviceIncidentUrgencyRuleDuringSupportHoursToHclTerraform(struct?: ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference | ServiceIncidentUrgencyRuleDuringSupportHours): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -624,11 +624,11 @@ export class ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference extends
 }
 export interface ServiceIncidentUrgencyRuleOutsideSupportHours {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#type Service#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#type Service#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#urgency Service#urgency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#urgency Service#urgency}
   */
   readonly urgency?: string;
 }
@@ -636,7 +636,7 @@ export interface ServiceIncidentUrgencyRuleOutsideSupportHours {
 export function serviceIncidentUrgencyRuleOutsideSupportHoursToTerraform(struct?: ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference | ServiceIncidentUrgencyRuleOutsideSupportHours): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -648,7 +648,7 @@ export function serviceIncidentUrgencyRuleOutsideSupportHoursToTerraform(struct?
 export function serviceIncidentUrgencyRuleOutsideSupportHoursToHclTerraform(struct?: ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference | ServiceIncidentUrgencyRuleOutsideSupportHours): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -741,23 +741,23 @@ export class ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference extend
 }
 export interface ServiceIncidentUrgencyRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#type Service#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#type Service#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#urgency Service#urgency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#urgency Service#urgency}
   */
   readonly urgency?: string;
   /**
   * during_support_hours block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#during_support_hours Service#during_support_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#during_support_hours Service#during_support_hours}
   */
   readonly duringSupportHours?: ServiceIncidentUrgencyRuleDuringSupportHours;
   /**
   * outside_support_hours block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#outside_support_hours Service#outside_support_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#outside_support_hours Service#outside_support_hours}
   */
   readonly outsideSupportHours?: ServiceIncidentUrgencyRuleOutsideSupportHours;
 }
@@ -765,7 +765,7 @@ export interface ServiceIncidentUrgencyRule {
 export function serviceIncidentUrgencyRuleToTerraform(struct?: ServiceIncidentUrgencyRuleOutputReference | ServiceIncidentUrgencyRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -779,7 +779,7 @@ export function serviceIncidentUrgencyRuleToTerraform(struct?: ServiceIncidentUr
 export function serviceIncidentUrgencyRuleToHclTerraform(struct?: ServiceIncidentUrgencyRuleOutputReference | ServiceIncidentUrgencyRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -925,11 +925,11 @@ export class ServiceIncidentUrgencyRuleOutputReference extends cdktn.ComplexObje
 }
 export interface ServiceScheduledActionsAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#name Service#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#name Service#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#type Service#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#type Service#type}
   */
   readonly type?: string;
 }
@@ -937,7 +937,7 @@ export interface ServiceScheduledActionsAt {
 export function serviceScheduledActionsAtToTerraform(struct?: ServiceScheduledActionsAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -949,7 +949,7 @@ export function serviceScheduledActionsAtToTerraform(struct?: ServiceScheduledAc
 export function serviceScheduledActionsAtToHclTerraform(struct?: ServiceScheduledActionsAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1074,17 +1074,17 @@ export class ServiceScheduledActionsAtList extends cdktn.ComplexList {
 }
 export interface ServiceScheduledActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#to_urgency Service#to_urgency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#to_urgency Service#to_urgency}
   */
   readonly toUrgency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#type Service#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#type Service#type}
   */
   readonly type?: string;
   /**
   * at block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#at Service#at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#at Service#at}
   */
   readonly at?: ServiceScheduledActionsAt[] | cdktn.IResolvable;
 }
@@ -1092,7 +1092,7 @@ export interface ServiceScheduledActions {
 export function serviceScheduledActionsToTerraform(struct?: ServiceScheduledActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     to_urgency: cdktn.stringToTerraform(struct!.toUrgency),
@@ -1105,7 +1105,7 @@ export function serviceScheduledActionsToTerraform(struct?: ServiceScheduledActi
 export function serviceScheduledActionsToHclTerraform(struct?: ServiceScheduledActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     to_urgency: {
@@ -1258,23 +1258,23 @@ export class ServiceScheduledActionsList extends cdktn.ComplexList {
 }
 export interface ServiceSupportHours {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#days_of_week Service#days_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#days_of_week Service#days_of_week}
   */
   readonly daysOfWeek?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#end_time Service#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#end_time Service#end_time}
   */
   readonly endTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#start_time Service#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#start_time Service#start_time}
   */
   readonly startTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#time_zone Service#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#time_zone Service#time_zone}
   */
   readonly timeZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#type Service#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#type Service#type}
   */
   readonly type?: string;
 }
@@ -1282,7 +1282,7 @@ export interface ServiceSupportHours {
 export function serviceSupportHoursToTerraform(struct?: ServiceSupportHoursOutputReference | ServiceSupportHours): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     days_of_week: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.daysOfWeek),
@@ -1297,7 +1297,7 @@ export function serviceSupportHoursToTerraform(struct?: ServiceSupportHoursOutpu
 export function serviceSupportHoursToHclTerraform(struct?: ServiceSupportHoursOutputReference | ServiceSupportHours): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     days_of_week: {
@@ -1474,7 +1474,7 @@ export class ServiceSupportHoursOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service pagerduty_service}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service pagerduty_service}
 */
 export class Service extends cdktn.TerraformResource {
 
@@ -1490,7 +1490,7 @@ export class Service extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Service resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Service to import
-  * @param importFromId The id of the existing Service that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Service that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Service to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1502,7 +1502,7 @@ export class Service extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service pagerduty_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service pagerduty_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1513,7 +1513,7 @@ export class Service extends cdktn.TerraformResource {
       terraformResourceType: 'pagerduty_service',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.32.4',
+        providerVersion: '3.33.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
