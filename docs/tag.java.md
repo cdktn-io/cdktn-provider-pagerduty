@@ -4,7 +4,7 @@
 
 ### Tag <a name="Tag" id="@cdktn/provider-pagerduty.tag.Tag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/tag pagerduty_tag}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/tag pagerduty_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.tag.Tag.Initializer"></a>
 
@@ -34,7 +34,7 @@ Tag.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-pagerduty.tag.Tag.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.tag.Tag.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.tag.Tag.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.tag.Tag.Initializer.parameter.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/tag#label Tag#label}. |
+| <code><a href="#@cdktn/provider-pagerduty.tag.Tag.Initializer.parameter.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/tag#label Tag#label}. |
 
 ---
 
@@ -102,7 +102,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/tag#label Tag#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/tag#label Tag#label}.
 
 ---
 
@@ -551,7 +551,7 @@ The construct id used in the generated config for the Tag to import.
 
 The id of the existing Tag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ TagConfig.builder()
 | <code><a href="#@cdktn/provider-pagerduty.tag.TagConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.tag.TagConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.tag.TagConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.tag.TagConfig.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/tag#label Tag#label}. |
+| <code><a href="#@cdktn/provider-pagerduty.tag.TagConfig.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/tag#label Tag#label}. |
 
 ---
 
@@ -913,7 +913,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/tag#label Tag#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/tag#label Tag#label}.
 
 ---
 

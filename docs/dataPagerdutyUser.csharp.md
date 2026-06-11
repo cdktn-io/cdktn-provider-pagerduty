@@ -4,7 +4,7 @@
 
 ### DataPagerdutyUser <a name="DataPagerdutyUser" id="@cdktn/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/data-sources/user pagerduty_user}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/data-sources/user pagerduty_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataPagerdutyUser to impor
 
 The id of the existing DataPagerdutyUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -678,7 +678,7 @@ new DataPagerdutyUserConfig {
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUserConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUserConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUserConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUserConfig.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/data-sources/user#email DataPagerdutyUser#email}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUserConfig.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/data-sources/user#email DataPagerdutyUser#email}. |
 
 ---
 
@@ -760,7 +760,7 @@ public string Email { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/data-sources/user#email DataPagerdutyUser#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/data-sources/user#email DataPagerdutyUser#email}.
 
 ---
 
