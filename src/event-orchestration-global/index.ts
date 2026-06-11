@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface EventOrchestrationGlobalConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#event_orchestration EventOrchestrationGlobal#event_orchestration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#event_orchestration EventOrchestrationGlobal#event_orchestration}
   */
   readonly eventOrchestration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,23 +26,23 @@ export interface EventOrchestrationGlobalConfig extends cdktn.TerraformMetaArgum
   /**
   * catch_all block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#catch_all EventOrchestrationGlobal#catch_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#catch_all EventOrchestrationGlobal#catch_all}
   */
   readonly catchAll: EventOrchestrationGlobalCatchAll;
   /**
   * set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#set EventOrchestrationGlobal#set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#set EventOrchestrationGlobal#set}
   */
   readonly set: EventOrchestrationGlobalSet[] | cdktn.IResolvable;
 }
 export interface EventOrchestrationGlobalCatchAllActionsAutomationActionHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
   */
   readonly value: string;
 }
@@ -50,7 +50,7 @@ export interface EventOrchestrationGlobalCatchAllActionsAutomationActionHeader {
 export function eventOrchestrationGlobalCatchAllActionsAutomationActionHeaderToTerraform(struct?: EventOrchestrationGlobalCatchAllActionsAutomationActionHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -62,7 +62,7 @@ export function eventOrchestrationGlobalCatchAllActionsAutomationActionHeaderToT
 export function eventOrchestrationGlobalCatchAllActionsAutomationActionHeaderToHclTerraform(struct?: EventOrchestrationGlobalCatchAllActionsAutomationActionHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -181,11 +181,11 @@ export class EventOrchestrationGlobalCatchAllActionsAutomationActionHeaderList e
 }
 export interface EventOrchestrationGlobalCatchAllActionsAutomationActionParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
   */
   readonly value: string;
 }
@@ -193,7 +193,7 @@ export interface EventOrchestrationGlobalCatchAllActionsAutomationActionParamete
 export function eventOrchestrationGlobalCatchAllActionsAutomationActionParameterToTerraform(struct?: EventOrchestrationGlobalCatchAllActionsAutomationActionParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -205,7 +205,7 @@ export function eventOrchestrationGlobalCatchAllActionsAutomationActionParameter
 export function eventOrchestrationGlobalCatchAllActionsAutomationActionParameterToHclTerraform(struct?: EventOrchestrationGlobalCatchAllActionsAutomationActionParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -324,31 +324,31 @@ export class EventOrchestrationGlobalCatchAllActionsAutomationActionParameterLis
 }
 export interface EventOrchestrationGlobalCatchAllActionsAutomationAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}
   */
   readonly autoSend?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#trigger_types EventOrchestrationGlobal#trigger_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#trigger_types EventOrchestrationGlobal#trigger_types}
   */
   readonly triggerTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}
   */
   readonly url: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#header EventOrchestrationGlobal#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#header EventOrchestrationGlobal#header}
   */
   readonly header?: EventOrchestrationGlobalCatchAllActionsAutomationActionHeader[] | cdktn.IResolvable;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#parameter EventOrchestrationGlobal#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#parameter EventOrchestrationGlobal#parameter}
   */
   readonly parameter?: EventOrchestrationGlobalCatchAllActionsAutomationActionParameter[] | cdktn.IResolvable;
 }
@@ -356,7 +356,7 @@ export interface EventOrchestrationGlobalCatchAllActionsAutomationAction {
 export function eventOrchestrationGlobalCatchAllActionsAutomationActionToTerraform(struct?: EventOrchestrationGlobalCatchAllActionsAutomationActionOutputReference | EventOrchestrationGlobalCatchAllActionsAutomationAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     auto_send: cdktn.booleanToTerraform(struct!.autoSend),
@@ -372,7 +372,7 @@ export function eventOrchestrationGlobalCatchAllActionsAutomationActionToTerrafo
 export function eventOrchestrationGlobalCatchAllActionsAutomationActionToHclTerraform(struct?: EventOrchestrationGlobalCatchAllActionsAutomationActionOutputReference | EventOrchestrationGlobalCatchAllActionsAutomationAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     auto_send: {
@@ -571,19 +571,19 @@ export class EventOrchestrationGlobalCatchAllActionsAutomationActionOutputRefere
 }
 export interface EventOrchestrationGlobalCatchAllActionsExtraction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}
   */
   readonly target: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}
   */
   readonly template?: string;
 }
@@ -591,7 +591,7 @@ export interface EventOrchestrationGlobalCatchAllActionsExtraction {
 export function eventOrchestrationGlobalCatchAllActionsExtractionToTerraform(struct?: EventOrchestrationGlobalCatchAllActionsExtraction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     regex: cdktn.stringToTerraform(struct!.regex),
@@ -605,7 +605,7 @@ export function eventOrchestrationGlobalCatchAllActionsExtractionToTerraform(str
 export function eventOrchestrationGlobalCatchAllActionsExtractionToHclTerraform(struct?: EventOrchestrationGlobalCatchAllActionsExtraction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     regex: {
@@ -783,14 +783,14 @@ export class EventOrchestrationGlobalCatchAllActionsExtractionList extends cdktn
 }
 export interface EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
   */
   readonly value: string;
 }
@@ -798,7 +798,7 @@ export interface EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdat
 export function eventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateToTerraform(struct?: EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -810,7 +810,7 @@ export function eventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdate
 export function eventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateToHclTerraform(struct?: EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -929,19 +929,19 @@ export class EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateLis
 }
 export interface EventOrchestrationGlobalCatchAllActionsVariable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
   */
   readonly value: string;
 }
@@ -949,7 +949,7 @@ export interface EventOrchestrationGlobalCatchAllActionsVariable {
 export function eventOrchestrationGlobalCatchAllActionsVariableToTerraform(struct?: EventOrchestrationGlobalCatchAllActionsVariable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -963,7 +963,7 @@ export function eventOrchestrationGlobalCatchAllActionsVariableToTerraform(struc
 export function eventOrchestrationGlobalCatchAllActionsVariableToHclTerraform(struct?: EventOrchestrationGlobalCatchAllActionsVariable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1132,63 +1132,63 @@ export class EventOrchestrationGlobalCatchAllActionsVariableList extends cdktn.C
 }
 export interface EventOrchestrationGlobalCatchAllActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}
   */
   readonly annotate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}
   */
   readonly dropEvent?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#escalation_policy EventOrchestrationGlobal#escalation_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#escalation_policy EventOrchestrationGlobal#escalation_policy}
   */
   readonly escalationPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}
   */
   readonly eventAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}
   */
   readonly priority?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}
   */
   readonly routeTo?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}
   */
   readonly severity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}
   */
   readonly suppress?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}
   */
   readonly suspend?: number;
   /**
   * automation_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#automation_action EventOrchestrationGlobal#automation_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#automation_action EventOrchestrationGlobal#automation_action}
   */
   readonly automationAction?: EventOrchestrationGlobalCatchAllActionsAutomationAction;
   /**
   * extraction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#extraction EventOrchestrationGlobal#extraction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#extraction EventOrchestrationGlobal#extraction}
   */
   readonly extraction?: EventOrchestrationGlobalCatchAllActionsExtraction[] | cdktn.IResolvable;
   /**
   * incident_custom_field_update block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#incident_custom_field_update EventOrchestrationGlobal#incident_custom_field_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#incident_custom_field_update EventOrchestrationGlobal#incident_custom_field_update}
   */
   readonly incidentCustomFieldUpdate?: EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdate[] | cdktn.IResolvable;
   /**
   * variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#variable EventOrchestrationGlobal#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#variable EventOrchestrationGlobal#variable}
   */
   readonly variable?: EventOrchestrationGlobalCatchAllActionsVariable[] | cdktn.IResolvable;
 }
@@ -1196,7 +1196,7 @@ export interface EventOrchestrationGlobalCatchAllActions {
 export function eventOrchestrationGlobalCatchAllActionsToTerraform(struct?: EventOrchestrationGlobalCatchAllActionsOutputReference | EventOrchestrationGlobalCatchAllActions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotate: cdktn.stringToTerraform(struct!.annotate),
@@ -1219,7 +1219,7 @@ export function eventOrchestrationGlobalCatchAllActionsToTerraform(struct?: Even
 export function eventOrchestrationGlobalCatchAllActionsToHclTerraform(struct?: EventOrchestrationGlobalCatchAllActionsOutputReference | EventOrchestrationGlobalCatchAllActions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotate: {
@@ -1622,7 +1622,7 @@ export interface EventOrchestrationGlobalCatchAll {
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#actions EventOrchestrationGlobal#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#actions EventOrchestrationGlobal#actions}
   */
   readonly actions: EventOrchestrationGlobalCatchAllActions;
 }
@@ -1630,7 +1630,7 @@ export interface EventOrchestrationGlobalCatchAll {
 export function eventOrchestrationGlobalCatchAllToTerraform(struct?: EventOrchestrationGlobalCatchAllOutputReference | EventOrchestrationGlobalCatchAll): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     actions: eventOrchestrationGlobalCatchAllActionsToTerraform(struct!.actions),
@@ -1641,7 +1641,7 @@ export function eventOrchestrationGlobalCatchAllToTerraform(struct?: EventOrches
 export function eventOrchestrationGlobalCatchAllToHclTerraform(struct?: EventOrchestrationGlobalCatchAllOutputReference | EventOrchestrationGlobalCatchAll): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     actions: {
@@ -1703,11 +1703,11 @@ export class EventOrchestrationGlobalCatchAllOutputReference extends cdktn.Compl
 }
 export interface EventOrchestrationGlobalSetRuleActionsAutomationActionHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
   */
   readonly value: string;
 }
@@ -1715,7 +1715,7 @@ export interface EventOrchestrationGlobalSetRuleActionsAutomationActionHeader {
 export function eventOrchestrationGlobalSetRuleActionsAutomationActionHeaderToTerraform(struct?: EventOrchestrationGlobalSetRuleActionsAutomationActionHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1727,7 +1727,7 @@ export function eventOrchestrationGlobalSetRuleActionsAutomationActionHeaderToTe
 export function eventOrchestrationGlobalSetRuleActionsAutomationActionHeaderToHclTerraform(struct?: EventOrchestrationGlobalSetRuleActionsAutomationActionHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1846,11 +1846,11 @@ export class EventOrchestrationGlobalSetRuleActionsAutomationActionHeaderList ex
 }
 export interface EventOrchestrationGlobalSetRuleActionsAutomationActionParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
   */
   readonly value: string;
 }
@@ -1858,7 +1858,7 @@ export interface EventOrchestrationGlobalSetRuleActionsAutomationActionParameter
 export function eventOrchestrationGlobalSetRuleActionsAutomationActionParameterToTerraform(struct?: EventOrchestrationGlobalSetRuleActionsAutomationActionParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1870,7 +1870,7 @@ export function eventOrchestrationGlobalSetRuleActionsAutomationActionParameterT
 export function eventOrchestrationGlobalSetRuleActionsAutomationActionParameterToHclTerraform(struct?: EventOrchestrationGlobalSetRuleActionsAutomationActionParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1989,31 +1989,31 @@ export class EventOrchestrationGlobalSetRuleActionsAutomationActionParameterList
 }
 export interface EventOrchestrationGlobalSetRuleActionsAutomationAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}
   */
   readonly autoSend?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#trigger_types EventOrchestrationGlobal#trigger_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#trigger_types EventOrchestrationGlobal#trigger_types}
   */
   readonly triggerTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}
   */
   readonly url: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#header EventOrchestrationGlobal#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#header EventOrchestrationGlobal#header}
   */
   readonly header?: EventOrchestrationGlobalSetRuleActionsAutomationActionHeader[] | cdktn.IResolvable;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#parameter EventOrchestrationGlobal#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#parameter EventOrchestrationGlobal#parameter}
   */
   readonly parameter?: EventOrchestrationGlobalSetRuleActionsAutomationActionParameter[] | cdktn.IResolvable;
 }
@@ -2021,7 +2021,7 @@ export interface EventOrchestrationGlobalSetRuleActionsAutomationAction {
 export function eventOrchestrationGlobalSetRuleActionsAutomationActionToTerraform(struct?: EventOrchestrationGlobalSetRuleActionsAutomationActionOutputReference | EventOrchestrationGlobalSetRuleActionsAutomationAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     auto_send: cdktn.booleanToTerraform(struct!.autoSend),
@@ -2037,7 +2037,7 @@ export function eventOrchestrationGlobalSetRuleActionsAutomationActionToTerrafor
 export function eventOrchestrationGlobalSetRuleActionsAutomationActionToHclTerraform(struct?: EventOrchestrationGlobalSetRuleActionsAutomationActionOutputReference | EventOrchestrationGlobalSetRuleActionsAutomationAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     auto_send: {
@@ -2236,19 +2236,19 @@ export class EventOrchestrationGlobalSetRuleActionsAutomationActionOutputReferen
 }
 export interface EventOrchestrationGlobalSetRuleActionsExtraction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}
   */
   readonly target: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}
   */
   readonly template?: string;
 }
@@ -2256,7 +2256,7 @@ export interface EventOrchestrationGlobalSetRuleActionsExtraction {
 export function eventOrchestrationGlobalSetRuleActionsExtractionToTerraform(struct?: EventOrchestrationGlobalSetRuleActionsExtraction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     regex: cdktn.stringToTerraform(struct!.regex),
@@ -2270,7 +2270,7 @@ export function eventOrchestrationGlobalSetRuleActionsExtractionToTerraform(stru
 export function eventOrchestrationGlobalSetRuleActionsExtractionToHclTerraform(struct?: EventOrchestrationGlobalSetRuleActionsExtraction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     regex: {
@@ -2448,14 +2448,14 @@ export class EventOrchestrationGlobalSetRuleActionsExtractionList extends cdktn.
 }
 export interface EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
   */
   readonly value: string;
 }
@@ -2463,7 +2463,7 @@ export interface EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdate
 export function eventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateToTerraform(struct?: EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -2475,7 +2475,7 @@ export function eventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateT
 export function eventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateToHclTerraform(struct?: EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -2594,19 +2594,19 @@ export class EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateList
 }
 export interface EventOrchestrationGlobalSetRuleActionsVariable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
   */
   readonly value: string;
 }
@@ -2614,7 +2614,7 @@ export interface EventOrchestrationGlobalSetRuleActionsVariable {
 export function eventOrchestrationGlobalSetRuleActionsVariableToTerraform(struct?: EventOrchestrationGlobalSetRuleActionsVariable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2628,7 +2628,7 @@ export function eventOrchestrationGlobalSetRuleActionsVariableToTerraform(struct
 export function eventOrchestrationGlobalSetRuleActionsVariableToHclTerraform(struct?: EventOrchestrationGlobalSetRuleActionsVariable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2797,63 +2797,63 @@ export class EventOrchestrationGlobalSetRuleActionsVariableList extends cdktn.Co
 }
 export interface EventOrchestrationGlobalSetRuleActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}
   */
   readonly annotate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}
   */
   readonly dropEvent?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#escalation_policy EventOrchestrationGlobal#escalation_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#escalation_policy EventOrchestrationGlobal#escalation_policy}
   */
   readonly escalationPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}
   */
   readonly eventAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}
   */
   readonly priority?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}
   */
   readonly routeTo?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}
   */
   readonly severity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}
   */
   readonly suppress?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}
   */
   readonly suspend?: number;
   /**
   * automation_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#automation_action EventOrchestrationGlobal#automation_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#automation_action EventOrchestrationGlobal#automation_action}
   */
   readonly automationAction?: EventOrchestrationGlobalSetRuleActionsAutomationAction;
   /**
   * extraction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#extraction EventOrchestrationGlobal#extraction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#extraction EventOrchestrationGlobal#extraction}
   */
   readonly extraction?: EventOrchestrationGlobalSetRuleActionsExtraction[] | cdktn.IResolvable;
   /**
   * incident_custom_field_update block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#incident_custom_field_update EventOrchestrationGlobal#incident_custom_field_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#incident_custom_field_update EventOrchestrationGlobal#incident_custom_field_update}
   */
   readonly incidentCustomFieldUpdate?: EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdate[] | cdktn.IResolvable;
   /**
   * variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#variable EventOrchestrationGlobal#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#variable EventOrchestrationGlobal#variable}
   */
   readonly variable?: EventOrchestrationGlobalSetRuleActionsVariable[] | cdktn.IResolvable;
 }
@@ -2861,7 +2861,7 @@ export interface EventOrchestrationGlobalSetRuleActions {
 export function eventOrchestrationGlobalSetRuleActionsToTerraform(struct?: EventOrchestrationGlobalSetRuleActionsOutputReference | EventOrchestrationGlobalSetRuleActions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotate: cdktn.stringToTerraform(struct!.annotate),
@@ -2884,7 +2884,7 @@ export function eventOrchestrationGlobalSetRuleActionsToTerraform(struct?: Event
 export function eventOrchestrationGlobalSetRuleActionsToHclTerraform(struct?: EventOrchestrationGlobalSetRuleActionsOutputReference | EventOrchestrationGlobalSetRuleActions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotate: {
@@ -3285,7 +3285,7 @@ export class EventOrchestrationGlobalSetRuleActionsOutputReference extends cdktn
 }
 export interface EventOrchestrationGlobalSetRuleCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#expression EventOrchestrationGlobal#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#expression EventOrchestrationGlobal#expression}
   */
   readonly expression: string;
 }
@@ -3293,7 +3293,7 @@ export interface EventOrchestrationGlobalSetRuleCondition {
 export function eventOrchestrationGlobalSetRuleConditionToTerraform(struct?: EventOrchestrationGlobalSetRuleCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expression: cdktn.stringToTerraform(struct!.expression),
@@ -3304,7 +3304,7 @@ export function eventOrchestrationGlobalSetRuleConditionToTerraform(struct?: Eve
 export function eventOrchestrationGlobalSetRuleConditionToHclTerraform(struct?: EventOrchestrationGlobalSetRuleCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expression: {
@@ -3398,23 +3398,23 @@ export class EventOrchestrationGlobalSetRuleConditionList extends cdktn.ComplexL
 }
 export interface EventOrchestrationGlobalSetRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#disabled EventOrchestrationGlobal#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#disabled EventOrchestrationGlobal#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#label EventOrchestrationGlobal#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#label EventOrchestrationGlobal#label}
   */
   readonly label?: string;
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#actions EventOrchestrationGlobal#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#actions EventOrchestrationGlobal#actions}
   */
   readonly actions: EventOrchestrationGlobalSetRuleActions;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#condition EventOrchestrationGlobal#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#condition EventOrchestrationGlobal#condition}
   */
   readonly condition?: EventOrchestrationGlobalSetRuleCondition[] | cdktn.IResolvable;
 }
@@ -3422,7 +3422,7 @@ export interface EventOrchestrationGlobalSetRule {
 export function eventOrchestrationGlobalSetRuleToTerraform(struct?: EventOrchestrationGlobalSetRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disabled: cdktn.booleanToTerraform(struct!.disabled),
@@ -3436,7 +3436,7 @@ export function eventOrchestrationGlobalSetRuleToTerraform(struct?: EventOrchest
 export function eventOrchestrationGlobalSetRuleToHclTerraform(struct?: EventOrchestrationGlobalSetRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disabled: {
@@ -3619,7 +3619,7 @@ export class EventOrchestrationGlobalSetRuleList extends cdktn.ComplexList {
 }
 export interface EventOrchestrationGlobalSet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3628,7 +3628,7 @@ export interface EventOrchestrationGlobalSet {
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#rule EventOrchestrationGlobal#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#rule EventOrchestrationGlobal#rule}
   */
   readonly rule?: EventOrchestrationGlobalSetRule[] | cdktn.IResolvable;
 }
@@ -3636,7 +3636,7 @@ export interface EventOrchestrationGlobalSet {
 export function eventOrchestrationGlobalSetToTerraform(struct?: EventOrchestrationGlobalSet | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -3648,7 +3648,7 @@ export function eventOrchestrationGlobalSetToTerraform(struct?: EventOrchestrati
 export function eventOrchestrationGlobalSetToHclTerraform(struct?: EventOrchestrationGlobalSet | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -3770,7 +3770,7 @@ export class EventOrchestrationGlobalSetList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global pagerduty_event_orchestration_global}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global pagerduty_event_orchestration_global}
 */
 export class EventOrchestrationGlobal extends cdktn.TerraformResource {
 
@@ -3786,7 +3786,7 @@ export class EventOrchestrationGlobal extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EventOrchestrationGlobal resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventOrchestrationGlobal to import
-  * @param importFromId The id of the existing EventOrchestrationGlobal that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventOrchestrationGlobal that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventOrchestrationGlobal to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3798,7 +3798,7 @@ export class EventOrchestrationGlobal extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/event_orchestration_global pagerduty_event_orchestration_global} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/event_orchestration_global pagerduty_event_orchestration_global} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3809,7 +3809,7 @@ export class EventOrchestrationGlobal extends cdktn.TerraformResource {
       terraformResourceType: 'pagerduty_event_orchestration_global',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.32.4',
+        providerVersion: '3.33.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

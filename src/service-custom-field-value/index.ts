@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_custom_field_value
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_custom_field_value
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,30 +15,30 @@ export interface ServiceCustomFieldValueConfig extends cdktn.TerraformMetaArgume
   /**
   * The custom field values to set for the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_custom_field_value#custom_fields ServiceCustomFieldValue#custom_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_custom_field_value#custom_fields ServiceCustomFieldValue#custom_fields}
   */
   readonly customFields: ServiceCustomFieldValueCustomFields[] | cdktn.IResolvable;
   /**
   * The ID of the service to set custom field values for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_custom_field_value#service_id ServiceCustomFieldValue#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_custom_field_value#service_id ServiceCustomFieldValue#service_id}
   */
   readonly serviceId: string;
 }
 export interface ServiceCustomFieldValueCustomFields {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_custom_field_value#id ServiceCustomFieldValue#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_custom_field_value#id ServiceCustomFieldValue#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_custom_field_value#name ServiceCustomFieldValue#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_custom_field_value#name ServiceCustomFieldValue#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_custom_field_value#value ServiceCustomFieldValue#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_custom_field_value#value ServiceCustomFieldValue#value}
   */
   readonly value: string;
 }
@@ -46,7 +46,7 @@ export interface ServiceCustomFieldValueCustomFields {
 export function serviceCustomFieldValueCustomFieldsToTerraform(struct?: ServiceCustomFieldValueCustomFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -59,7 +59,7 @@ export function serviceCustomFieldValueCustomFieldsToTerraform(struct?: ServiceC
 export function serviceCustomFieldValueCustomFieldsToHclTerraform(struct?: ServiceCustomFieldValueCustomFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -203,7 +203,7 @@ export class ServiceCustomFieldValueCustomFieldsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_custom_field_value pagerduty_service_custom_field_value}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_custom_field_value pagerduty_service_custom_field_value}
 */
 export class ServiceCustomFieldValue extends cdktn.TerraformResource {
 
@@ -219,7 +219,7 @@ export class ServiceCustomFieldValue extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ServiceCustomFieldValue resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceCustomFieldValue to import
-  * @param importFromId The id of the existing ServiceCustomFieldValue that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_custom_field_value#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceCustomFieldValue that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_custom_field_value#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceCustomFieldValue to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -231,7 +231,7 @@ export class ServiceCustomFieldValue extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.32.4/docs/resources/service_custom_field_value pagerduty_service_custom_field_value} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/resources/service_custom_field_value pagerduty_service_custom_field_value} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -242,7 +242,7 @@ export class ServiceCustomFieldValue extends cdktn.TerraformResource {
       terraformResourceType: 'pagerduty_service_custom_field_value',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.32.4',
+        providerVersion: '3.33.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
