@@ -4,7 +4,7 @@
 
 ### DataPagerdutySchedulev2 <a name="DataPagerdutySchedulev2" id="@cdktn/provider-pagerduty.dataPagerdutySchedulev2.DataPagerdutySchedulev2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/data-sources/schedulev2 pagerduty_schedulev2}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.1/docs/data-sources/schedulev2 pagerduty_schedulev2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutySchedulev2.DataPagerdutySchedulev2.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the schedule to search for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/data-sources/schedulev2#name DataPagerdutySchedulev2#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.1/docs/data-sources/schedulev2#name DataPagerdutySchedulev2#name}
 
 ---
 
@@ -449,7 +449,7 @@ The construct id used in the generated config for the DataPagerdutySchedulev2 to
 
 The id of the existing DataPagerdutySchedulev2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/data-sources/schedulev2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.1/docs/data-sources/schedulev2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ public java.lang.String getName();
 
 The name of the schedule to search for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.0/docs/data-sources/schedulev2#name DataPagerdutySchedulev2#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.33.1/docs/data-sources/schedulev2#name DataPagerdutySchedulev2#name}
 
 ---
 
