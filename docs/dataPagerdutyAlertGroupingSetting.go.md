@@ -4,12 +4,12 @@
 
 ### DataPagerdutyAlertGroupingSetting <a name="DataPagerdutyAlertGroupingSetting" id="@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyalertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyalertgroupingsetting"
 
 datapagerdutyalertgroupingsetting.NewDataPagerdutyAlertGroupingSetting(scope Construct, id *string, config DataPagerdutyAlertGroupingSettingConfig) DataPagerdutyAlertGroupingSetting
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyalertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyalertgroupingsetting"
 
 datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSetting_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyalertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyalertgroupingsetting"
 
 datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSetting_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyalertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyalertgroupingsetting"
 
 datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSetting_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSetting_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyalertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyalertgroupingsetting"
 
 datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataPagerdutyAlertGrouping
 
 The id of the existing DataPagerdutyAlertGroupingSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/alert_grouping_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/alert_grouping_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyalertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyalertgroupingsetting"
 
 &datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSettingConfig {
 	Connection: interface{},
@@ -667,7 +667,7 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerd
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}. |
 
 ---
 
@@ -749,7 +749,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}.
 
 ---
 
@@ -758,7 +758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyalertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyalertgroupingsetting"
 
 &datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSettingConfigA {
 
@@ -773,7 +773,7 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerd
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyalertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyalertgroupingsetting"
 
 datapagerdutyalertgroupingsetting.NewDataPagerdutyAlertGroupingSettingConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataPagerdutyAlertGroupingSettingConfigAOutputReference
 ```

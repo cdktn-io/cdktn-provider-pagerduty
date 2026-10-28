@@ -4,12 +4,12 @@
 
 ### DataPagerdutyTag <a name="DataPagerdutyTag" id="@cdktn/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/tag pagerduty_tag}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/tag pagerduty_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutytag"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutytag"
 
 datapagerdutytag.NewDataPagerdutyTag(scope Construct, id *string, config DataPagerdutyTagConfig) DataPagerdutyTag
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutytag"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutytag"
 
 datapagerdutytag.DataPagerdutyTag_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutytag"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutytag"
 
 datapagerdutytag.DataPagerdutyTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datapagerdutytag.DataPagerdutyTag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutytag"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutytag"
 
 datapagerdutytag.DataPagerdutyTag_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datapagerdutytag.DataPagerdutyTag_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutytag"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutytag"
 
 datapagerdutytag.DataPagerdutyTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataPagerdutyTag to import
 
 The id of the existing DataPagerdutyTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutytag"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutytag"
 
 &datapagerdutytag.DataPagerdutyTagConfig {
 	Connection: interface{},
@@ -707,7 +707,7 @@ Label *string
 
 The label of the tag to find in the PagerDuty API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/tag#label DataPagerdutyTag#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/tag#label DataPagerdutyTag#label}
 
 ---
 

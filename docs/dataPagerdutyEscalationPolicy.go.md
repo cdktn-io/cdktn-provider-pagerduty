@@ -4,12 +4,12 @@
 
 ### DataPagerdutyEscalationPolicy <a name="DataPagerdutyEscalationPolicy" id="@cdktn/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/escalation_policy pagerduty_escalation_policy}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/escalation_policy pagerduty_escalation_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyescalationpolicy"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyescalationpolicy"
 
 datapagerdutyescalationpolicy.NewDataPagerdutyEscalationPolicy(scope Construct, id *string, config DataPagerdutyEscalationPolicyConfig) DataPagerdutyEscalationPolicy
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyescalationpolicy"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyescalationpolicy"
 
 datapagerdutyescalationpolicy.DataPagerdutyEscalationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyescalationpolicy"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyescalationpolicy"
 
 datapagerdutyescalationpolicy.DataPagerdutyEscalationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datapagerdutyescalationpolicy.DataPagerdutyEscalationPolicy_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyescalationpolicy"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyescalationpolicy"
 
 datapagerdutyescalationpolicy.DataPagerdutyEscalationPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datapagerdutyescalationpolicy.DataPagerdutyEscalationPolicy_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyescalationpolicy"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyescalationpolicy"
 
 datapagerdutyescalationpolicy.DataPagerdutyEscalationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataPagerdutyEscalationPol
 
 The id of the existing DataPagerdutyEscalationPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/escalation_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/escalation_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyescalationpolicy"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyescalationpolicy"
 
 &datapagerdutyescalationpolicy.DataPagerdutyEscalationPolicyConfig {
 	Connection: interface{},
@@ -645,7 +645,7 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerd
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/escalation_policy#name DataPagerdutyEscalationPolicy#name}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/escalation_policy#name DataPagerdutyEscalationPolicy#name}. |
 
 ---
 
@@ -727,7 +727,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/escalation_policy#name DataPagerdutyEscalationPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/escalation_policy#name DataPagerdutyEscalationPolicy#name}.
 
 ---
 

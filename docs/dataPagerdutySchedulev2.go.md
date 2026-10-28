@@ -4,12 +4,12 @@
 
 ### DataPagerdutySchedulev2 <a name="DataPagerdutySchedulev2" id="@cdktn/provider-pagerduty.dataPagerdutySchedulev2.DataPagerdutySchedulev2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/schedulev2 pagerduty_schedulev2}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/schedulev2 pagerduty_schedulev2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutySchedulev2.DataPagerdutySchedulev2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyschedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyschedulev2"
 
 datapagerdutyschedulev2.NewDataPagerdutySchedulev2(scope Construct, id *string, config DataPagerdutySchedulev2Config) DataPagerdutySchedulev2
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.dataPagerdutySchedulev2.DataPagerdutySchedulev2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyschedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyschedulev2"
 
 datapagerdutyschedulev2.DataPagerdutySchedulev2_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.dataPagerdutySchedulev2.DataPagerdutySchedulev2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyschedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyschedulev2"
 
 datapagerdutyschedulev2.DataPagerdutySchedulev2_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datapagerdutyschedulev2.DataPagerdutySchedulev2_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-pagerduty.dataPagerdutySchedulev2.DataPagerdutySchedulev2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyschedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyschedulev2"
 
 datapagerdutyschedulev2.DataPagerdutySchedulev2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datapagerdutyschedulev2.DataPagerdutySchedulev2_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.dataPagerdutySchedulev2.DataPagerdutySchedulev2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyschedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyschedulev2"
 
 datapagerdutyschedulev2.DataPagerdutySchedulev2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataPagerdutySchedulev2 to
 
 The id of the existing DataPagerdutySchedulev2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/schedulev2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/schedulev2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.dataPagerdutySchedulev2.DataPagerdutySchedulev2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyschedulev2"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyschedulev2"
 
 &datapagerdutyschedulev2.DataPagerdutySchedulev2Config {
 	Connection: interface{},
@@ -707,7 +707,7 @@ Name *string
 
 The name of the schedule to search for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/schedulev2#name DataPagerdutySchedulev2#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/schedulev2#name DataPagerdutySchedulev2#name}
 
 ---
 

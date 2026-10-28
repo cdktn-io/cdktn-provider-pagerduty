@@ -4,12 +4,12 @@
 
 ### ServiceCustomField <a name="ServiceCustomField" id="@cdktn/provider-pagerduty.serviceCustomField.ServiceCustomField"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/service_custom_field pagerduty_service_custom_field}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/service_custom_field pagerduty_service_custom_field}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.serviceCustomField.ServiceCustomField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/servicecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/servicecustomfield"
 
 servicecustomfield.NewServiceCustomField(scope Construct, id *string, config ServiceCustomFieldConfig) ServiceCustomField
 ```
@@ -441,7 +441,7 @@ func ResetFieldOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.serviceCustomField.ServiceCustomField.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/servicecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/servicecustomfield"
 
 servicecustomfield.ServiceCustomField_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.serviceCustomField.ServiceCustomField.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/servicecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/servicecustomfield"
 
 servicecustomfield.ServiceCustomField_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ servicecustomfield.ServiceCustomField_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.serviceCustomField.ServiceCustomField.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/servicecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/servicecustomfield"
 
 servicecustomfield.ServiceCustomField_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ servicecustomfield.ServiceCustomField_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.serviceCustomField.ServiceCustomField.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/servicecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/servicecustomfield"
 
 servicecustomfield.ServiceCustomField_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the ServiceCustomField to impo
 
 The id of the existing ServiceCustomField that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/service_custom_field#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/service_custom_field#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -950,7 +950,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.serviceCustomField.ServiceCustomFieldConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/servicecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/servicecustomfield"
 
 &servicecustomfield.ServiceCustomFieldConfig {
 	Connection: interface{},
@@ -1073,7 +1073,7 @@ DataType *string
 
 The kind of data the custom field is allowed to contain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}
 
 ---
 
@@ -1087,7 +1087,7 @@ DisplayName *string
 
 The human-readable name of the field. This must be unique across an account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/service_custom_field#display_name ServiceCustomField#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/service_custom_field#display_name ServiceCustomField#display_name}
 
 ---
 
@@ -1101,7 +1101,7 @@ FieldType *string
 
 The type of data this field contains. In combination with the `data_type` field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/service_custom_field#field_type ServiceCustomField#field_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/service_custom_field#field_type ServiceCustomField#field_type}
 
 ---
 
@@ -1117,7 +1117,7 @@ The name of the field.
 
 May include ASCII characters, specifically lowercase letters, digits, and underescores. The `name` for a Field must be unique and cannot be changed once created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/service_custom_field#name ServiceCustomField#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/service_custom_field#name ServiceCustomField#name}
 
 ---
 
@@ -1131,7 +1131,7 @@ DefaultValue *string
 
 Default value for the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/service_custom_field#default_value ServiceCustomField#default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/service_custom_field#default_value ServiceCustomField#default_value}
 
 ---
 
@@ -1145,7 +1145,7 @@ Description *string
 
 A description of the data this field contains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/service_custom_field#description ServiceCustomField#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/service_custom_field#description ServiceCustomField#description}
 
 ---
 
@@ -1159,7 +1159,7 @@ Enabled interface{}
 
 Whether the field is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/service_custom_field#enabled ServiceCustomField#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/service_custom_field#enabled ServiceCustomField#enabled}
 
 ---
 
@@ -1173,7 +1173,7 @@ FieldOption interface{}
 
 field_option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/service_custom_field#field_option ServiceCustomField#field_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/service_custom_field#field_option ServiceCustomField#field_option}
 
 ---
 
@@ -1182,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.serviceCustomField.ServiceCustomFieldFieldOption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/servicecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/servicecustomfield"
 
 &servicecustomfield.ServiceCustomFieldFieldOption {
 	DataType: *string,
@@ -1194,8 +1194,8 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/servicecus
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-pagerduty.serviceCustomField.ServiceCustomFieldFieldOption.property.dataType">DataType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}. |
-| <code><a href="#@cdktn/provider-pagerduty.serviceCustomField.ServiceCustomFieldFieldOption.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/service_custom_field#value ServiceCustomField#value}. |
+| <code><a href="#@cdktn/provider-pagerduty.serviceCustomField.ServiceCustomFieldFieldOption.property.dataType">DataType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}. |
+| <code><a href="#@cdktn/provider-pagerduty.serviceCustomField.ServiceCustomFieldFieldOption.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/service_custom_field#value ServiceCustomField#value}. |
 
 ---
 
@@ -1207,7 +1207,7 @@ DataType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}.
 
 ---
 
@@ -1219,7 +1219,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/service_custom_field#value ServiceCustomField#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/service_custom_field#value ServiceCustomField#value}.
 
 ---
 
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.serviceCustomField.ServiceCustomFieldFieldOptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/servicecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/servicecustomfield"
 
 servicecustomfield.NewServiceCustomFieldFieldOptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceCustomFieldFieldOptionList
 ```
@@ -1390,7 +1390,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.serviceCustomField.ServiceCustomFieldFieldOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/servicecustomfield"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/servicecustomfield"
 
 servicecustomfield.NewServiceCustomFieldFieldOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceCustomFieldFieldOptionOutputReference
 ```
