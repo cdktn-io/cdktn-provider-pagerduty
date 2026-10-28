@@ -4,12 +4,12 @@
 
 ### DataPagerdutyTeams <a name="DataPagerdutyTeams" id="@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/teams pagerduty_teams}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/teams pagerduty_teams}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyteams"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyteams"
 
 datapagerdutyteams.NewDataPagerdutyTeams(scope Construct, id *string, config DataPagerdutyTeamsConfig) DataPagerdutyTeams
 ```
@@ -312,7 +312,7 @@ func ResetQuery()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeams.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyteams"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyteams"
 
 datapagerdutyteams.DataPagerdutyTeams_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeams.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyteams"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyteams"
 
 datapagerdutyteams.DataPagerdutyTeams_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datapagerdutyteams.DataPagerdutyTeams_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeams.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyteams"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyteams"
 
 datapagerdutyteams.DataPagerdutyTeams_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datapagerdutyteams.DataPagerdutyTeams_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeams.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyteams"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyteams"
 
 datapagerdutyteams.DataPagerdutyTeams_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataPagerdutyTeams to impo
 
 The id of the existing DataPagerdutyTeams that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/teams#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/teams#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeamsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyteams"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyteams"
 
 &datapagerdutyteams.DataPagerdutyTeamsConfig {
 	Connection: interface{},
@@ -660,7 +660,7 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerd
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeamsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeamsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeamsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeamsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/teams#id DataPagerdutyTeams#id}. |
+| <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeamsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/teams#id DataPagerdutyTeams#id}. |
 | <code><a href="#@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeamsConfig.property.query">Query</a></code> | <code>*string</code> | Filters the result, showing only the records whose name matches the query. |
 
 ---
@@ -743,7 +743,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/teams#id DataPagerdutyTeams#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/teams#id DataPagerdutyTeams#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -760,7 +760,7 @@ Query *string
 
 Filters the result, showing only the records whose name matches the query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/data-sources/teams#query DataPagerdutyTeams#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/data-sources/teams#query DataPagerdutyTeams#query}
 
 ---
 
@@ -769,7 +769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeamsTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyteams"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyteams"
 
 &datapagerdutyteams.DataPagerdutyTeamsTeams {
 
@@ -784,7 +784,7 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerd
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeamsTeamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyteams"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyteams"
 
 datapagerdutyteams.NewDataPagerdutyTeamsTeamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyTeamsTeamsList
 ```
@@ -933,7 +933,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.dataPagerdutyTeams.DataPagerdutyTeamsTeamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/datapagerdutyteams"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/datapagerdutyteams"
 
 datapagerdutyteams.NewDataPagerdutyTeamsTeamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPagerdutyTeamsTeamsOutputReference
 ```

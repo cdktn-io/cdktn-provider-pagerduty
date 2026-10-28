@@ -4,12 +4,12 @@
 
 ### EventOrchestration <a name="EventOrchestration" id="@cdktn/provider-pagerduty.eventOrchestration.EventOrchestration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/event_orchestration pagerduty_event_orchestration}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/event_orchestration pagerduty_event_orchestration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.eventOrchestration.EventOrchestration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorchestration"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/eventorchestration"
 
 eventorchestration.NewEventOrchestration(scope Construct, id *string, config EventOrchestrationConfig) EventOrchestration
 ```
@@ -441,7 +441,7 @@ func ResetTeam()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.eventOrchestration.EventOrchestration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorchestration"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/eventorchestration"
 
 eventorchestration.EventOrchestration_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.eventOrchestration.EventOrchestration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorchestration"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/eventorchestration"
 
 eventorchestration.EventOrchestration_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ eventorchestration.EventOrchestration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.eventOrchestration.EventOrchestration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorchestration"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/eventorchestration"
 
 eventorchestration.EventOrchestration_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ eventorchestration.EventOrchestration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.eventOrchestration.EventOrchestration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorchestration"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/eventorchestration"
 
 eventorchestration.EventOrchestration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the EventOrchestration to impo
 
 The id of the existing EventOrchestration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/event_orchestration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/event_orchestration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -851,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorchestration"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/eventorchestration"
 
 &eventorchestration.EventOrchestrationConfig {
 	Connection: interface{},
@@ -880,11 +880,11 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorche
 | <code><a href="#@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/event_orchestration#name EventOrchestration#name}. |
-| <code><a href="#@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/event_orchestration#description EventOrchestration#description}. |
-| <code><a href="#@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/event_orchestration#id EventOrchestration#id}. |
+| <code><a href="#@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/event_orchestration#name EventOrchestration#name}. |
+| <code><a href="#@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/event_orchestration#description EventOrchestration#description}. |
+| <code><a href="#@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/event_orchestration#id EventOrchestration#id}. |
 | <code><a href="#@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationConfig.property.integration">Integration</a></code> | <code>interface{}</code> | integration block. |
-| <code><a href="#@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationConfig.property.team">Team</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/event_orchestration#team EventOrchestration#team}. |
+| <code><a href="#@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationConfig.property.team">Team</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/event_orchestration#team EventOrchestration#team}. |
 
 ---
 
@@ -966,7 +966,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/event_orchestration#name EventOrchestration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/event_orchestration#name EventOrchestration#name}.
 
 ---
 
@@ -978,7 +978,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/event_orchestration#description EventOrchestration#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/event_orchestration#description EventOrchestration#description}.
 
 ---
 
@@ -990,7 +990,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/event_orchestration#id EventOrchestration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/event_orchestration#id EventOrchestration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1007,7 +1007,7 @@ Integration interface{}
 
 integration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/event_orchestration#integration EventOrchestration#integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/event_orchestration#integration EventOrchestration#integration}
 
 ---
 
@@ -1019,7 +1019,7 @@ Team *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/event_orchestration#team EventOrchestration#team}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/event_orchestration#team EventOrchestration#team}.
 
 ---
 
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorchestration"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/eventorchestration"
 
 &eventorchestration.EventOrchestrationIntegration {
 
@@ -1041,7 +1041,7 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorche
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationIntegrationParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorchestration"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/eventorchestration"
 
 &eventorchestration.EventOrchestrationIntegrationParameters {
 
@@ -1056,7 +1056,7 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorche
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationIntegrationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorchestration"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/eventorchestration"
 
 eventorchestration.NewEventOrchestrationIntegrationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationIntegrationList
 ```
@@ -1216,7 +1216,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationIntegrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorchestration"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/eventorchestration"
 
 eventorchestration.NewEventOrchestrationIntegrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationIntegrationOutputReference
 ```
@@ -1516,7 +1516,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationIntegrationParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorchestration"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/eventorchestration"
 
 eventorchestration.NewEventOrchestrationIntegrationParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationIntegrationParametersList
 ```
@@ -1665,7 +1665,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.eventOrchestration.EventOrchestrationIntegrationParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/eventorchestration"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/eventorchestration"
 
 eventorchestration.NewEventOrchestrationIntegrationParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationIntegrationParametersOutputReference
 ```

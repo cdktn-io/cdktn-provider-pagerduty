@@ -4,12 +4,12 @@
 
 ### MaintenanceWindow <a name="MaintenanceWindow" id="@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/maintenance_window pagerduty_maintenance_window}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/maintenance_window pagerduty_maintenance_window}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/maintenancewindow"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/maintenancewindow"
 
 maintenancewindow.NewMaintenanceWindow(scope Construct, id *string, config MaintenanceWindowConfig) MaintenanceWindow
 ```
@@ -414,7 +414,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindow.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/maintenancewindow"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/maintenancewindow"
 
 maintenancewindow.MaintenanceWindow_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/maintenancewindow"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/maintenancewindow"
 
 maintenancewindow.MaintenanceWindow_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ maintenancewindow.MaintenanceWindow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/maintenancewindow"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/maintenancewindow"
 
 maintenancewindow.MaintenanceWindow_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ maintenancewindow.MaintenanceWindow_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/maintenancewindow"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/maintenancewindow"
 
 maintenancewindow.MaintenanceWindow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the MaintenanceWindow to impor
 
 The id of the existing MaintenanceWindow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/maintenance_window#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/maintenance_window#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/maintenancewindow"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/maintenancewindow"
 
 &maintenancewindow.MaintenanceWindowConfig {
 	Connection: interface{},
@@ -842,11 +842,11 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/maintenanc
 | <code><a href="#@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.property.endTime">EndTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/maintenance_window#end_time MaintenanceWindow#end_time}. |
-| <code><a href="#@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.property.services">Services</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/maintenance_window#services MaintenanceWindow#services}. |
-| <code><a href="#@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/maintenance_window#start_time MaintenanceWindow#start_time}. |
-| <code><a href="#@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/maintenance_window#description MaintenanceWindow#description}. |
-| <code><a href="#@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/maintenance_window#id MaintenanceWindow#id}. |
+| <code><a href="#@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.property.endTime">EndTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/maintenance_window#end_time MaintenanceWindow#end_time}. |
+| <code><a href="#@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.property.services">Services</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/maintenance_window#services MaintenanceWindow#services}. |
+| <code><a href="#@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/maintenance_window#start_time MaintenanceWindow#start_time}. |
+| <code><a href="#@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/maintenance_window#description MaintenanceWindow#description}. |
+| <code><a href="#@cdktn/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/maintenance_window#id MaintenanceWindow#id}. |
 
 ---
 
@@ -928,7 +928,7 @@ EndTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/maintenance_window#end_time MaintenanceWindow#end_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/maintenance_window#end_time MaintenanceWindow#end_time}.
 
 ---
 
@@ -940,7 +940,7 @@ Services *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/maintenance_window#services MaintenanceWindow#services}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/maintenance_window#services MaintenanceWindow#services}.
 
 ---
 
@@ -952,7 +952,7 @@ StartTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/maintenance_window#start_time MaintenanceWindow#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/maintenance_window#start_time MaintenanceWindow#start_time}.
 
 ---
 
@@ -964,7 +964,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/maintenance_window#description MaintenanceWindow#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/maintenance_window#description MaintenanceWindow#description}.
 
 ---
 
@@ -976,7 +976,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/maintenance_window#id MaintenanceWindow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/maintenance_window#id MaintenanceWindow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

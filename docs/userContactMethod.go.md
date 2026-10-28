@@ -4,12 +4,12 @@
 
 ### UserContactMethod <a name="UserContactMethod" id="@cdktn/provider-pagerduty.userContactMethod.UserContactMethod"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method pagerduty_user_contact_method}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method pagerduty_user_contact_method}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.userContactMethod.UserContactMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/usercontactmethod"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/usercontactmethod"
 
 usercontactmethod.NewUserContactMethod(scope Construct, id *string, config UserContactMethodConfig) UserContactMethod
 ```
@@ -421,7 +421,7 @@ func ResetSendShortEmail()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.userContactMethod.UserContactMethod.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/usercontactmethod"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/usercontactmethod"
 
 usercontactmethod.UserContactMethod_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.userContactMethod.UserContactMethod.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/usercontactmethod"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/usercontactmethod"
 
 usercontactmethod.UserContactMethod_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ usercontactmethod.UserContactMethod_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.userContactMethod.UserContactMethod.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/usercontactmethod"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/usercontactmethod"
 
 usercontactmethod.UserContactMethod_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ usercontactmethod.UserContactMethod_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.userContactMethod.UserContactMethod.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/usercontactmethod"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/usercontactmethod"
 
 usercontactmethod.UserContactMethod_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the UserContactMethod to impor
 
 The id of the existing UserContactMethod that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/usercontactmethod"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/usercontactmethod"
 
 &usercontactmethod.UserContactMethodConfig {
 	Connection: interface{},
@@ -928,13 +928,13 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/usercontac
 | <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.address">Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#address UserContactMethod#address}. |
-| <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#label UserContactMethod#label}. |
-| <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#type UserContactMethod#type}. |
-| <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#user_id UserContactMethod#user_id}. |
-| <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.countryCode">CountryCode</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#country_code UserContactMethod#country_code}. |
-| <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.deviceType">DeviceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#device_type UserContactMethod#device_type}. |
-| <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.sendShortEmail">SendShortEmail</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#send_short_email UserContactMethod#send_short_email}. |
+| <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.address">Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#address UserContactMethod#address}. |
+| <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#label UserContactMethod#label}. |
+| <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#type UserContactMethod#type}. |
+| <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#user_id UserContactMethod#user_id}. |
+| <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.countryCode">CountryCode</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#country_code UserContactMethod#country_code}. |
+| <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.deviceType">DeviceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#device_type UserContactMethod#device_type}. |
+| <code><a href="#@cdktn/provider-pagerduty.userContactMethod.UserContactMethodConfig.property.sendShortEmail">SendShortEmail</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#send_short_email UserContactMethod#send_short_email}. |
 
 ---
 
@@ -1016,7 +1016,7 @@ Address *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#address UserContactMethod#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#address UserContactMethod#address}.
 
 ---
 
@@ -1028,7 +1028,7 @@ Label *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#label UserContactMethod#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#label UserContactMethod#label}.
 
 ---
 
@@ -1040,7 +1040,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#type UserContactMethod#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#type UserContactMethod#type}.
 
 ---
 
@@ -1052,7 +1052,7 @@ UserId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#user_id UserContactMethod#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#user_id UserContactMethod#user_id}.
 
 ---
 
@@ -1064,7 +1064,7 @@ CountryCode *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#country_code UserContactMethod#country_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#country_code UserContactMethod#country_code}.
 
 ---
 
@@ -1076,7 +1076,7 @@ DeviceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#device_type UserContactMethod#device_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#device_type UserContactMethod#device_type}.
 
 ---
 
@@ -1088,7 +1088,7 @@ SendShortEmail interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/user_contact_method#send_short_email UserContactMethod#send_short_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/user_contact_method#send_short_email UserContactMethod#send_short_email}.
 
 ---
 

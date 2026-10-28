@@ -4,12 +4,12 @@
 
 ### AlertGroupingSetting <a name="AlertGroupingSetting" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting pagerduty_alert_grouping_setting}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting pagerduty_alert_grouping_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/alertgroupingsetting"
 
 alertgroupingsetting.NewAlertGroupingSetting(scope Construct, id *string, config AlertGroupingSettingConfig) AlertGroupingSetting
 ```
@@ -434,7 +434,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/alertgroupingsetting"
 
 alertgroupingsetting.AlertGroupingSetting_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/alertgroupingsetting"
 
 alertgroupingsetting.AlertGroupingSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ alertgroupingsetting.AlertGroupingSetting_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/alertgroupingsetting"
 
 alertgroupingsetting.AlertGroupingSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ alertgroupingsetting.AlertGroupingSetting_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/alertgroupingsetting"
 
 alertgroupingsetting.AlertGroupingSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the AlertGroupingSetting to im
 
 The id of the existing AlertGroupingSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/alertgroupingsetting"
 
 &alertgroupingsetting.AlertGroupingSettingConfig {
 	Connection: interface{},
@@ -856,7 +856,7 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/alertgroup
 	Provisioners: *[]interface{},
 	Services: *[]*string,
 	Type: *string,
-	Config: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17.alertGroupingSetting.AlertGroupingSettingConfigA,
+	Config: github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18.alertGroupingSetting.AlertGroupingSettingConfigA,
 	Description: *string,
 	Name: *string,
 }
@@ -873,11 +873,11 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/alertgroup
 | <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfig.property.services">Services</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#services AlertGroupingSetting#services}. |
-| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#type AlertGroupingSetting#type}. |
+| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfig.property.services">Services</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#services AlertGroupingSetting#services}. |
+| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#type AlertGroupingSetting#type}. |
 | <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfig.property.config">Config</a></code> | <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfigA">AlertGroupingSettingConfigA</a></code> | config block. |
-| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#description AlertGroupingSetting#description}. |
-| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#name AlertGroupingSetting#name}. |
+| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#description AlertGroupingSetting#description}. |
+| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#name AlertGroupingSetting#name}. |
 
 ---
 
@@ -959,7 +959,7 @@ Services *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#services AlertGroupingSetting#services}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#services AlertGroupingSetting#services}.
 
 ---
 
@@ -971,7 +971,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#type AlertGroupingSetting#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#type AlertGroupingSetting#type}.
 
 ---
 
@@ -985,7 +985,7 @@ Config AlertGroupingSettingConfigA
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#config AlertGroupingSetting#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#config AlertGroupingSetting#config}
 
 ---
 
@@ -997,7 +997,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#description AlertGroupingSetting#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#description AlertGroupingSetting#description}.
 
 ---
 
@@ -1009,7 +1009,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#name AlertGroupingSetting#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#name AlertGroupingSetting#name}.
 
 ---
 
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/alertgroupingsetting"
 
 &alertgroupingsetting.AlertGroupingSettingConfigA {
 	Aggregate: *string,
@@ -1033,11 +1033,11 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/alertgroup
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfigA.property.aggregate">Aggregate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#aggregate AlertGroupingSetting#aggregate}. |
-| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfigA.property.fields">Fields</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#fields AlertGroupingSetting#fields}. |
+| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfigA.property.aggregate">Aggregate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#aggregate AlertGroupingSetting#aggregate}. |
+| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfigA.property.fields">Fields</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#fields AlertGroupingSetting#fields}. |
 | <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfigA.property.iagFields">IagFields</a></code> | <code>*[]*string</code> | An array of strings which represent the iag fields with which to intelligently group against. |
-| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfigA.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#timeout AlertGroupingSetting#timeout}. |
-| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfigA.property.timeWindow">TimeWindow</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#time_window AlertGroupingSetting#time_window}. |
+| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfigA.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#timeout AlertGroupingSetting#timeout}. |
+| <code><a href="#@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfigA.property.timeWindow">TimeWindow</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#time_window AlertGroupingSetting#time_window}. |
 
 ---
 
@@ -1049,7 +1049,7 @@ Aggregate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#aggregate AlertGroupingSetting#aggregate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#aggregate AlertGroupingSetting#aggregate}.
 
 ---
 
@@ -1061,7 +1061,7 @@ Fields *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#fields AlertGroupingSetting#fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#fields AlertGroupingSetting#fields}.
 
 ---
 
@@ -1075,7 +1075,7 @@ IagFields *[]*string
 
 An array of strings which represent the iag fields with which to intelligently group against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#iag_fields AlertGroupingSetting#iag_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#iag_fields AlertGroupingSetting#iag_fields}
 
 ---
 
@@ -1087,7 +1087,7 @@ Timeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#timeout AlertGroupingSetting#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#timeout AlertGroupingSetting#timeout}.
 
 ---
 
@@ -1099,7 +1099,7 @@ TimeWindow *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/alert_grouping_setting#time_window AlertGroupingSetting#time_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/alert_grouping_setting#time_window AlertGroupingSetting#time_window}.
 
 ---
 
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.alertGroupingSetting.AlertGroupingSettingConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/alertgroupingsetting"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/alertgroupingsetting"
 
 alertgroupingsetting.NewAlertGroupingSettingConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertGroupingSettingConfigAOutputReference
 ```

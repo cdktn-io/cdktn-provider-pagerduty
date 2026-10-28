@@ -4,12 +4,12 @@
 
 ### AutomationActionsRunnerTeamAssociation <a name="AutomationActionsRunnerTeamAssociation" id="@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/automation_actions_runner_team_association pagerduty_automation_actions_runner_team_association}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/automation_actions_runner_team_association pagerduty_automation_actions_runner_team_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/automationactionsrunnerteamassociation"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/automationactionsrunnerteamassociation"
 
 automationactionsrunnerteamassociation.NewAutomationActionsRunnerTeamAssociation(scope Construct, id *string, config AutomationActionsRunnerTeamAssociationConfig) AutomationActionsRunnerTeamAssociation
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/automationactionsrunnerteamassociation"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/automationactionsrunnerteamassociation"
 
 automationactionsrunnerteamassociation.AutomationActionsRunnerTeamAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/automationactionsrunnerteamassociation"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/automationactionsrunnerteamassociation"
 
 automationactionsrunnerteamassociation.AutomationActionsRunnerTeamAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ automationactionsrunnerteamassociation.AutomationActionsRunnerTeamAssociation_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/automationactionsrunnerteamassociation"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/automationactionsrunnerteamassociation"
 
 automationactionsrunnerteamassociation.AutomationActionsRunnerTeamAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ automationactionsrunnerteamassociation.AutomationActionsRunnerTeamAssociation_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/automationactionsrunnerteamassociation"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/automationactionsrunnerteamassociation"
 
 automationactionsrunnerteamassociation.AutomationActionsRunnerTeamAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the AutomationActionsRunnerTea
 
 The id of the existing AutomationActionsRunnerTeamAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/automation_actions_runner_team_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/automation_actions_runner_team_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/automationactionsrunnerteamassociation"
+import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v18/automationactionsrunnerteamassociation"
 
 &automationactionsrunnerteamassociation.AutomationActionsRunnerTeamAssociationConfig {
 	Connection: interface{},
@@ -789,9 +789,9 @@ import "github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17/automation
 | <code><a href="#@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociationConfig.property.runnerId">RunnerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/automation_actions_runner_team_association#runner_id AutomationActionsRunnerTeamAssociation#runner_id}. |
-| <code><a href="#@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociationConfig.property.teamId">TeamId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/automation_actions_runner_team_association#team_id AutomationActionsRunnerTeamAssociation#team_id}. |
-| <code><a href="#@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/automation_actions_runner_team_association#id AutomationActionsRunnerTeamAssociation#id}. |
+| <code><a href="#@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociationConfig.property.runnerId">RunnerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/automation_actions_runner_team_association#runner_id AutomationActionsRunnerTeamAssociation#runner_id}. |
+| <code><a href="#@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociationConfig.property.teamId">TeamId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/automation_actions_runner_team_association#team_id AutomationActionsRunnerTeamAssociation#team_id}. |
+| <code><a href="#@cdktn/provider-pagerduty.automationActionsRunnerTeamAssociation.AutomationActionsRunnerTeamAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/automation_actions_runner_team_association#id AutomationActionsRunnerTeamAssociation#id}. |
 
 ---
 
@@ -873,7 +873,7 @@ RunnerId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/automation_actions_runner_team_association#runner_id AutomationActionsRunnerTeamAssociation#runner_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/automation_actions_runner_team_association#runner_id AutomationActionsRunnerTeamAssociation#runner_id}.
 
 ---
 
@@ -885,7 +885,7 @@ TeamId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/automation_actions_runner_team_association#team_id AutomationActionsRunnerTeamAssociation#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/automation_actions_runner_team_association#team_id AutomationActionsRunnerTeamAssociation#team_id}.
 
 ---
 
@@ -897,7 +897,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.36.0/docs/resources/automation_actions_runner_team_association#id AutomationActionsRunnerTeamAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.37.0/docs/resources/automation_actions_runner_team_association#id AutomationActionsRunnerTeamAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
